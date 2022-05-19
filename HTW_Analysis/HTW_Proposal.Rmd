@@ -1,0 +1,183 @@
+---
+title             : "Project 2 - Hit The Wall"
+author:
+  - name          : "Thomas Gorman"
+author_note: >
+  Testing out writing in rmarkdown, and papaja
+abstract: >
+ insert abstract
+output:
+  pdf_document:
+    extra_dependencies: ["bbm", "threeparttable"]
+    
+---
+
+```{r include = FALSE}
+#my_citation <- cite_r(file = "r-references.bib")
+options(tinytex.verbose = TRUE)
+source('HTW_Prep_Paper_Data.R')
+
+chains = T
+knitr::opts_chunk$set(warning = FALSE)
+knitr::opts_chunk$set(fig.pos = 'h')
+```
+
+### Methods
+
+[Participants]{.underline}
+
+Data was collected from 647 participants (after exclusions). The results shown below consider data from subjects in our initial experiment, which consisted of 196 participants (106 constant, 90 varied). The follow-up experiments entailed minor manipulations: 1) reversing the velocity bands that were trained on vs. novel during testing; 2) providing ordinal rather than numerical feedback during training (e.g. correct, too low, too high). The data from these subsequent experiments are largely consistently with our initial results shown below.
+
+[Task]{.underline}
+
+We developed a novel visuomotor extrapolation task, termed the ["Hit The Wall" (HTW]{.underline}) task, wherein participants learned to launch a projectile such that it hit a rectangle at the far end of the screen with an appropriate amount of force. Although the projectile had both x and y velocity components, only the x-dimension was relevant for the task.
+
+[Design:]{.underline}
+
+1)  90 training trials split evenly divided between velocity bands. Varied training with 3 velocity bands and Constant training with 1 band.
+
+2)  No-feedback testing from 3 novel extrapolation bands. 15 trials each.  
+
+3)  No-feedbacd testing from the 3 bands used during the training phase (2 of which were novel for the constant group). 9 trials each.
+
+4)  Feedback testing for each of the 3 extrapolation bands. 10 trials each.
+
+ 
+
+**Results**
+
+[Training:]{.underline}
+
+Training performance is shown in Results Figure 2A. All groups show improvement from each of their training velocity-bands (i.e. decreasing average distance from target). In the velocity band trained at by both groups (800-1000), the constant group maintains a superior level of performance from the early through the final stages of training. This difference is unsurprising given that the constant group had 3x more practice trials from that band.
+
+```{r Training, echo=FALSE,fig.height=4.0, fig.width=6}
+#fig.cap="\\label{fig:figs}training performance"
+nbins=8
+dt%>% mutate(Trial.Bin=cut(trial,breaks=nbins,labels=FALSE)) %>%  
+  group_by(sbjCode,condit,throwCategory,Trial.Bin) %>% summarise(dist=mean(dist),.groups = 'keep') %>%
+   ggplot(aes(Trial.Bin,dist,color=throwCategory,group=throwCategory))+
+  lineBars+
+  facet_wrap(~condit)+
+  scale_x_continuous(breaks=seq(1,nbins))+
+  ylab("Mean Distance From Target Velocity")+xlab("Training Block")+
+  scale_color_discrete(name="Velocity Band")+
+  labs(title="Hit The Wall - Training Performance",
+       caption="Figure 2A: Training Performance for both groups – binned into 8 blocks." )+
+  theme(plot.caption=element_text(hjust=0,face="italic"))
+
+
+```
+
+[Testing:]{.underline}
+
+
+Results Figure 2C shows the average velocity produced for all 6 bands that were tested. At least at the aggregate level, both conditions were able to differentiate all 6 bands in the correct order, despite only having received training feedback for 1/6 (constant) or 3/6 (varied) bands during training. Participants in both groups also had a bias towards greatly overestimating the correct velocity for band 100-300, for which both groups had an average of greater than 500. 
+
+
+
+```{r Testing Vx, echo=FALSE, fig.height=7, fig.width=9 }
+# 
+# 
+# sumStats = dtest %>% group_by(sbjCode,vbLabel,condit,throwCategory) %>% 
+#   summarise(vxMean=mean(vxCapped),vxMedian=median(vxCapped),vxSd=sd(vxCapped),.groups = 'keep') %>%group_by(vbLabel,condit,throwCategory) %>%
+#   summarise(groupMean=round(mean(vxMean),0),groupMedian=round(mean(vxMedian),0),groupSd=round(mean(vxSd,na.rm=TRUE),0),.groups = 'keep') %>%
+#   mutate(meanLab=paste0("Mean=",groupMean),medianLab=paste0("Median=",groupMedian),sdLab=paste0("Sd=",groupSd)) %>% 
+#   mutate(sumStatLab=paste0(meanLab,"\n",medianLab,"\n",sdLab))
+# 
+# fig2aCap=str_wrap("Figure 2B: Bands 100-300, 350-550 and 600-800 are novel extrapolations for both groups. Band 800-1000 was a training band for both groups. Bands 1000-1200, and 1200-1400 were trained for the varied group, and novel for the constant group.  Top figure displays mean deviation from correct velocity. Bottom figure displays the average % of trials where participants hit the wall with the correct velocity. Error bars indicate standard error of the mean. " ,width=200)
+# 
+# dtest %>% group_by(sbjCode,vbLabel,condit,throwCategory) %>% 
+#   summarise(vxMean=mean(vxCapped),lowBound=first(bandInt),highBound=first(highBound),
+#             vbLag=first(vbLag),vbLead=first(vbLead),.groups = 'keep') %>%
+#   ggplot(aes(x=vbLabel,y=vxMean,fill=throwCategory))+
+#   geom_half_violin(color=NA)+ # remove border color
+#   geom_half_boxplot(position=position_nudge(x=-0.05),side="r",outlier.shape = NA,center=TRUE, 
+#                     errorbar.draw = FALSE,width=.25)+
+#   geom_half_point(transformation = position_jitter(width = 0.05, height = 0.05),size=.3,aes(color=throwCategory))+
+#   facet_wrap(~condit,scale="free_x")+
+#   geom_rect(data=vbRect,aes(xmin=vbLag,xmax=vbLead,ymin=lowBound,ymax=highBound,fill=throwCategory),alpha=.3)+
+#   geom_text(data=sumStats,aes(y=2090,label = sumStatLab),size=2.5)+
+#   bandLines4+
+#   #geom_text(data=sumStats,aes(x=throwCategory,y=2100,label = groupMean),size=2, vjust = -0.5)+
+#   scale_y_continuous(expand=expansion(add=100),breaks=round(seq(0,2000,by=200),2))+
+#   scale_fill_discrete(name="Velocity Band")+
+#   scale_color_discrete(guide="none")+  # remove extra legend
+#   theme(legend.position='none',
+#         plot.title=element_text(face="bold"),
+#         axis.title.x=element_text(face="bold"),
+#         axis.title.y=element_text(face="bold"),
+#         axis.text.x = element_text(size = 7.5))+
+#   ylab("Mean X Velocity")+xlab("Target Velocity Band") + 
+#    labs(title="Testing Performance (no-feedback) - X-Velocity Per Band",
+#        caption=fig2aCap)+
+#   theme(plot.caption=element_text(hjust=0,face="italic"))
+
+
+```
+
+
+
+For evaluating testing performance, we consider 3 separate metrics. 1) The average absolute deviation from the correct velocity, 2) The % of throws in which the wall was hit with the correct velocity and 3) The average x velocity produced.
+
+As is reflected in Results Figure 2B, the constant group performed significantly better than the varied group at the 3 testing bands of greatest interest. Both groups tended to perform worse for testing bands further away from their training conditions. The varied group had a slight advantage for bands 1000-1200 and 1200-1400, which were repeats from training for the varied participants, but novel for the constant participants.
+
+```{r}
+
+
+
+
+
+
+```
+
+
+
+
+
+```{r}
+
+text_tbl <- data.frame(
+    'Step'=c("Input Activation","Output Activation","Output Probability","Mean Output","Feedback Activation","Update Weights","Extrapolation",""),
+    'Equation' = c("$a_i$(X) = $\\frac{e^{-c \\cdot (X-X_i)^2}}{ \\sum_{k=1}^Me^{-c \\cdot (X-X_i)^2}}$", 
+                   '$O_j$(X) = $\\sum_{k=1}^Mw_{ji} \\cdot a_i(X)$',
+                   '$P[Y_j | X] = \\frac{O_i(X)}{\\sum_{k=1}^Mo_k(X)}$',
+                   "$m(x) = \\sum_{j=1}^LY_j \\cdot \\bigg[\\frac{O_j(X)}{\\sum_{k=1}^Lo_k(X)}\\bigg]$",
+                   "$f_j(Z)=e^{-c\\cdot(Z-Y_j)^2}$",
+                   "$w_{ji}(t+1)=w_{ji}(t)+\\alpha \\cdot {f_i(Z(t))-O_j(X(t))} \\cdot a_i(X(t))$",
+                   "$P[X_i|X] = \\frac{a_i(X)}{\\sum_{k=1}^Ma_k(X)}$",
+                   "$E[Y|X_i]=m(X_i) + \\bigg[\\frac{m(X_{i+1})-m(X_{i-1})}{X_{i+1} - X_{i-1}} \\bigg] \\cdot[X-X_i]$"),
+    
+    'Description'= c(
+            "Activation of each input node, $X_i$, is a function of the Gaussian similarity between the node value and stimulus X. ",
+            "Activation of each Output unit $O_j$ is the weighted sum of the input activations and association weights",
+            "Each output node has associated response, $Y_j$. The probability of response $Y_j$ is determined by the ratio of output activations",
+            "The response to stimulus x is the weighted average of the response probabilities",
+            "After responding, feedback signal Z is presented, activating each output node via the Gaussian similarity to the ideal response  ",
+            "Delta rule to update weights. Magnitude of weight changes controlled by learning rate parameter alpha.",
+            "Novel test stimulus X activates input nodes associated with trained stimuli",
+            "Slope value computed from nearest training instances and then added to the response associated with the nearest training instance,m(x)")
+)
+text_tbl$Step=cell_spec(text_tbl$Step,font_size=12)
+text_tbl$Equation=cell_spec(text_tbl$Equation,font_size=20)
+almTable=kable(text_tbl, 'latex', 
+  booktabs=T, escape = F, align='l',
+  caption = '<span style = "color:black;"><center><strong>Table 2A: ALM & EXAM Equations</strong></center></span>',
+  col.names=c("","Equation","Description")) %>%
+  kable_styling(position="left",bootstrap_options = c("hover")) %>%
+  column_spec(1, bold = F,border_right=T) %>%
+  column_spec(2, width = '10cm')%>%
+  column_spec(3, width = '15cm') %>%
+  pack_rows("ALM Activation & Response",1,4,bold=FALSE,italic=TRUE) %>%
+  pack_rows("ALM Learning",5,6,bold=FALSE,italic=TRUE) %>%
+  pack_rows("EXAM",7,8,bold=FALSE,italic=TRUE) 
+  #save_kable(file="almTable.html",self_contained=T)
+almTable
+
+
+
+```
+
+
+
+
+
