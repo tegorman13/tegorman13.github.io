@@ -1,15 +1,11 @@
 ---
-title             : "Project 2 - Hit The Wall"
-author:
-  - name          : "Thomas Gorman"
-author_note: >
-  Testing out writing in rmarkdown, and papaja
-abstract: >
- insert abstract
-output:
-  pdf_document:
-    extra_dependencies: ["bbm", "threeparttable"]
-    
+title: "Project 2 - Hit The Wall"
+output: html_document
+knit: (function(input_file, encoding) {
+    out_dir <- 'docs';
+    rmarkdown::render(input_file,
+      encoding=encoding,
+      output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
 ---
 
 ```{r include = FALSE}
@@ -70,10 +66,7 @@ dt%>% mutate(Trial.Bin=cut(trial,breaks=nbins,labels=FALSE)) %>%
 
 [Testing:]{.underline}
 
-
-Results Figure 2C shows the average velocity produced for all 6 bands that were tested. At least at the aggregate level, both conditions were able to differentiate all 6 bands in the correct order, despite only having received training feedback for 1/6 (constant) or 3/6 (varied) bands during training. Participants in both groups also had a bias towards greatly overestimating the correct velocity for band 100-300, for which both groups had an average of greater than 500. 
-
-
+Results Figure 2C shows the average velocity produced for all 6 bands that were tested. At least at the aggregate level, both conditions were able to differentiate all 6 bands in the correct order, despite only having received training feedback for 1/6 (constant) or 3/6 (varied) bands during training. Participants in both groups also had a bias towards greatly overestimating the correct velocity for band 100-300, for which both groups had an average of greater than 500.
 
 ```{r Testing Vx, echo=FALSE, fig.height=7, fig.width=9 }
 # 
@@ -115,8 +108,6 @@ Results Figure 2C shows the average velocity produced for all 6 bands that were 
 
 ```
 
-
-
 For evaluating testing performance, we consider 3 separate metrics. 1) The average absolute deviation from the correct velocity, 2) The % of throws in which the wall was hit with the correct velocity and 3) The average x velocity produced.
 
 As is reflected in Results Figure 2B, the constant group performed significantly better than the varied group at the 3 testing bands of greatest interest. Both groups tended to perform worse for testing bands further away from their training conditions. The varied group had a slight advantage for bands 1000-1200 and 1200-1400, which were repeats from training for the varied participants, but novel for the constant participants.
@@ -129,10 +120,6 @@ As is reflected in Results Figure 2B, the constant group performed significantly
 
 
 ```
-
-
-
-
 
 ```{r}
 
@@ -176,8 +163,3 @@ almTable
 
 
 ```
-
-
-
-
-
