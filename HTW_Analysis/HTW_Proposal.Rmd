@@ -193,7 +193,7 @@ The total dataset consists of 8,551 individual users, 168,307 game sessions, and
 
 **Figure 3A**
 
-### [Model-based analysis 1: Effect of split-test variability manipulation on learning]{.underline} {.tabset}
+### Model-based analysis 1: Effect of split-test variability manipulation on learning {.tabset}
 
 1) Residual Effect of Split-testvariation
 
