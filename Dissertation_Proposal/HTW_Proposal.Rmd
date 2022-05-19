@@ -271,13 +271,12 @@ almTable
 ```
 
 
-<<<<<<< HEAD
+
 
 ## Project 3 {.tabset}
 
 **The Influence of Variability in a Speeded Attentional-Control Task**
-=======
->>>>>>> 82e984ceb26c523b780307d7abaf7c9d79a47264
+
 
 ### Background {.tabset}
 
@@ -355,10 +354,17 @@ trials (or some window).
 
 
 
-<<<<<<< HEAD
+
 ## General Discussion {.tabset}
-=======
->>>>>>> 82e984ceb26c523b780307d7abaf7c9d79a47264
+
+testing space
+
+
+
+
+
+
+
 
 
 ## References {.tabset}
