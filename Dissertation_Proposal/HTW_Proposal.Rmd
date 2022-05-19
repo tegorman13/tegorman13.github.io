@@ -2,7 +2,6 @@
 title: "Thomas Gorman Dissertation Proposal"
 output: 
   rmdformats::readthedown:
-    toc_depth: 2
 csl: apa.csl
 bibliography: "HTW.bib"
 knit: (function(input_file, encoding) {
@@ -272,10 +271,13 @@ almTable
 ```
 
 
+<<<<<<< HEAD
 
 ## Project 3 {.tabset}
 
 **The Influence of Variability in a Speeded Attentional-Control Task**
+=======
+>>>>>>> 82e984ceb26c523b780307d7abaf7c9d79a47264
 
 ### Background {.tabset}
 
@@ -353,7 +355,10 @@ trials (or some window).
 
 
 
+<<<<<<< HEAD
 ## General Discussion {.tabset}
+=======
+>>>>>>> 82e984ceb26c523b780307d7abaf7c9d79a47264
 
 
 ## References {.tabset}
