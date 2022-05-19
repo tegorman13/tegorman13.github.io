@@ -121,7 +121,7 @@ As is reflected in Results Figure 2B, the constant group performed significantly
 
 ```
 
-```{r}
+```{r echo=FALSE}
 
 text_tbl <- data.frame(
     'Step'=c("Input Activation","Output Activation","Output Probability","Mean Output","Feedback Activation","Update Weights","Extrapolation",""),
