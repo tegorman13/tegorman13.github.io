@@ -40,7 +40,7 @@ We developed a novel visuomotor extrapolation task, termed the ["Hit The Wall" (
 
  
 
-**Results**
+### Results
 
 [Training:]{.underline}
 
@@ -112,14 +112,21 @@ For evaluating testing performance, we consider 3 separate metrics. 1) The avera
 
 As is reflected in Results Figure 2B, the constant group performed significantly better than the varied group at the 3 testing bands of greatest interest. Both groups tended to perform worse for testing bands further away from their training conditions. The varied group had a slight advantage for bands 1000-1200 and 1200-1400, which were repeats from training for the varied participants, but novel for the constant participants.
 
-```{r}
+### Modeling
 
+In project 1, we applied model-based techniques to quantify and control for the similarity between training and testing experience, which in turn enabled us to account for the difference between varied and constant training via an extended version of a similarity based generalization model. In project 2, we will go a step further, implementing a full process model capable of both 1) producing novel responses and 2) modeling behavior in both the learning and testing stages of the experiment. For this purpose, we will apply the associative learning model (ALM) and the EXAM model of function learning (DeLosh 1997). ALM is a simple connectionist learning model which closely resembles Kruschke's ALCOVE model (Kruscke 1992), with modifications to allow for the generation of continuous responses.
 
+[ALM & Exam Description]{.underline}
 
+Delosh et al. (1997) introduced the associative learning model (ALM), a connectionist model within the popular class of radial-basis networks. ALM was inspired by, and closely resembles Kruschke's influential ALCOVE model of categorization (Kruscke 1992). ALM is structured with input and output nodes that correspond to regions of the stimulus space, and response space, respectively. The units in the input layer activate as a function of their similarity to a presented stimulus. As was the case with the exemplar-based models, similarity in ALM is exponentially decaying function of distance. So, for example, an input stimulus of value 55 would induce maximal activation of the input unit tuned to 55. Depending on the value of the generalization parameter, the nearby units (e.g. 54 and 56; 53 and 57) may also activate to some degree. The input layer is fully connected to the output layer, and the activation for any particular output node is simply the weighted sum of the connection weights between that node and the input activations. The network then produces a response by taking the weighted average of the output units (recall that each output unit has a value corresponding to a particular response). During training, the network receives feedback which activates each output unit as a function of its distance from the ideal level of activation necessary to produce the correct response. The connection weights between input and output units are then updated via the standard delta learning rule, where the magnitude of weight changes are controlled by a learning rate parameter.
 
+See Table 2A for a full specification of the equations that define ALM and EXAM.
 
+[Model Fitting and Comparison]{.underline}
 
-```
+Following the procedure used by McDaniel & Busemeyer (2009), we will assess the ability of both ALM and EXAM to account for the empirical data when fitting the models to 1) only the training data, and 2) both training and testing data. Models will be fit directly to the trial by trial data of each individual participants, both by minimizing the root-mean squared deviation (RMSE), and by maximizing log likelihood.
+
+Finding the sensitivity and learning rate parameters most likely to have generated the training data from a given participant. Each set of parameter values results in a learning trajectory that produces a weight matrix.
 
 ```{r echo=FALSE}
 
@@ -163,3 +170,30 @@ almTable
 
 
 ```
+
+**Project 3 -- The Influence of Variability in a Speeded Attentional-Control Task**
+
+Last year,
+we applied to access data generated from the many popular online games by Lumos
+Labs (Lumosity). We received access to data from "Lost in Migration" a gamified
+version of the Eriksen Flanker task. Users are presented with a configuration
+of 5 "birds" - a central "target" bird and 4 "flanker" birds. The task is to
+indicate the direction of the central bird as fast as possible using the
+up/down/right/left arrow keys on their device. On 50% of trials, the flanker
+birds are pointing the same direction as the target birds, while on the other
+half of trials the flanker birds point in an incompatible direction.
+
+The total dataset consists of 8,551 individual users, 168,307 game sessions, and
+8,207,980 trials of the game. A subset of the users in the dataset participated
+in a "split-test" conducted by Lumos Labs, wherein new users could be randomly
+assigned to one of several modified version of the game. The modified versions all
+increased the range of possible values for up to 3 aspects of the task stimuli:
+
+1) The
+rotation of the flanker birds relative to the target on incongruent trials (90,180,270
+in standard version, continuous range in modified version)
+2) The distance between flankers and target (constant in standard version),
+
+3) The size of the stimuli (constant in standard version)
+
+**Figure 3A**
