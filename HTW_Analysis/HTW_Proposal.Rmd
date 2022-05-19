@@ -1,6 +1,8 @@
 ---
 title: "Project 2 - Hit The Wall"
-output: html_document
+output: 
+  html_document:
+    code_folding: hide
 knit: (function(input_file, encoding) {
     out_dir <- 'docs';
     rmarkdown::render(input_file,
@@ -40,7 +42,7 @@ We developed a novel visuomotor extrapolation task, termed the ["Hit The Wall" (
 
  
 
-### Results
+### Results {.tabset}
 
 [Training:]{.underline}
 
@@ -112,7 +114,7 @@ For evaluating testing performance, we consider 3 separate metrics. 1) The avera
 
 As is reflected in Results Figure 2B, the constant group performed significantly better than the varied group at the 3 testing bands of greatest interest. Both groups tended to perform worse for testing bands further away from their training conditions. The varied group had a slight advantage for bands 1000-1200 and 1200-1400, which were repeats from training for the varied participants, but novel for the constant participants.
 
-### Modeling
+### Modeling {.tabset}
 
 In project 1, we applied model-based techniques to quantify and control for the similarity between training and testing experience, which in turn enabled us to account for the difference between varied and constant training via an extended version of a similarity based generalization model. In project 2, we will go a step further, implementing a full process model capable of both 1) producing novel responses and 2) modeling behavior in both the learning and testing stages of the experiment. For this purpose, we will apply the associative learning model (ALM) and the EXAM model of function learning (DeLosh 1997). ALM is a simple connectionist learning model which closely resembles Kruschke's ALCOVE model (Kruscke 1992), with modifications to allow for the generation of continuous responses.
 
@@ -171,7 +173,7 @@ almTable
 
 ```
 
-**Project 3 -- The Influence of Variability in a Speeded Attentional-Control Task**
+**Project 3 -- The Influence of Variability in a Speeded Attentional-Control Task** {.tabset}
 
 Last year,
 we applied to access data generated from the many popular online games by Lumos
