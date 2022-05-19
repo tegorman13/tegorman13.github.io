@@ -2,6 +2,7 @@
 title: "Thomas Gorman Dissertation Proposal"
 output: 
   rmdformats::readthedown:
+    toc_depth: 2
 csl: apa.csl
 bibliography: "HTW.bib"
 knit: (function(input_file, encoding) {
@@ -34,6 +35,8 @@ knitr::opts_chunk$set(fig.pos = 'h')
 
 
 ## Project 2 {.tabset}
+
+**Hit the Wall**
 
 ### Methods
 
@@ -268,8 +271,11 @@ almTable
 
 ```
 
-## Project 3 -- The Influence of Variability in a Speeded Attentional-Control Task {.tabset}
 
+
+## Project 3 {.tabset}
+
+**The Influence of Variability in a Speeded Attentional-Control Task**
 
 ### Background {.tabset}
 
@@ -347,6 +353,7 @@ trials (or some window).
 
 
 
+## General Discussion {.tabset}
 
 
 ## References {.tabset}
