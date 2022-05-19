@@ -193,8 +193,8 @@ The total dataset consists of 8,551 individual users, 168,307 game sessions, and
 
 **Figure 3A**
 
-### Model-based analysis 1: Effect of split-test variability manipulation on learning {.tabset}
-
+### Model-based analysis 1  {.tabset}
+**Effect of split-test variability manipulation on learning**
 1) Residual Effect of Split-testvariation
 
 -   After split-test users return to the standard version of LIM, for how long will we be
@@ -213,8 +213,8 @@ o  Interaction with how many games split test users completed before switching
 
 o  E.g'Flanker Size' users vs. 'Flanker Size & Rotation & Distance' users.
 
-### [Model-based analysis 2: Trial-by-trial influence of repetition and variability]{.underline}{.tabset}
-
+### Model-based analysis 2 {.tabset}
+**Trial-by-trial influence of repetition and variability **
 Like many in-lab experiments, the LIM trials are randomized. A consequence of this
 randomization is that some users will experience a greater proportion of repeat
 trials, while others.
