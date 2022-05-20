@@ -1,0 +1,30 @@
+url: https://tegorman13.github.io/Dissertation_Proposal
+template:
+  params:
+    bootswatch: 5
+
+pkgdown:
+  as_is: true
+
+toc:
+  depth: 2
+
+navbar:
+  structure:
+    left:
+    - Project_2
+    - Project_3
+
+components:
+    Project_2:
+      test: Project 2
+      href: docs/ihtw.html
+    Project_3:
+      text: Functions
+      href: docs/index.html
+
+# reference:
+# - title: Templates
+#   contents:
+#   - '`index`'
+#   - '`htw`'
