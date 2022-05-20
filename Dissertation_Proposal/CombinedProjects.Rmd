@@ -1,53 +1,41 @@
 ---
-title: "Project 2"
-subtitle: "Hit The Wall"
+title: "Thomas Gorman Dissertation Proposal"
 output: 
   rmdformats::readthedown:
-    toc_width: 1
 csl: apa.csl
 bibliography: "HTW.bib"
 knit: (function(input_file, encoding) {
     out_dir <- 'docs';
     rmarkdown::render(input_file,
       encoding=encoding,
-      output_file=file.path(dirname(input_file), out_dir, 'htw.html'))})
+      output_file=file.path(dirname(input_file), out_dir, 'combo.html'))})
 editor_options: 
   markdown: 
     wrap: 72
 ---
 
+
+
+
+
+
+
 ```{r include = FALSE}
 #my_citation <- cite_r(file = "r-references.bib")
-#options(tinytex.verbose = TRUE)
+options(tinytex.verbose = TRUE)
 source('HTW_Prep_Paper_Data.R')
-#library(rmdformats)
+library(rmdformats)
 
-# chains = T
-# knitr::opts_chunk$set(warning = FALSE)
-# knitr::opts_chunk$set(fig.pos = 'h')
+chains = T
+knitr::opts_chunk$set(warning = FALSE)
+knitr::opts_chunk$set(fig.pos = 'h')
 ```
+
+
 
 ## Project 2 {.tabset}
 
-### Introduction
-
-In project 1, we applied model-based techniques to quantify and control
-for the similarity between training and testing experience, which in
-turn enabled us to account for the difference between varied and
-constant training via an extended version of a similarity based
-generalization model. In project 2, we will go a step further,
-implementing a full process model capable of both 1) producing novel
-responses and 2) modeling behavior in both the learning and testing
-stages of the experiment. For this purpose, we will apply the
-associative learning model (ALM) and the EXAM model of function learning
-[@deloshExtrapolationSineQua1997]. ALM is a simple connectionist learning model which
-closely resembles Kruschke's ALCOVE model [@kruschkeALCOVEExemplarbasedConnectionist1992], with
-modifications to allow for the generation of continuous responses.
-
-Our research question here brings us into close alignment with the well established literature on function learning [@brehmerHypothesesRelationsScaled1974; @carrollFunctionalLearningLearning1963; @kohInductionCombinationRules1993]. Central questions of the function learning literature include the capacity of  learners to generalizing what they have learned to novel instances that fall in-between or outside prior experience, and the extent to which rule-based vs. exemplar based association models can account for human behavior [@bottNonmonotonicExtrapolationFunction2004; @deloshExtrapolationSineQua1997; @jonesActiveFunctionLearning2018; @kalishPopulationLinearExperts2004; @mcdanielConceptualBasisFunction2005; @mcdanielPredictingTransferPerformance2009]. 
-
-
-
+**Hit the Wall**
 
 ### Methods
 
@@ -86,6 +74,8 @@ task.
 4)  Feedback testing for each of the 3 extrapolation bands. 10 trials
     each.
 
+ 
+
 ### Results {.tabset}
 
 [Training:]{.underline}
@@ -98,7 +88,7 @@ performance from the early through the final stages of training. This
 difference is unsurprising given that the constant group had 3x more
 practice trials from that band.
 
-```{r Training, echo=FALSE,fig.height=5.0, fig.width=7}
+```{r Training, echo=FALSE,fig.height=4.0, fig.width=6}
 #fig.cap="\\label{fig:figs}training performance"
 nbins=8
 dt%>% mutate(Trial.Bin=cut(trial,breaks=nbins,labels=FALSE)) %>%  
@@ -110,7 +100,7 @@ dt%>% mutate(Trial.Bin=cut(trial,breaks=nbins,labels=FALSE)) %>%
   ylab("Mean Distance From Target Velocity")+xlab("Training Block")+
   scale_color_discrete(name="Velocity Band")+
   labs(title="Hit The Wall - Training Performance",
-       caption="2A. Training Performance for both groups – binned into 8 blocks." )+
+       caption="Figure 2A: Training Performance for both groups – binned into 8 blocks." )+
   theme(plot.caption=element_text(hjust=0,face="italic"))
 
 
@@ -159,7 +149,7 @@ dtest %>% group_by(sbjCode,vbLabel,condit,throwCategory) %>%
         axis.title.y=element_text(face="bold"),
         axis.text.x = element_text(size = 7.5))+
   ylab("Mean X Velocity")+xlab("Target Velocity Band") +
-   labs(title="2B. Testing Performance (no-feedback) - X-Velocity Per Band",
+   labs(title="Testing Performance (no-feedback) - X-Velocity Per Band",
        caption=fig2aCap)+
   theme(plot.caption=element_text(hjust=0,face="italic"))
 
@@ -178,58 +168,6 @@ further away from their training conditions. The varied group had a
 slight advantage for bands 1000-1200 and 1200-1400, which were repeats
 from training for the varied participants, but novel for the constant
 participants.
-
-```{r Test Performance, echo=FALSE, fig.height=7, fig.width=9}
-
-gbDev<-dtest %>% group_by(sbjCode,vbLabel,condit,throwCategory) %>% 
-  summarise(distMean=mean(distCapped),.groups = 'keep') %>% 
-  mutate(meanDevCapped=ifelse(distMean>900,900,distMean)) %>%
-  ggplot(aes(x=vbLabel,y=meanDevCapped,fill=condit))+
-  stat_summary(geom="bar",fun=mean,position=dodge,alpha=.7)+
-   stat_summary(geom="errorbar",fun.data=mean_se,alpha=.8,width=.5,position=dodge)+
- #ggbeeswarm::geom_quasirandom(aes(),dodge.width=.9,alpha=.15,size=.3)+
-  scale_y_continuous(breaks=round(seq(0,1000,by=200),2))+
-  ylab("Mean Absoulte Distance From Boundary")+xlab("Target Velocity Band") +
-scale_fill_discrete(name="Training Condition",labels=c("Constant","Varied"))+scale_color_discrete(guide="none")+
-  theme( plot.title=element_text(size=9),
-        axis.title.x=element_text(face="bold",size=11),
-        axis.title.y=element_text(face="bold",size=11),
-        axis.text.x = element_text(size = 7.5),
-        legend.position="top")+
-  labs(title="")#Testing - Mean Absolute Distance From Boundary
-leg=ggpubr::get_legend(gbDev)
-gbDev<- gbDev+theme(legend.position='none')
-  
-gbHit<-dtest %>% group_by(sbjCode,condit,vbLabel,expMode,testMode) %>% 
-  summarise(nHitsTest=sum(dist==0),n=n(),Percent_Hit=nHitsTest/n,.groups = 'keep') %>% 
-  ggplot(aes(x=vbLabel,y=Percent_Hit,fill=condit))+
-  stat_summary(geom="bar",fun=mean,position=dodge,alpha=.7)+
-   stat_summary(geom="errorbar",fun.data=mean_se,alpha=.8,width=.5,position=dodge)+
-# ggbeeswarm::geom_quasirandom(aes(),dodge.width=.9,alpha=.15,size=.3)+
-  ylab("% of throws with correct velocity")+xlab("Target Velocity Band") + 
-  scale_fill_discrete(guide='none')+scale_color_discrete(guide="none")+
-  theme( plot.title=element_text(size=9),
-        axis.title.x=element_text(face="bold",size=11),
-        axis.title.y=element_text(face="bold",size=11),
-        axis.text.x = element_text(size = 7.5),
-        legend.position="top")+
-  labs(title="")#Testing -% of hits
-
-
-
-gtitle="2C. Testing Performance"
-title = ggdraw()+draw_label(gtitle,fontface = 'bold',x=0,hjust=0)+theme(plot.margin = margin(0, 0, 0, 7))
-captionText=str_wrap("Figure 2C: Bands 100-300, 350-550 and 600-800 are novel extrapolations for both groups. Band 800-1000 was a training band for both groups. Bands 1000-1200, and 1200-1400 were trained for the varied group, and novel for the constant group.  Right side figure displays mean deviation from correct velocity band (lower values correspond to better performance). Bottom Left displays the average % of trials where participants hit the wall with the correct velocity (higher values correspond got better performance). Error bars indicate standard error of the mean. ",200)
-capt=ggdraw()+draw_label(captionText,fontface = 'italic',x=0,hjust=0,size=11)+theme(plot.margin = margin(0, 0, 0, 1))
-
-plot_grid(title,NULL,leg,NULL,gbDev,gbHit,capt,NULL,ncol=2,rel_heights=c(.1,.1,1,.1),rel_widths=c(1,1))
-
-
-
-```
-
-
-
 
 ### Modeling {.tabset}
 
@@ -332,4 +270,112 @@ almTable
 
 ```
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Project 3 {.tabset}
+
+**The Influence of Variability in a Speeded Attentional-Control Task**
+
+
+### Background {.tabset}
+
+Last year, we applied to access data generated from the many popular
+online games by Lumos Labs (Lumosity). We received access to data from
+"Lost in Migration" a gamified version of the Eriksen Flanker task.
+Users are presented with a configuration of 5 "birds" - a central
+"target" bird and 4 "flanker" birds. The task is to indicate the
+direction of the central bird as fast as possible using the
+up/down/right/left arrow keys on their device. On 50% of trials, the
+flanker birds are pointing the same direction as the target birds, while
+on the other half of trials the flanker birds point in an incompatible
+direction.
+
+The total dataset consists of 8,551 individual users, 168,307 game
+sessions, and 8,207,980 trials of the game. A subset of the users in the
+dataset participated in a "split-test" conducted by Lumos Labs, wherein
+new users could be randomly assigned to one of several modified version
+of the game. The modified versions all increased the range of possible
+values for up to 3 aspects of the task stimuli:
+
+1)  The rotation of the flanker birds relative to the target on
+    incongruent trials (90,180,270 in standard version, continuous range
+    in modified version)
+
+2)  The distance between flankers and target (constant in standard
+    version),
+
+3)  The size of the stimuli (constant in standard version)
+
+**Figure 3A**
+
+### Model-based analysis 1 {.tabset}
+
+**Effect of split-test variability manipulation on learning** 1)
+Residual Effect of Split-testvariation
+
+-   After split-test users return to the standard version of LIM, for
+    how long will we be able to detect behavioral differences between
+    split-test and standard-only users (in terms of games and/or
+    trials).
+
+2)  Between-Group comparisons
+
+-Standard version users vs. split test users during 'training' (Figure
+3D)
+
+-Standard vs. split-test on the first game after split test users switch
+to standard version
+
+o  Interaction with how many games split test users completed before
+switching
+
+-Higher varied vs. lower varied split test users
+
+o  E.g'Flanker Size' users vs. 'Flanker Size & Rotation & Distance'
+users.
+
+### Model-based analysis 2 {.tabset}
+
+**Trial-by-trial influence of repetition and variability** Like many
+in-lab experiments, the LIM trials are randomized. A consequence of this
+randomization is that some users will experience a greater proportion of
+repeat trials, while others.
+
+Trial-by-trial variability
+
+-   The total \# of unique configurations experienced
+
+-   The distance between trials - in terms of properties of stimuli
+(number, arrangement)
+
+- Distance between a new trial, and all of the previously experienced
+trials (or some window).
+
+
+
+
+## General Discussion {.tabset}
+
+testing space
+
+
+
+
+
+
+
+
+
 ## References {.tabset}
+
