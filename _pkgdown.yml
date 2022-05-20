@@ -18,7 +18,7 @@ navbar:
 components:
     Project_2:
       test: Project 2
-      href: docs/ihtw.html
+      href: docs/htw.html
     Project_3:
       text: Functions
       href: docs/index.html
