@@ -13,16 +13,27 @@ toc:
 navbar:
   structure:
     left:
+    - Project_1
     - Project_2
     - Project_3
 
 components:
+    Project_1:
+      text: Project 1
+      href: docs/igas.html
     Project_2:
-      test: Project 2
+      text: Project 2
       href: docs/htw.html
     Project_3:
       text: Functions
       href: docs/index.html
+home:
+  strip_header: true
+  links:
+    - text: A link to X
+      href: some link
+  Authors:
+    - text: Author 1
 
 # reference:
 # - title: Templates
