@@ -1,0 +1,14 @@
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+
+\centering
+\includegraphics{IGAS_PJ_files/figure-latex/Figure 2-1.pdf}
+\caption{(\#fig:Figure 2)test caption}
+\end{figure*}
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+
+\centering
+\includegraphics{IGAS_PJ_files/figure-latex/Toy Model 3-1.pdf}
+\caption{(\#fig:Toy Model 3)Figure 9. A simple model depicting the necessity of both of two separately fit generalization parameters, c, and a positive distance between training and testing contexts, in order for an instance model to predict a pattern of varied training from stimuli 400 and 800 outperforming constant training from position 600 at a test position of 600. For the top left panel, in which the generalization model assumes a single c value (-.008) for \#\textbar{} both varied and constant conditions, and identical contexts across training and testing, the equation which generates the varied condition is: Amount \#\textbar of Generalization = \(e^(c*abs(x-800)) +e^(c*abs(x-400))\), whereas the constant group generalization is generated from \(2* e^(c*abs(x-600))\). For the top \#\textbar right panel, the c constants in the original equations are different for the 2 conditions, with c=-.002 for the varied condition, and c=-.008 for the \#\textbar constant condition. The bottom two panels are generated from identical equations to those immediately above, except for the addition of extra distance \#\textbar(100 units) to reflect the assumption of some change in context between training and testing conditions. Thus, the generalization model for the varied condition in the bottom-right panel is of the form: Amount of Generalization \(e^{-c\\cdot(X-800)^2}+e^{-c\\cdot(X-400)^2}\)}
+\end{figure*}

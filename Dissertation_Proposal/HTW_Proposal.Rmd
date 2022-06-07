@@ -31,8 +31,6 @@ source('HTW_Prep_Paper_Data.R')
 
 # Project 2
 
-## Introduction {.tabset}
-
 In project 1, we applied model-based techniques to quantify and control
 for the similarity between training and testing experience, which in
 turn enabled us to account for the difference between varied and
@@ -47,20 +45,34 @@ learning model which closely resembles Kruschke's ALCOVE model
 [@kruschkeALCOVEExemplarbasedConnectionist1992], with modifications to
 allow for the generation of continuous responses.
 
-Our research question here brings us into close alignment with the well
-established literature on function learning
+## Introduction {.tabset}
+
+Whether faced with the problem of how hard to press down on the gas
+pedal to achieve the desired speed in a new car, or of adjusting the
+volume of a laptop to be audible within a desired distance, the tasks
+that humans must perform will frequently require learning and exploiting
+the relationship, or function, between continuous dimensions of the
+environment. Such phenomena, often referred to as function learning
 [@brehmerHypothesesRelationsScaled1974;
-@carrollFunctionalLearningLearning1963;
-@kohInductionCombinationRules1993]. Central questions of the function
-learning literature include the capacity of learners to generalizing
-what they have learned to novel instances that fall in-between or
-outside prior experience, and the extent to which rule-based vs.
-exemplar based association models can account for human behavior
+@carrollFunctionalLearningLearning1963]
+
+Central questions of the function learning literature include the
+capacity of learners to generalizing what they have learned to novel
+instances that fall in-between or outside the range prior experience,
+the relative difficulties of learning various functional forms (e.g.
+linear vs. quadratic), and the relative effectiveness of rule-based vs.
+association-based exemplar models
 [@bottNonmonotonicExtrapolationFunction2004;
 @deloshExtrapolationSineQua1997; @jonesActiveFunctionLearning2018;
 @kalishPopulationLinearExperts2004;
 @mcdanielConceptualBasisFunction2005;
 @mcdanielPredictingTransferPerformance2009].
+
+The research questions of Project 2 here brings us into close alignment
+with the well established literature on function learning
+[@brehmerHypothesesRelationsScaled1974;
+@carrollFunctionalLearningLearning1963;
+@kohInductionCombinationRules1993].
 
 ## Methods
 
@@ -197,7 +209,7 @@ slight advantage for bands 1000-1200 and 1200-1400, which were repeats
 from training for the varied participants, but novel for the constant
 participants.
 
-```{r Test Performance, echo=FALSE, fig.height=7, fig.width=9}
+```{r Test Performance, echo=FALSE, fig.height=7, fig.width=10}
 
 gbDev<-dtest %>% group_by(sbjCode,vbLabel,condit,throwCategory) %>% 
   summarise(distMean=mean(distCapped),.groups = 'keep') %>% 
@@ -237,7 +249,7 @@ gbHit<-dtest %>% group_by(sbjCode,condit,vbLabel,expMode,testMode) %>%
 
 gtitle="2C. Testing Performance"
 title = ggdraw()+draw_label(gtitle,fontface = 'bold',x=0,hjust=0)+theme(plot.margin = margin(0, 0, 0, 7))
-captionText=str_wrap("Figure 2C: Bands 100-300, 350-550 and 600-800 are novel extrapolations for both groups. Band 800-1000 was a training band for both groups. Bands 1000-1200, and 1200-1400 were trained for the varied group, and novel for the constant group.  Right side figure displays mean deviation from correct velocity band (lower values correspond to better performance). Bottom Left displays the average % of trials where participants hit the wall with the correct velocity (higher values correspond got better performance). Error bars indicate standard error of the mean. ",200)
+captionText=str_wrap("Figure 2C: Bands 100-300, 350-550 and 600-800 are novel extrapolations for both groups. Band 800-1000 was a training band for both groups. Bands 1000-1200, and 1200-1400 were trained for the varied group, and novel for the constant group.  Right side figure displays mean deviation from correct velocity band (lower values correspond to better performance). Bottom Left displays the average % of trials where participants hit the wall with the correct velocity (higher values correspond got better performance). Error bars indicate standard error of the mean. ",150)
 capt=ggdraw()+draw_label(captionText,fontface = 'italic',x=0,hjust=0,size=11)+theme(plot.margin = margin(0, 0, 0, 1))
 
 plot_grid(title,NULL,leg,NULL,gbDev,gbHit,capt,NULL,ncol=2,rel_heights=c(.1,.1,1,.1),rel_widths=c(1,1))
@@ -327,13 +339,39 @@ almTable=kable(text_tbl, 'html',
   column_spec(3, width = '15cm') %>%
   pack_rows("ALM Activation & Response",1,4,bold=FALSE,italic=TRUE) %>%
   pack_rows("ALM Learning",5,6,bold=FALSE,italic=TRUE) %>%
-  pack_rows("EXAM",7,8,bold=FALSE,italic=TRUE) 
+  pack_rows("EXAM",7,8,bold=FALSE,italic=TRUE)
   #save_kable(file="almTable.html",self_contained=T)
 almTable
 
 
 
 ```
+
+
+
+
+
+```{r echo=FALSE}
+# 
+# 
+# text_tbl <- data.frame(
+#     'Step'=c("Input Activation","Output Activation"),
+#     'Equation' = c("$a_i$(X) = $\\frac{e^{-c \\cdot (X-X_i)^2}}{ \\sum_{k=1}^Me^{-c \\cdot (X-X_i)^2}}$", 
+#                    '$O_j$(X) = $\\sum_{k=1}^Mw_{ji} \\cdot a_i(X)$')
+# )
+# text_tbl$Step=cell_spec(text_tbl$Step,font_size=12)
+# text_tbl$Equation=cell_spec(text_tbl$Equation,font_size=20)
+# almTable2=kable(text_tbl, 'html', 
+#   booktabs=T, escape = F, align='l',
+#   caption = '<span style = "color:black;"><center><strong>Table 2A: ALM & EXAM Equations</strong></center></span>',
+#   col.names=c("Equation","Description")) 
+#   #save_kable(file="almTable.html",self_contained=T)
+# almTable2
+
+
+```
+
+
 
 ### [Model Fitting]{.underline}
 
