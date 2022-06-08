@@ -1,14 +1,13 @@
 
 
 
-name: "ProposalSite"
+name: Proposal
 output_dir: site
+exclude: ["*.rds","*.pdf","*.tex","*.csl","*.bib","docs*"]
 navbar:
   title: "Thomas Gorman - Disseration Proposal"
   type: inverse
   left:
-    - text: "Home"
-      href: newfile.html
     - text: "Project 1"
       href: igas_n.html
     - text: "Project 2"
@@ -16,9 +15,7 @@ navbar:
     - text: "Project 3"
       href: lbd_n.html
 output:
-  html_document:
-    theme: cosmo
-    highlight: textmate
+  rmdformats::readthedown:
 
 
 
