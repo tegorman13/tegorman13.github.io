@@ -1,0 +1,25 @@
+
+
+
+name: "ProposalSite"
+output_dir: site
+navbar:
+  title: "Thomas Gorman - Disseration Proposal"
+  type: inverse
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Project 1"
+      href: igas_n.html
+    - text: "Project 2"
+      href: htw_n.html
+    - text: "Project 3"
+      href: lbd_n.html
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
+
+
+
+
