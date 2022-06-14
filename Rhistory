@@ -1,0 +1,289 @@
+git commit --allow-empty -m "Trigger rebuild"
+remotes::install_github("paleolimbot/rbbt")
+library(rbbt)
+rbbt::bbt_bib_selected(translator = "biblatex", .action = bbt_print)
+rbbt::bbt_bib("albrechtCompetitiveRetrievalStrategy2020", translator = "biblatex", .action = bbt_print)
+devtools::install_github("crsh/citr")
+citr:::insert_citation()
+citr:::insert_citation()
+citr:::insert_citation()
+citr:::insert_citation()
+citr:::insert_citation()
+devtools::install_github("rstudio/addinexamples", type = "source")
+addinexamples:::subsetAddin()
+citr:::insert_citation()
+citr:::insert_citation()
+citr:::insert_citation()
+citr:::insert_citation()
+citr:::insert_citation()
+citr:::insert_citation()
+citr:::insert_citation()
+citr:::insert_citation()
+citr:::insert_citation()
+#my_citation <- cite_r(file = "r-references.bib")
+#options(tinytex.verbose = TRUE)
+source('HTW_Prep_Paper_Data.R')
+library(rmdformats)
+# chains = T
+# knitr::opts_chunk$set(warning = FALSE)
+# knitr::opts_chunk$set(fig.pos = 'h')
+#fig.cap="\\label{fig:figs}training performance"
+nbins=8
+dt%>% mutate(Trial.Bin=cut(trial,breaks=nbins,labels=FALSE)) %>%
+group_by(sbjCode,condit,throwCategory,Trial.Bin) %>% summarise(dist=mean(dist),.groups = 'keep') %>%
+ggplot(aes(Trial.Bin,dist,color=throwCategory,group=throwCategory))+
+lineBars+
+facet_wrap(~condit)+
+scale_x_continuous(breaks=seq(1,nbins))+
+ylab("Mean Distance From Target Velocity")+xlab("Training Block")+
+scale_color_discrete(name="Velocity Band")+
+labs(title="Hit The Wall - Training Performance",
+caption="Figure 2A: Training Performance for both groups – binned into 8 blocks." )+
+theme(plot.caption=element_text(hjust=0,face="italic"))
+sumStats = dtest %>% group_by(sbjCode,vbLabel,condit,throwCategory) %>%
+summarise(vxMean=mean(vxCapped),vxMedian=median(vxCapped),vxSd=sd(vxCapped),.groups = 'keep') %>%group_by(vbLabel,condit,throwCategory) %>%
+summarise(groupMean=round(mean(vxMean),0),groupMedian=round(mean(vxMedian),0),groupSd=round(mean(vxSd,na.rm=TRUE),0),.groups = 'keep') %>%
+mutate(meanLab=paste0("Mean=",groupMean),medianLab=paste0("Median=",groupMedian),sdLab=paste0("Sd=",groupSd)) %>%
+mutate(sumStatLab=paste0(meanLab,"\n",medianLab,"\n",sdLab))
+fig2aCap=str_wrap("Figure 2B: Bands 100-300, 350-550 and 600-800 are novel extrapolations for both groups. Band 800-1000 was a training band for both groups. Bands 1000-1200, and 1200-1400 were trained for the varied group, and novel for the constant group.  Top figure displays mean deviation from correct velocity. Bottom figure displays the average % of trials where participants hit the wall with the correct velocity. Error bars indicate standard error of the mean. " ,width=200)
+dtest %>% group_by(sbjCode,vbLabel,condit,throwCategory) %>%
+summarise(vxMean=mean(vxCapped),lowBound=first(bandInt),highBound=first(highBound),
+vbLag=first(vbLag),vbLead=first(vbLead),.groups = 'keep') %>%
+ggplot(aes(x=vbLabel,y=vxMean,fill=throwCategory))+
+geom_half_violin(color=NA)+ # remove border color
+geom_half_boxplot(position=position_nudge(x=-0.05),side="r",outlier.shape = NA,center=TRUE,
+errorbar.draw = FALSE,width=.25)+
+geom_half_point(transformation = position_jitter(width = 0.05, height = 0.05),size=.3,aes(color=throwCategory))+
+facet_wrap(~condit,scale="free_x")+
+geom_rect(data=vbRect,aes(xmin=vbLag,xmax=vbLead,ymin=lowBound,ymax=highBound,fill=throwCategory),alpha=.3)+
+geom_text(data=sumStats,aes(y=2090,label = sumStatLab),size=2.5)+
+bandLines4+
+#geom_text(data=sumStats,aes(x=throwCategory,y=2100,label = groupMean),size=2, vjust = -0.5)+
+scale_y_continuous(expand=expansion(add=100),breaks=round(seq(0,2000,by=200),2))+
+scale_fill_discrete(name="Velocity Band")+
+scale_color_discrete(guide="none")+  # remove extra legend
+theme(legend.position='none',
+plot.title=element_text(face="bold"),
+axis.title.x=element_text(face="bold"),
+axis.title.y=element_text(face="bold"),
+axis.text.x = element_text(size = 7.5))+
+ylab("Mean X Velocity")+xlab("Target Velocity Band") +
+labs(title="Testing Performance (no-feedback) - X-Velocity Per Band",
+caption=fig2aCap)+
+theme(plot.caption=element_text(hjust=0,face="italic"))
+gbDev<-dtest %>% group_by(sbjCode,vbLabel,condit,throwCategory) %>%
+summarise(distMean=mean(distCapped)) %>% mutate(meanDevCapped=ifelse(distMean>900,900,distMean)) %>%
+ggplot(aes(x=vbLabel,y=meanDevCapped,fill=condit))+
+stat_summary(geom="bar",fun=mean,position=dodge,alpha=.7)+
+stat_summary(geom="errorbar",fun.data=mean_se,alpha=.8,width=.5,position=dodge)+
+#ggbeeswarm::geom_quasirandom(aes(),dodge.width=.9,alpha=.15,size=.3)+
+scale_y_continuous(breaks=round(seq(0,1000,by=200),2))+
+ylab("Mean Absoulte Distance From Boundary")+xlab("Target Velocity Band") +
+scale_fill_discrete(name="Training Condition",labels=c("Constant","Varied"))+scale_color_discrete(guide="none")+
+theme( plot.title=element_text(size=9),
+axis.title.x=element_text(face="bold",size=11),
+axis.title.y=element_text(face="bold",size=11),
+axis.text.x = element_text(size = 7.5),
+legend.position="top")+
+labs(title="Testing - Mean Absolute Distance From Boundary")
+leg=ggpubr::get_legend(gbDev)
+gbDev<- gbDev+theme(legend.position='none')
+gbHit<-dtest %>% group_by(sbjCode,condit,vbLabel,expMode,testMode) %>%
+summarise(nHitsTest=sum(dist==0),n=n(),Percent_Hit=nHitsTest/n) %>%
+ggplot(aes(x=vbLabel,y=Percent_Hit,fill=condit))+
+stat_summary(geom="bar",fun=mean,position=dodge,alpha=.7)+
+stat_summary(geom="errorbar",fun.data=mean_se,alpha=.8,width=.5,position=dodge)+
+# ggbeeswarm::geom_quasirandom(aes(),dodge.width=.9,alpha=.15,size=.3)+
+ylab("% of throws with correct velocity")+xlab("Target Velocity Band") +
+scale_fill_discrete(guide='none')+scale_color_discrete(guide="none")+
+theme( plot.title=element_text(size=9),
+axis.title.x=element_text(face="bold",size=11),
+axis.title.y=element_text(face="bold",size=11),
+axis.text.x = element_text(size = 7.5),
+legend.position="top")+
+labs(title="Testing -% of hits")
+gtitle="Testing Performance"
+title = ggdraw()+draw_label(gtitle,fontface = 'bold',x=0,hjust=0)+theme(plot.margin = margin(0, 0, 0, 7))
+captionText=str_wrap("Figure 2B: Bands 100-300, 350-550 and 600-800 are novel extrapolations for both groups. Band 800-1000 was a training band for both groups. Bands 1000-1200, and 1200-1400 were trained for the varied group, and novel for the constant group.  Top figure displays mean deviation from correct velocity. Bottom figure displays the average % of trials where participants hit the wall with the correct velocity. Error bars indicate standard error of the mean. ",200)
+capt=ggdraw()+draw_label(captionText,fontface = 'italic',x=0,hjust=0,size=11)+theme(plot.margin = margin(0, 0, 0, 1))
+plot_grid(title,NULL,leg,NULL,gbDev,gbHit,capt,NULL,ncol=2,rel_heights=c(.1,.1,1,.1),rel_widths=c(1,1))
+gbDev<-dtest %>% group_by(sbjCode,vbLabel,condit,throwCategory) %>%
+summarise(distMean=mean(distCapped),.groups = 'keep') %>%
+mutate(meanDevCapped=ifelse(distMean>900,900,distMean)) %>%
+ggplot(aes(x=vbLabel,y=meanDevCapped,fill=condit))+
+stat_summary(geom="bar",fun=mean,position=dodge,alpha=.7)+
+stat_summary(geom="errorbar",fun.data=mean_se,alpha=.8,width=.5,position=dodge)+
+#ggbeeswarm::geom_quasirandom(aes(),dodge.width=.9,alpha=.15,size=.3)+
+scale_y_continuous(breaks=round(seq(0,1000,by=200),2))+
+ylab("Mean Absoulte Distance From Boundary")+xlab("Target Velocity Band") +
+scale_fill_discrete(name="Training Condition",labels=c("Constant","Varied"))+scale_color_discrete(guide="none")+
+theme( plot.title=element_text(size=9),
+axis.title.x=element_text(face="bold",size=11),
+axis.title.y=element_text(face="bold",size=11),
+axis.text.x = element_text(size = 7.5),
+legend.position="top")+
+labs(title="Testing - Mean Absolute Distance From Boundary")
+leg=ggpubr::get_legend(gbDev)
+gbDev<- gbDev+theme(legend.position='none')
+gbHit<-dtest %>% group_by(sbjCode,condit,vbLabel,expMode,testMode) %>%
+summarise(nHitsTest=sum(dist==0),n=n(),Percent_Hit=nHitsTest/n,.groups = 'keep') %>%
+ggplot(aes(x=vbLabel,y=Percent_Hit,fill=condit))+
+stat_summary(geom="bar",fun=mean,position=dodge,alpha=.7)+
+stat_summary(geom="errorbar",fun.data=mean_se,alpha=.8,width=.5,position=dodge)+
+# ggbeeswarm::geom_quasirandom(aes(),dodge.width=.9,alpha=.15,size=.3)+
+ylab("% of throws with correct velocity")+xlab("Target Velocity Band") +
+scale_fill_discrete(guide='none')+scale_color_discrete(guide="none")+
+theme( plot.title=element_text(size=9),
+axis.title.x=element_text(face="bold",size=11),
+axis.title.y=element_text(face="bold",size=11),
+axis.text.x = element_text(size = 7.5),
+legend.position="top")+
+labs(title="Testing -% of hits")
+gtitle="Testing Performance"
+title = ggdraw()+draw_label(gtitle,fontface = 'bold',x=0,hjust=0)+theme(plot.margin = margin(0, 0, 0, 7))
+captionText=str_wrap("Figure 2B: Bands 100-300, 350-550 and 600-800 are novel extrapolations for both groups. Band 800-1000 was a training band for both groups. Bands 1000-1200, and 1200-1400 were trained for the varied group, and novel for the constant group.  Top figure displays mean deviation from correct velocity. Bottom figure displays the average % of trials where participants hit the wall with the correct velocity. Error bars indicate standard error of the mean. ",200)
+capt=ggdraw()+draw_label(captionText,fontface = 'italic',x=0,hjust=0,size=11)+theme(plot.margin = margin(0, 0, 0, 1))
+plot_grid(title,NULL,leg,NULL,gbDev,gbHit,capt,NULL,ncol=2,rel_heights=c(.1,.1,1,.1),rel_widths=c(1,1))
+gbDev<-dtest %>% group_by(sbjCode,vbLabel,condit,throwCategory) %>%
+summarise(distMean=mean(distCapped),.groups = 'keep') %>%
+mutate(meanDevCapped=ifelse(distMean>900,900,distMean)) %>%
+ggplot(aes(x=vbLabel,y=meanDevCapped,fill=condit))+
+stat_summary(geom="bar",fun=mean,position=dodge,alpha=.7)+
+stat_summary(geom="errorbar",fun.data=mean_se,alpha=.8,width=.5,position=dodge)+
+#ggbeeswarm::geom_quasirandom(aes(),dodge.width=.9,alpha=.15,size=.3)+
+scale_y_continuous(breaks=round(seq(0,1000,by=200),2))+
+ylab("Mean Absoulte Distance From Boundary")+xlab("Target Velocity Band") +
+scale_fill_discrete(name="Training Condition",labels=c("Constant","Varied"))+scale_color_discrete(guide="none")+
+theme( plot.title=element_text(size=9),
+axis.title.x=element_text(face="bold",size=11),
+axis.title.y=element_text(face="bold",size=11),
+axis.text.x = element_text(size = 7.5),
+legend.position="top")+
+labs(title="")#Testing - Mean Absolute Distance From Boundary
+leg=ggpubr::get_legend(gbDev)
+gbDev<- gbDev+theme(legend.position='none')
+gbHit<-dtest %>% group_by(sbjCode,condit,vbLabel,expMode,testMode) %>%
+summarise(nHitsTest=sum(dist==0),n=n(),Percent_Hit=nHitsTest/n,.groups = 'keep') %>%
+ggplot(aes(x=vbLabel,y=Percent_Hit,fill=condit))+
+stat_summary(geom="bar",fun=mean,position=dodge,alpha=.7)+
+stat_summary(geom="errorbar",fun.data=mean_se,alpha=.8,width=.5,position=dodge)+
+# ggbeeswarm::geom_quasirandom(aes(),dodge.width=.9,alpha=.15,size=.3)+
+ylab("% of throws with correct velocity")+xlab("Target Velocity Band") +
+scale_fill_discrete(guide='none')+scale_color_discrete(guide="none")+
+theme( plot.title=element_text(size=9),
+axis.title.x=element_text(face="bold",size=11),
+axis.title.y=element_text(face="bold",size=11),
+axis.text.x = element_text(size = 7.5),
+legend.position="top")+
+labs(title="")#Testing -% of hits
+gtitle="Testing Performance"
+title = ggdraw()+draw_label(gtitle,fontface = 'bold',x=0,hjust=0)+theme(plot.margin = margin(0, 0, 0, 7))
+captionText=str_wrap("Figure 2B: Bands 100-300, 350-550 and 600-800 are novel extrapolations for both groups. Band 800-1000 was a training band for both groups. Bands 1000-1200, and 1200-1400 were trained for the varied group, and novel for the constant group.  Top figure displays mean deviation from correct velocity. Bottom figure displays the average % of trials where participants hit the wall with the correct velocity. Error bars indicate standard error of the mean. ",200)
+capt=ggdraw()+draw_label(captionText,fontface = 'italic',x=0,hjust=0,size=11)+theme(plot.margin = margin(0, 0, 0, 1))
+plot_grid(title,NULL,leg,NULL,gbDev,gbHit,capt,NULL,ncol=2,rel_heights=c(.1,.1,1,.1),rel_widths=c(1,1))
+gbDev<-dtest %>% group_by(sbjCode,vbLabel,condit,throwCategory) %>%
+summarise(distMean=mean(distCapped),.groups = 'keep') %>%
+mutate(meanDevCapped=ifelse(distMean>900,900,distMean)) %>%
+ggplot(aes(x=vbLabel,y=meanDevCapped,fill=condit))+
+stat_summary(geom="bar",fun=mean,position=dodge,alpha=.7)+
+stat_summary(geom="errorbar",fun.data=mean_se,alpha=.8,width=.5,position=dodge)+
+#ggbeeswarm::geom_quasirandom(aes(),dodge.width=.9,alpha=.15,size=.3)+
+scale_y_continuous(breaks=round(seq(0,1000,by=200),2))+
+ylab("Mean Absoulte Distance From Boundary")+xlab("Target Velocity Band") +
+scale_fill_discrete(name="Training Condition",labels=c("Constant","Varied"))+scale_color_discrete(guide="none")+
+theme( plot.title=element_text(size=9),
+axis.title.x=element_text(face="bold",size=11),
+axis.title.y=element_text(face="bold",size=11),
+axis.text.x = element_text(size = 7.5),
+legend.position="top")+
+labs(title="")#Testing - Mean Absolute Distance From Boundary
+leg=ggpubr::get_legend(gbDev)
+gbDev<- gbDev+theme(legend.position='none')
+gbHit<-dtest %>% group_by(sbjCode,condit,vbLabel,expMode,testMode) %>%
+summarise(nHitsTest=sum(dist==0),n=n(),Percent_Hit=nHitsTest/n,.groups = 'keep') %>%
+ggplot(aes(x=vbLabel,y=Percent_Hit,fill=condit))+
+stat_summary(geom="bar",fun=mean,position=dodge,alpha=.7)+
+stat_summary(geom="errorbar",fun.data=mean_se,alpha=.8,width=.5,position=dodge)+
+# ggbeeswarm::geom_quasirandom(aes(),dodge.width=.9,alpha=.15,size=.3)+
+ylab("% of throws with correct velocity")+xlab("Target Velocity Band") +
+scale_fill_discrete(guide='none')+scale_color_discrete(guide="none")+
+theme( plot.title=element_text(size=9),
+axis.title.x=element_text(face="bold",size=11),
+axis.title.y=element_text(face="bold",size=11),
+axis.text.x = element_text(size = 7.5),
+legend.position="top")+
+labs(title="")#Testing -% of hits
+gtitle="Testing Performance"
+title = ggdraw()+draw_label(gtitle,fontface = 'bold',x=0,hjust=0)+theme(plot.margin = margin(0, 0, 0, 7))
+captionText=str_wrap("Figure 2B: Bands 100-300, 350-550 and 600-800 are novel extrapolations for both groups. Band 800-1000 was a training band for both groups. Bands 1000-1200, and 1200-1400 were trained for the varied group, and novel for the constant group.  Right side figure displays mean deviation from correct velocity band (lower values correspond to better performance). Bottom Left displays the average % of trials where participants hit the wall with the correct velocity (higher values correspond got better performance). Error bars indicate standard error of the mean. ",200)
+capt=ggdraw()+draw_label(captionText,fontface = 'italic',x=0,hjust=0,size=11)+theme(plot.margin = margin(0, 0, 0, 1))
+plot_grid(title,NULL,leg,NULL,gbDev,gbHit,capt,NULL,ncol=2,rel_heights=c(.1,.1,1,.1),rel_widths=c(1,1))
+packages <- c('tidyverse','car',
+'psych','Matrix','purrr','broom','rjson',
+'rstatix','gridExtra','lme4','lmerTest','data.table','entropy','effectsize',
+'ggridges','lattice','grid','gridExtra','gtable','ggpubr','cowplot','rstatix',
+'gghalves')
+have = packages %in% rownames(installed.packages())
+if ( any(!have) ) { install.packages(packages[!have]) }
+setwd("~/OneDrive - Indiana University/My_Github/Dissertation_Proposal")
+remotes::install_github("crsh/papaja")
+install.packages("remotes")
+remotes::install_github("crsh/papaja")
+#my_citation <- cite_r(file = "r-references.bib")
+#options(tinytex.verbose = TRUE)
+source('HTW_Prep_Paper_Data.R')
+#library(rmdformats)
+# chains = T
+# knitr::opts_chunk$set(warning = FALSE)
+# knitr::opts_chunk$set(fig.pos = 'h')
+#fig.cap="\\label{fig:figs}training performance"
+nbins=8
+dt%>% mutate(Trial.Bin=cut(trial,breaks=nbins,labels=FALSE)) %>%
+group_by(sbjCode,condit,throwCategory,Trial.Bin) %>% summarise(dist=mean(dist),.groups = 'keep') %>%
+ggplot(aes(Trial.Bin,dist,color=throwCategory,group=throwCategory))+
+lineBars+
+facet_wrap(~condit)+
+scale_x_continuous(breaks=seq(1,nbins))+
+ylab("Mean Distance From Target Velocity")+xlab("Training Block")+
+scale_color_discrete(name="Velocity Band")+
+labs(title="Hit The Wall - Training Performance",
+caption="2A. Training Performance for both groups – binned into 8 blocks." )+
+theme(plot.caption=element_text(hjust=0,face="italic"),
+plot.title=element_text(face="bold"),
+axis.title.x=element_text(face="bold"),
+axis.title.y=element_text(face="bold"))
+sumStats = dtest %>% group_by(sbjCode,vbLabel,condit,throwCategory) %>%
+summarise(vxMean=mean(vxCapped),vxMedian=median(vxCapped),vxSd=sd(vxCapped),.groups = 'keep') %>%group_by(vbLabel,condit,throwCategory) %>%
+summarise(groupMean=round(mean(vxMean),0),groupMedian=round(mean(vxMedian),0),groupSd=round(mean(vxSd,na.rm=TRUE),0),.groups = 'keep') %>%
+mutate(meanLab=paste0("Mean=",groupMean),medianLab=paste0("Median=",groupMedian),sdLab=paste0("Sd=",groupSd)) %>%
+mutate(sumStatLab=paste0(meanLab,"\n",medianLab,"\n",sdLab))
+fig2aCap=str_wrap("Figure 2B: Bands 100-300, 350-550 and 600-800 are novel extrapolations for both groups. Band 800-1000 was a training band for both groups. Bands 1000-1200, and 1200-1400 were trained for the varied group, and novel for the constant group.  Top figure displays mean deviation from correct velocity. Bottom figure displays the average % of trials where participants hit the wall with the correct velocity. Error bars indicate standard error of the mean. " ,width=200)
+dtest %>% group_by(sbjCode,vbLabel,condit,throwCategory) %>%
+summarise(vxMean=mean(vxCapped),lowBound=first(bandInt),highBound=first(highBound),
+vbLag=first(vbLag),vbLead=first(vbLead),.groups = 'keep') %>%
+ggplot(aes(x=vbLabel,y=vxMean,fill=throwCategory))+
+geom_half_violin(color=NA)+ # remove border color
+geom_half_boxplot(position=position_nudge(x=-0.05),side="r",outlier.shape = NA,center=TRUE,
+errorbar.draw = FALSE,width=.25)+
+geom_half_point(transformation = position_jitter(width = 0.05, height = 0.05),size=.3,aes(color=throwCategory))+
+facet_wrap(~condit,scale="free_x")+
+geom_rect(data=vbRect,aes(xmin=vbLag,xmax=vbLead,ymin=lowBound,ymax=highBound,fill=throwCategory),alpha=.3)+
+geom_text(data=sumStats,aes(y=2090,label = sumStatLab),size=2.5)+
+bandLines4+
+#geom_text(data=sumStats,aes(x=throwCategory,y=2100,label = groupMean),size=2, vjust = -0.5)+
+scale_y_continuous(expand=expansion(add=100),breaks=round(seq(0,2000,by=200),2))+
+scale_fill_discrete(name="Velocity Band")+
+scale_color_discrete(guide="none")+  # remove extra legend
+theme(legend.position='none',
+plot.title=element_text(face="bold"),
+axis.title.x=element_text(face="bold"),
+axis.title.y=element_text(face="bold"),
+axis.text.x = element_text(size = 7.5))+
+ylab("Mean X Velocity")+xlab("Target Velocity Band") +
+labs(title="2B. Testing Performance (no-feedback) - X-Velocity Per Band",
+caption=fig2aCap)+
+theme(plot.caption=element_text(hjust=0,face="italic"))
+install.packages("rmdformats")
+install.packages("tinytex")
+tinytex::install_tinytex()
+library(papaja)
