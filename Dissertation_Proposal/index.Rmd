@@ -3,13 +3,7 @@ title: "Dissertation Proposal"
 date: '2022-06-08'
 ---
 
-
-
-Home page
-Dissertation Proposal
-new line
-
-
+Home page Dissertation Proposal new line
 
 ```{r include=FALSE}
 
@@ -59,35 +53,25 @@ bandLines4 <- list(geom_segment(data=vbRect,aes(x=vbLag,xend=vbLead,y=highBound,
 
 ```
 
-
-
 ## [Project 1](igas_n.html)
 
-```{r echo=FALSE, out.width= "85%", out.extra='style="float:right; padding:2px"'}
+**An Instance-Based Model Account of the Benefits of Varied Practice in Visuomotor Skill Learning**
 
+```{r echo=FALSE, out.width= "85%", out.extra='style="float:right; padding:2px"'}
 
 ss=solSpace %>% ggplot(aes(x=X_Velocity*-1,y=Y_Velocity*-1)) + 
   geom_point(aes(colour=Result),alpha=0.6) + scale_color_manual(values =brewer.pal(n=6,name="Set1"))+
   theme(axis.text=element_blank(),axis.title=element_blank(),axis.line=element_blank(),
         axis.ticks=element_blank(), legend.position = "none" )
-
-    
 ss
 
 ```
 
-
-
-
-
 aaa
-
-
 
 ## [Project 2](htw_n.html)
 
 ```{r echo=FALSE, out.width= "95%", out.extra='style="float:right; padding:2px"'}
-
 
 dtest %>% group_by(sbjCode,vbLabel,condit,throwCategory) %>%
   summarise(vxMean=mean(vxCapped),lowBound=first(bandInt),highBound=first(highBound),
@@ -107,14 +91,9 @@ dtest %>% group_by(sbjCode,vbLabel,condit,throwCategory) %>%
 
 ```
 
-
-
-
-
 ..
 
-
-## [Project 3](lbd_n.html) 
+## [Project 3](lbd_n.html)
 
 ```{r}
 
@@ -122,5 +101,3 @@ dtest %>% group_by(sbjCode,vbLabel,condit,throwCategory) %>%
 
 
 ```
-
-
