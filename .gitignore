@@ -8,7 +8,7 @@
 *.rds
 
 # Image/output files unless otherwise specified
-*.png
+
 *.docx
 *.doc
 *.jpg
