@@ -1,6 +1,5 @@
 ---
 title: "Dissertation Proposal"
-output: html_document
 date: '2022-06-08'
 ---
 
