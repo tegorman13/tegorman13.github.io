@@ -6,7 +6,7 @@ title: "Resources"
 
 # Collaborators 
 
-[Percepts and Concepts Lab](http://https//pc.cogs.indiana.edu)
+[Percepts and Concepts Lab](https://pc.cogs.indiana.edu/)
 
 [Learning and Transfer Lab](https://greenlab.psych.wisc.edu/)
 
