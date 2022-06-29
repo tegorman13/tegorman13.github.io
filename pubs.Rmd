@@ -9,6 +9,11 @@ title: "Publications"
 
 # Published
 
+
+Gorman, T.E., & Goldstone, R.L (2022 - Accepted). An instance-based model account of the benefits of varied practice in visuomotor skill. Cognitive Psychology
+\
+\
+
 Gorman, T. E., Gentile, D. A., & Green, C. S. (2018). Problem gaming: A short primer. American Journal of Play, 10(3), 309–327. 
 [<u><B>pdf</u></B>](pdf/Gorman et al_2018_Problem_gaming.pdf){target="_blank"}
 \
