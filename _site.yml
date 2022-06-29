@@ -12,6 +12,8 @@ navbar:
       href:  pubs.html
     - text: "Projects"
       href: projects.html
+    - text: "Resources"
+      href: resources.html
   right: 
     - text: ""
       icon: ai-google-scholar-square
