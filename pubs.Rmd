@@ -7,7 +7,7 @@ title: "Publications"
 
 -----
 
-### Published
+# Published
 
 Gorman, T. E., Gentile, D. A., & Green, C. S. (2018). Problem gaming: A short primer. American Journal of Play, 10(3), 309–327. 
 [<u><B>pdf</u></B>](pdf/Gorman et al_2018_Problem_gaming.pdf){target="_blank"}
@@ -35,7 +35,7 @@ Green, C. S., Gorman, T., & Bavelier, D. (2016). Action Video-Game Training and 
 
 -----
 
-### Conference Presentations
+# Conference Presentations
 
 Half Day Tutorial on Measuring Mindfulness Behaviorally: Onsite/Online Data Col-lection with jsPsych 
 -Cognitive Science Conference – 2018
@@ -49,7 +49,7 @@ Short term mindfulness intervention reduces cognitive deficits in heavy media mu
 -----
 
 
-### Preprints
+# Preprints
 
 
 -----

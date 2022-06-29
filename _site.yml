@@ -1,17 +1,18 @@
 
 
 
-name: Proposal
-output_dir: site
+name: Thomas Gorman
+output_dir: "."
+theme: css/custom.css
 exclude: ["*.rds","*.tex","*.csl","*.bib","docs*","404.html"]
 navbar:
   title: "Thomas Gorman"
   type: inverse
   left:
-    - text: "Publications"
-      href:  pubs.html
     - text: "Projects"
       href: projects.html
+    - text: "Publications"
+      href:  pubs.html
     - text: "Resources"
       href: resources.html
   right: 
@@ -29,6 +30,8 @@ navbar:
       href: https://osf.io/s8m2x/
 output:
   rmdformats::readthedown:
+    css: "style.css"
+    toc_width: 1
     fig_caption: yes
     includes:
       in_header:

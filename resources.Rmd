@@ -2,5 +2,35 @@
 title: "Resources"
 ---
 
-In Progress
+
+
+# Collaborators 
+
+[Percepts and Concepts Lab](http://https//pc.cogs.indiana.edu)
+
+[Learning and Transfer Lab](https://greenlab.psych.wisc.edu/)
+
+
+
+# Cognitive Modeling
+
+
+\
+\
+
+# Statistics
+
+
+\
+\
+
+# Experimental Design
+
+
+\
+\
+
+
+# Datasets
+
 
