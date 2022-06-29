@@ -1,0 +1,7 @@
+---
+title: "Thomas Gorman"
+date: "`r format(Sys.time(), '%H:%M,  %B %d , %Y')`"
+---
+
+The central goal of the proposed dissertation is to examine the extent to which similarity-based learning and generalization models can account for the common empirical patterns found throughout the literature on varied training. Towards this end, I have conducted my own experiments designed to address some shortcomings of previous work. I will also make use of preexisting, "natural" data from a popular online game.
+

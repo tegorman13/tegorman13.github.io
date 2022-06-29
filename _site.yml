@@ -1,0 +1,37 @@
+
+
+
+name: Proposal
+output_dir: site
+exclude: ["*.rds","*.tex","*.csl","*.bib","docs*","404.html"]
+navbar:
+  title: "Thomas Gorman"
+  type: inverse
+  left:
+    - text: "Publications"
+      href:  pubs.html
+    - text: "Projects"
+      href: projects.html
+  right: 
+    - text: ""
+      icon: ai-google-scholar-square
+      href: https://scholar.google.com/citations?user=USMVPjEAAAAJ&hl=en
+    - text: ""
+      icon: fa-github
+      href: https://github.com/tegorman13
+    - text: ""
+      icon: ai ai-researchgate fa-lg
+      href: https://www.researchgate.net/profile/Thomas-Gorman-3
+    - text: ""
+      icon: ai-osf
+      href: https://osf.io/s8m2x/
+output:
+  rmdformats::readthedown:
+    fig_caption: yes
+    includes:
+      in_header:
+      - header.html
+
+
+
+

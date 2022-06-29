@@ -1,0 +1,40 @@
+---
+title: "Publications"
+---
+
+
+### Preprints
+
+
+-----
+
+### Published
+
+Gorman, T. E., Gentile, D. A., & Green, C. S. (2018). Problem gaming: A short primer. American Journal of Play, 10(3), 309–327. 
+[pdf](pdf/Gorman et al_2018_Problem_gaming.pdf){target="_blank"}
+\
+\
+Kattner, F., Cochrane, A., Cox, C. R., Gorman, T. E., & Green, C. S. (2017). Perceptual learning generalization from sequential perceptual training as a change in learning rate. Current Biology, 27(6), 840–846. 
+[pdf](pdf/Kattner_2017 _Perceptual_learning_generalization_from_sequential.pdf){target="_blank"}
+\
+\
+Gorman, T. E., & Green, C. S. (2017). Young minds on video games. In Cognitive development in digital contexts (pp. 121–143). Academic Press. 
+\
+\
+Gorman, T. E., & Green, C. S. (2016). Short-term mindfulness intervention reduces the negative attentional effects associated with heavy media multitasking. Scientific Reports, 6. https://doi.org/10.1038/srep24542 
+[pdf](pdf/Gorman_Green_2016_Short-term_mindfulness_intervention_reduces_the_negative_attentional_effects.pdf){target="_blank"}
+\
+\
+Green, C. S., Gorman, T., & Bavelier, D. (2016). Action Video-Game Training and Its Effects on Perception and Attentional Control. In T. Strobach & J. Karbach (Eds.), Cognitive Training (pp. 107–116). Springer International Publishing.  https://doi.org/10.1007/978-3-319-42662-4_10 
+[pdf](pdf/AVG_CognitiveTraining_Green_Gorman_Bavelier.pdf){target="_blank"}
+
+
+
+
+
+-----
+
+### Peer-reviewed conference contributions
+
+
+-----
