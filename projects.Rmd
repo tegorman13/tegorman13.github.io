@@ -1,0 +1,112 @@
+---
+title: "Projects"
+date: "`r format(Sys.time(), '%H:%M,  %B %d , %Y')`"
+---
+
+The central goal of the proposed dissertation is to examine the extent to which similarity-based learning and generalization models can account for the common empirical patterns found throughout the literature on varied training. Towards this end, I have conducted my own experiments designed to address some shortcomings of previous work. I will also make use of preexisting, "natural" data from a popular online game.
+
+```{r include=FALSE}
+
+packages <- c('tidyverse','rmarkdown',"RColorBrewer",'gghalves')
+invisible(lapply(packages, require, character.only = TRUE))
+
+
+e2<- readRDS('data/igas_e2_cleanedData-final.rds')%>% mutate(initialVelocityX=X_Velocity,initialVelocityY=Y_Velocity)
+solSpace <- e2 %>% filter(trialType==11)
+#solSpace %>% ggplot(aes(x=X_Velocity,y=Y_Velocity)) + geom_point(aes(colour=ThrowPosition),alpha=0.58) + ggtitle("") 
+
+solSpace$Result = ifelse(solSpace$ThrowPosition==400,"400",solSpace$ThrowPosition)
+solSpace$Result = ifelse(solSpace$ThrowPosition==500,"500",solSpace$Result)
+solSpace$Result= ifelse(solSpace$ThrowPosition==625,"625",solSpace$Result)
+solSpace$Result = ifelse(solSpace$ThrowPosition==675,"675",solSpace$Result)
+solSpace$Result = ifelse(solSpace$ThrowPosition==800,"800",solSpace$Result)
+solSpace$Result = ifelse(solSpace$ThrowPosition==900,"900",solSpace$Result)
+theme_set(theme_classic())
+
+d <- readRDS("data/htw-04-07-22.rds")
+d <- d %>% mutate(distCapped=ifelse(dist>1500,1500,dist),
+                  vxCapped =ifelse(vx>2000,2000,vx),
+                  rectWidth=.4,
+                  vbn=as.numeric(throwCategory),
+                  vbLag=vbn-rectWidth,vbLead=vbn+rectWidth,
+                  condit=recode_factor(condit,constant="Constant",varied="Varied"))
+dtest <- d %>% filter(expMode=="test-Nf" | expMode=="test-train-nf") %>% 
+  droplevels() %>%   
+  mutate(testMode=factor(ifelse(expMode=="test-Nf","Novel Velocity Band","Trained Velocity Band \n(Constant trained from only 800-1000)")))
+
+
+dtest$vbLabel <- factor(dtest$throwCategory, 
+                        labels= c("100-300\nNovel", "350-550\nNovel", "600-800\nNovel",
+                                  "800-1000\nTrained\nBoth", "1000-1200\nTrained\nVaried","1200-1400\nTrained\nVaried"))
+
+
+vbRect<- dtest %>% group_by(throwCategory,vbLabel) %>% 
+  summarise(vxMean=mean(vx,trim=.05),lowBound=first(bandInt),highBound=first(highBound),vx=median(vx),
+            vxCapped=median(vxCapped),devMean=mean(dist)) %>%
+  mutate(rectWidth=.4,vbn=as.numeric(throwCategory),vbLag=vbn-rectWidth,vbLead=vbn+rectWidth)
+
+
+bandLines4 <- list(geom_segment(data=vbRect,aes(x=vbLag,xend=vbLead,y=highBound,yend=highBound),alpha=1,linetype="dashed"),
+                   geom_segment(data=vbRect,aes(x=vbLag,xend=vbLead,y=lowBound,yend=lowBound),alpha=1,linetype="dashed"),
+                   geom_text(data=vbRect,aes(x=vbLag-.03,y=lowBound+100,label=throwCategory),angle=90,size=2.5,fontface="bold") )    
+
+
+```
+
+
+### [Project 1](igas_n.html)
+
+```{r echo=FALSE,fig.height=2.5, fig.width=5}
+#, out.width= "85%", out.extra='style="float:right; padding:2px"'
+ss=solSpace %>% ggplot(aes(x=X_Velocity*-1,y=Y_Velocity*-1)) + 
+  geom_point(aes(colour=Result),alpha=0.6) + scale_color_manual(values =brewer.pal(n=6,name="Set1"))+
+  theme(axis.text=element_blank(),axis.title=element_blank(),axis.line=element_blank(),
+        axis.ticks=element_blank(), legend.position = "none" )
+ss
+
+```
+
+In Project 1, I programmed a simple projectile launching task to serve as a conceptual replication of an influential paradigm in the visuomotor skill learning literature. Several of the canonical empirical patterns are replicated, with the varied trained participants tending to perform better during testing in both experiments. A major issue with previous research in the cross-disciplinary "benefits of variability" literature is that many previous works do not adequately control for the similarity between training and testing conditions. Such issues arise when both from failures to consider the possibility of non-linear generalization, and from often the unquestioned assumption that participants are acquiring, and then generalizing from prototype or schema-based representations. I introduce a theoretically motivated method of explicitly quantifying the similarity between training experience and testing condition. The resulting similarity quantity can then be used to explicitly control for similarity (by adding it as a covariate to the statistical model). The effect of variability remains significant while controlling for similarity, which I argue is a more rigorous demonstration of the effect of variability on testing performance than what is typically provided with standard methods. I conclude by introducing an extended version of the model that assumes training variation influences the steepness of the generalization gradient. With this flexible similarity mechanism, the group-level effect of variability can then be accounted for within the similarity-based generalization framework.\
+
+
+### [Project 2](htw_n.html)
+
+```{r echo=FALSE,fig.height=2.5, fig.width=5}
+
+dtest %>% group_by(sbjCode,vbLabel,condit,throwCategory) %>%
+  summarise(vxMean=mean(vxCapped),lowBound=first(bandInt),highBound=first(highBound),
+            vbLag=first(vbLag),vbLead=first(vbLead),.groups = 'keep') %>%
+  ggplot(aes(x=vbLabel,y=vxMean,fill=throwCategory))+
+  geom_half_violin(color=NA)+ # remove border color
+  geom_half_boxplot(position=position_nudge(x=-0.05),side="r",outlier.shape = NA,center=TRUE,
+                    errorbar.draw = FALSE,width=.25)+
+  geom_half_point(transformation = position_jitter(width = 0.05, height = 0.05),size=.3,aes(color=throwCategory))+
+  geom_rect(data=vbRect,aes(xmin=vbLag,xmax=vbLead,ymin=lowBound,ymax=highBound,fill=throwCategory),alpha=.3)+
+  bandLines4+
+  scale_y_continuous(expand=expansion(add=100),breaks=round(seq(0,2000,by=200),2))+
+  scale_fill_discrete(name="Velocity Band")+
+  scale_color_discrete(guide="none")+  # remove extra legend
+  theme(axis.text=element_blank(),axis.title=element_blank(),
+        legend.position = "none" )
+
+```
+
+In Project 2, a modified version of the task from Project 1 is used in conjunction with a testing procedure that challenges participants to extrapolate well beyond their training experience. In line with previous research in the function learning literature, participants show evidence of successful extrapolation in our linear task environment. Surprisingly though, the constant training group outperforms the varied training group consistently across numerous variants of the task. Such a pattern is far from unheard of in the vast literature on training variability, and it is therefore remains a worthwhile challenge to evaluate the ability of similarity-based models to account for the observed effects. Additionally, the cognitive process models implemented for project 2 will go beyond the modelling efforts of the previous project in two respects. 1) Extensions that enable the model to produce predictions of participant responses, and 2) fitting and attempting to account for behavior in both training AND testing phases of the experiment.\
+
+
+### [Project 3](lbd_n.html)
+
+```{r echo=FALSE,fig.height=2.5, fig.width=5}
+cowplot::ggdraw()+cowplot::draw_image("Assets/LIM_InGame.png",hjust=0)+theme(plot.margin = margin(0, 0, 0, 0))
+```
+
+For the third and final project, I will take advantage of a large dataset from Lost In Migration, a popular online game resembling the classic Eriksen flanker task. Due to randomization of game trials, some users experience much more variability in the early phases of the game than others. Additionally, the dataset provided by Lumos labs includes data from users who experienced a 'high variability' version of the game before being switched to the standard version. I will assess the influence of both variability-via-randomization, and variability-via-manipulation, and once again evaluate the ability of similarity-based-generalization models to account for the observed patterns. While the key theoretical questions, and general modeling approach will remain the same as the first two projects, the Lost In Migration's dataset will present the opportunity to examine the influence of variability in a much more graded fashion, and to assess the ecological validity of the phenomena.
+
+```{r}
+
+
+
+
+```
+
+
