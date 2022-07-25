@@ -10,7 +10,7 @@ You can also check my [<u>my Google Scholar page</u>](https://scholar.google.com
 # Articles
 
 
-Gorman, T. E., & Goldstone, R. L. (2022). An instance-based model account of the benefits of varied practice in visuomotor skill. Cognitive Psychology, 137, 101491. https://doi.org/10.1016/j.cogpsych.2022.101491 [<u><B>pdf</u></B>](pdf/Gorman_Goldstone_2022_Instance-based_model_varied_practice.pdf.pdf){target="_blank"}
+Gorman, T. E., & Goldstone, R. L. (2022). An instance-based model account of the benefits of varied practice in visuomotor skill. Cognitive Psychology, 137, 101491. https://doi.org/10.1016/j.cogpsych.2022.101491 [<u><B>pdf</u></B>](pdf/Gorman_Goldstone_2022_Instance-based_model_varied_practice.pdf){target="_blank"}
 \
 \
 Kattner, F., Cochrane, A., Cox, C. R., Gorman, T. E., & Green, C. S. (2017). Perceptual learning generalization from sequential perceptual training as a change in learning rate. Current Biology, 27(6), 840–846.
