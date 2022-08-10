@@ -2,9 +2,11 @@
 title: "Resources"
 ---
 
+* This page is still under construction
 
 
-# Collaborators 
+
+# Labs & Collaborators 
 
 [Percepts and Concepts Lab](https://pc.cogs.indiana.edu/)
 

@@ -3,7 +3,7 @@ title: "Projects"
 date: "`r format(Sys.time(), '%H:%M,  %B %d , %Y')`"
 ---
 
-The central goal of the proposed dissertation is to examine the extent to which similarity-based learning and generalization models can account for the common empirical patterns found throughout the literature on varied training. Towards this end, I have conducted my own experiments designed to address some shortcomings of previous work. I will also make use of preexisting, "natural" data from a popular online game.
+
 
 ```{r include=FALSE}
 
@@ -54,7 +54,7 @@ bandLines4 <- list(geom_segment(data=vbRect,aes(x=vbLag,xend=vbLead,y=highBound,
 ```
 
 
-### [Project 1](igas_n.html)
+### [Variability and Visuomotor Learning](igas_n.html)
 
 ```{r echo=FALSE,fig.height=2.5, fig.width=5}
 #, out.width= "85%", out.extra='style="float:right; padding:2px"'
@@ -69,7 +69,7 @@ ss
 In Project 1, I programmed a simple projectile launching task to serve as a conceptual replication of an influential paradigm in the visuomotor skill learning literature. Several of the canonical empirical patterns are replicated, with the varied trained participants tending to perform better during testing in both experiments. A major issue with previous research in the cross-disciplinary "benefits of variability" literature is that many previous works do not adequately control for the similarity between training and testing conditions. Such issues arise when both from failures to consider the possibility of non-linear generalization, and from often the unquestioned assumption that participants are acquiring, and then generalizing from prototype or schema-based representations. I introduce a theoretically motivated method of explicitly quantifying the similarity between training experience and testing condition. The resulting similarity quantity can then be used to explicitly control for similarity (by adding it as a covariate to the statistical model). The effect of variability remains significant while controlling for similarity, which I argue is a more rigorous demonstration of the effect of variability on testing performance than what is typically provided with standard methods. I conclude by introducing an extended version of the model that assumes training variation influences the steepness of the generalization gradient. With this flexible similarity mechanism, the group-level effect of variability can then be accounted for within the similarity-based generalization framework.\
 
 
-### [Project 2](htw_n.html)
+### [Variability and Extrapolation](htw_n.html)
 
 ```{r echo=FALSE,fig.height=2.5, fig.width=5}
 
@@ -94,7 +94,7 @@ dtest %>% group_by(sbjCode,vbLabel,condit,throwCategory) %>%
 In Project 2, a modified version of the task from Project 1 is used in conjunction with a testing procedure that challenges participants to extrapolate well beyond their training experience. In line with previous research in the function learning literature, participants show evidence of successful extrapolation in our linear task environment. Surprisingly though, the constant training group outperforms the varied training group consistently across numerous variants of the task. Such a pattern is far from unheard of in the vast literature on training variability, and it is therefore remains a worthwhile challenge to evaluate the ability of similarity-based models to account for the observed effects. Additionally, the cognitive process models implemented for project 2 will go beyond the modelling efforts of the previous project in two respects. 1) Extensions that enable the model to produce predictions of participant responses, and 2) fitting and attempting to account for behavior in both training AND testing phases of the experiment.\
 
 
-### [Project 3](lbd_n.html)
+### [Variability in the Wild](lbd_n.html)
 
 ```{r echo=FALSE,fig.height=2.5, fig.width=5}
 cowplot::ggdraw()+cowplot::draw_image("Assets/LIM_InGame.png",hjust=0)+theme(plot.margin = margin(0, 0, 0, 0))

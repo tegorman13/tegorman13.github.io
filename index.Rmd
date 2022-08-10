@@ -3,5 +3,5 @@ title: "Thomas Gorman"
 date: "`r format(Sys.time(), '%H:%M,  %B %d , %Y')`"
 ---
 
-Under construction
+I'm currently a PhD student at the University of Indiana - Bloomington, working towards a joint degree in Cognitive Science and Psychology. My research centers around issues in learning transfer and generalization. 
 
