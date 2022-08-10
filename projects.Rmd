@@ -54,7 +54,7 @@ bandLines4 <- list(geom_segment(data=vbRect,aes(x=vbLag,xend=vbLead,y=highBound,
 ```
 
 
-### [Variability and Visuomotor Learning](igas_n.html)
+### Variability and Visuomotor Learning
 
 ```{r echo=FALSE,fig.height=2.5, fig.width=5}
 #, out.width= "85%", out.extra='style="float:right; padding:2px"'
@@ -69,7 +69,7 @@ ss
 In Project 1, I programmed a simple projectile launching task to serve as a conceptual replication of an influential paradigm in the visuomotor skill learning literature. Several of the canonical empirical patterns are replicated, with the varied trained participants tending to perform better during testing in both experiments. A major issue with previous research in the cross-disciplinary "benefits of variability" literature is that many previous works do not adequately control for the similarity between training and testing conditions. Such issues arise when both from failures to consider the possibility of non-linear generalization, and from often the unquestioned assumption that participants are acquiring, and then generalizing from prototype or schema-based representations. I introduce a theoretically motivated method of explicitly quantifying the similarity between training experience and testing condition. The resulting similarity quantity can then be used to explicitly control for similarity (by adding it as a covariate to the statistical model). The effect of variability remains significant while controlling for similarity, which I argue is a more rigorous demonstration of the effect of variability on testing performance than what is typically provided with standard methods. I conclude by introducing an extended version of the model that assumes training variation influences the steepness of the generalization gradient. With this flexible similarity mechanism, the group-level effect of variability can then be accounted for within the similarity-based generalization framework.\
 
 
-### [Variability and Extrapolation](htw_n.html)
+### Variability and Extrapolation
 
 ```{r echo=FALSE,fig.height=2.5, fig.width=5}
 
