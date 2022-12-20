@@ -17,10 +17,40 @@ title: "Resources"
 # Cognitive Modeling
 
 
+[Farrell & Lewandowsky's Computational Modeling of Cognition and Behavior](https://psy-farrell.github.io/computational-modelling/) \
+
+[An Introduction to Bayesian Data Analysis for Cognitive Science](https://vasishth.github.io/bayescogsci/book/)
+
+[Modelling Cognitive Processes](https://yxlin.github.io/) \
+
+[COSMOS workshop](https://cosmos-konstanz.github.io/materials/) \ 
+
+[Randy O'Reily's Youtube Channel](https://www.youtube.com/c/RandallOReilly/videos) \
+
+[MIT Center For Minds and Machines](https://www.youtube.com/c/MITCBMM/videos) \ 
+
+[CMP Lab Video Series on Mathematical Psychology](https://www.youtube.com/channel/UChQucsNNsryDVOoawPZeZBw/videos) \
 \
 \
 
 # Statistics
+
+
+## Statistics For Psychology
+
+https://statsthinking21.github.io/statsthinking21-R-site/
+
+https://ajwills72.github.io/rminr/
+
+https://glennwilliams.me/r4psych/
+
+https://www.sas.upenn.edu/~baron/from_cattell/rpsych/rpsych.html
+
+https://learningstatisticswithr.com/
+
+https://psyteachr.github.io/
+
+https://rpsychologist.com/viz
 
 
 \
@@ -29,10 +59,38 @@ title: "Resources"
 # Experimental Design
 
 
+[Experimentology Book](https://langcog.github.io/experimentology/index.html)
+
+[Matt Crump's Programming For Psychologists Book](https://crumplab.com/programmingforpsych/)
+
+
+
 \
 \
 
 
 # Datasets
 
+
+https://github.com/
+
+https://osf.io/
+
+https://zenodo.org
+
+https://figshare.com
+
+https://openneuro.org
+
+https://datadryad.org/stash/
+
+https://codeocean.com/
+
+https://bitbucket.org/product/
+
+https://dataspace.princeton.edu
+
+https://kilthub.cmu.edu
+
+https://paperswithcode.com/datasets?q=neuro&v=lst&o=match
 

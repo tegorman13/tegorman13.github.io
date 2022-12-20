@@ -22,11 +22,11 @@ navbar:
       icon: ai-google-scholar-square
       href: https://scholar.google.com/citations?user=USMVPjEAAAAJ&hl=en
     - text: ""
-      icon: fa-github
-      href: https://github.com/tegorman13
-    - text: ""
       icon: ai ai-researchgate fa-lg
       href: https://www.researchgate.net/profile/Thomas-Gorman-3
+    - text: ""
+      icon: fa-github
+      href: https://github.com/tegorman13
     - text: ""
       icon: ai-osf
       href: https://osf.io/s8m2x/
