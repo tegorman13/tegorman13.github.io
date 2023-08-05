@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "This page is still under construction"
+  },
+  {
+    "objectID": "resources.html#statistics-for-psychology",
+    "href": "resources.html#statistics-for-psychology",
+    "title": "Resources",
+    "section": "Statistics For Psychology",
+    "text": "Statistics For Psychology\nhttps://statsthinking21.github.io/statsthinking21-R-site/\nhttps://ajwills72.github.io/rminr/\nhttps://glennwilliams.me/r4psych/\nhttps://www.sas.upenn.edu/~baron/from_cattell/rpsych/rpsych.html\nhttps://learningstatisticswithr.com/\nhttps://psyteachr.github.io/\nhttps://rpsychologist.com/viz"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "In all of these projects, my goal is to understand and explain the patterns of performance observed, and to identify the cognitive and computational mechanisms that underlie learning and transfer. By exploring these topics, I hope to contribute to a better understanding of how we learn and generalize."
+  },
+  {
+    "objectID": "projects.html#primary-phd-work",
+    "href": "projects.html#primary-phd-work",
+    "title": "Projects",
+    "section": "Primary PhD Work",
+    "text": "Primary PhD Work\n\nVariability and Visuomotor Learning\n\n\n\n\n\nFor this project, I programmed a simple projectile launching task to serve as a conceptual replication of an influential paradigm in the visuomotor skill learning literature. Several of the canonical empirical patterns are replicated, with the varied trained participants tending to perform better during testing in both experiments. A major issue with previous research in the cross-disciplinary “benefits of variability” literature is that many previous works do not adequately control for the similarity between training and testing conditions. Such issues arise when both from failures to consider the possibility of non-linear generalization, and from often the unquestioned assumption that participants are acquiring, and then generalizing from prototype or schema-based representations. I introduce a theoretically motivated method of explicitly quantifying the similarity between training experience and testing condition. The resulting similarity quantity can then be used to explicitly control for similarity (by adding it as a covariate to the statistical model). The effect of variability remains significant while controlling for similarity, which I argue is a more rigorous demonstration of the effect of variability on testing performance than what is typically provided with standard methods. I conclude by introducing an extended version of the model that assumes training variation influences the steepness of the generalization gradient. With this flexible similarity mechanism, the group-level effect of variability can then be accounted for within the similarity-based generalization framework.\n\n\n\nExamining the Effects of Training Variability on Extrapolation Performance\n\n\n\n\n\nIn a follow up to my first project, a modified version of the task is used in conjunction with a testing procedure that challenges participants to extrapolate well beyond their training experience. In line with previous research in the function learning literature, participants show evidence of successful extrapolation in our linear task environment. Surprisingly though, the constant training group outperforms the varied training group consistently across numerous variants of the task. Such a pattern is far from unheard of in the vast literature on training variability, and it is therefore remains a worthwhile challenge to evaluate the ability of similarity-based models to account for the observed effects. Additionally, the cognitive process models implemented for project 2 will go beyond the modelling efforts of the previous project in two respects. 1) Extensions that enable the model to produce predictions of participant responses, and 2) fitting and attempting to account for behavior in both training AND testing phases of the experiment.\n\n\n\nInvestigating the Role of Variability in Real-World Learning: A Study Using Lost In Migration Data\n\n\n\n\n\nHere, I will take advantage of a large dataset from Lost In Migration, a popular online game resembling the classic Eriksen flanker task. Due to randomization of game trials, some users experience much more variability in the early phases of the game than others. Additionally, the dataset provided by Lumos labs includes data from users who experienced a ‘high variability’ version of the game before being switched to the standard version. I will assess the influence of both variability-via-randomization, and variability-via-manipulation, and once again evaluate the ability of similarity-based-generalization models to account for the observed patterns. While the key theoretical questions, and general modeling approach will remain the same as the first two projects, the Lost In Migration’s dataset will present the opportunity to examine the influence of variability in a much more graded fashion, and to assess the ecological validity of the phenomena."
+  },
+  {
+    "objectID": "projects.html#other-projects",
+    "href": "projects.html#other-projects",
+    "title": "Projects",
+    "section": "Other Projects",
+    "text": "Other Projects\n\nLearning the Structure of the Environment\n\n\nEffect of Distance and Sequence in Category Learning\n\nPresented at MathPsych/ICCM Conference (2018)\n\n\n\nSkewed vs. Uniform Frequency Distributions in Cross-Situational Learning"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Email\n\ntegorman@iu.edu\ntegorman13@gmail.com\n\n\n\nOffice\n\nGeology 6050L"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Thomas Gorman",
+    "section": "",
+    "text": "Welcome to my personal website! I’m Thomas, a PhD student in Cognitive Science at Indiana University - Bloomington. My research interests center on learning transfer and generalization, and I have conducted studies in the domains of visuomotor and category learning. To explore these topics, I use a combination of experimental and computational modeling approaches."
+  },
+  {
+    "objectID": "pubs.html",
+    "href": "pubs.html",
+    "title": "Publications",
+    "section": "",
+    "text": "You can also check my my Google Scholar page for an updated list of my works.\n\n\nArticles\nGorman, T. E., & Goldstone, R. L. (2022). An instance-based model account of the benefits of varied practice in visuomotor skill. Cognitive Psychology, 137, 101491. https://doi.org/10.1016/j.cogpsych.2022.101491 pdf\n\nKattner, F., Cochrane, A., Cox, C. R., Gorman, T. E., & Green, C. S. (2017). Perceptual learning generalization from sequential perceptual training as a change in learning rate. Current Biology, 27(6), 840–846. pdf\n\nGorman, T. E., & Green, C. S. (2016). Short-term mindfulness intervention reduces the negative attentional effects associated with heavy media multitasking. Scientific Reports, 6. https://doi.org/10.1038/srep24542 pdf\n\n\n\n\nBook Chapters\nGorman, T. E., Gentile, D. A., & Green, C. S. (2018). Problem gaming: A short primer. American Journal of Play, 10(3), 309–327. pdf\n\nGorman, T. E., & Green, C. S. (2017). Young minds on video games. In Cognitive development in digital contexts (pp. 121–143). Academic Press.\n\nGreen, C. S., Gorman, T., & Bavelier, D. (2016). Action Video-Game Training and Its Effects on Perception and Attentional Control. In T. Strobach & J. Karbach (Eds.), Cognitive Training (pp. 107–116). Springer International Publishing. https://doi.org/10.1007/978-3-319-42662-4_10 pdf\n\n\n\n\n\n\nConference Presentations\nHalf Day Tutorial on Measuring Mindfulness Behaviorally: Onsite/Online Data Col-lection with jsPsych -Cognitive Science Conference – 2018\nDoes interleaving go the distance? Exploring the effect of dissimilarity on interleaved category learning -Math Psych/ICCM 2018\nShort term mindfulness intervention reduces cognitive deficits in heavy media multi-taskers -Undergraduate Research Symposium – UW-Madison – April 16th, 2015\n\n\n\nPreprints"
+  }
+]

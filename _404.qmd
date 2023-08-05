@@ -1,0 +1,14 @@
+---
+title: Page Not Found
+subtitle: |
+  You've somehow ventured into the abyss. 
+# output:
+#   rmdformats::readthedown:
+# knit: (function(input_file, encoding) {
+#     out_dir <- '.';
+#     rmarkdown::render(input_file,
+#       encoding=encoding,
+#       output_file=file.path(dirname(input_file), out_dir, '404.html'))})
+---
+
+<!-- knit this file to create 404.html in root directory  -->

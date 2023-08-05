@@ -1,0 +1,9 @@
+---
+title: "Thomas Gorman"
+date: last-modified
+---
+
+Welcome to my personal website! I'm Thomas, a PhD student in Cognitive Science at Indiana University - Bloomington. My research interests center on learning transfer and generalization, and I have conducted studies in the domains of visuomotor and category learning. To explore these topics, I use a combination of experimental and computational modeling approaches.
+
+
+
