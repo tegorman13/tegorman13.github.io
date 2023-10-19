@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: docs
   preview:
-    port: 4200
+    port: 4203
   render:
     - "*.qmd"
     - "!_*" # ignore any file that starts with a _

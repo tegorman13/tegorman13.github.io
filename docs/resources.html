@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.251">
+<meta name="generator" content="quarto-1.4.429">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -49,12 +49,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
   "keyboard-shortcut": [
     "f",
     "/",
     "s"
   ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -92,38 +93,38 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html" rel="" target="">
- <span class="menu-text">Projects</span></a>
+    <a class="nav-link" href="./projects.html"> 
+<span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./pubs.html" rel="" target="">
- <span class="menu-text">Publications</span></a>
+    <a class="nav-link" href="./pubs.html"> 
+<span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./resources.html" rel="" target="" aria-current="page">
- <span class="menu-text">Resources</span></a>
+    <a class="nav-link active" href="./resources.html" aria-current="page"> 
+<span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./contact.html" rel="" target="">
- <span class="menu-text">Contact</span></a>
+    <a class="nav-link" href="./contact.html"> 
+<span class="menu-text">Contact</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="https://scholar.google.com/citations?user=USMVPjEAAAAJ&amp;hl=en" rel="" target="">
- <span class="menu-text"><i class="ai  ai-google-scholar ai-2x"></i></span></a>
+    <a class="nav-link" href="https://scholar.google.com/citations?user=USMVPjEAAAAJ&amp;hl=en"> 
+<span class="menu-text"><i class="ai  ai-google-scholar ai-2x"></i></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://www.researchgate.net/profile/Thomas-Gorman-3" rel="" target="">
- <span class="menu-text"><i class="ai  ai-researchgate ai-2x"></i></span></a>
+    <a class="nav-link" href="https://www.researchgate.net/profile/Thomas-Gorman-3"> 
+<span class="menu-text"><i class="ai  ai-researchgate ai-2x"></i></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://github.com/tegorman13" rel="" target="">
- <span class="menu-text"><i class="fa-brands fa-github fa-2x" aria-label="github"></i></span></a>
+    <a class="nav-link" href="https://github.com/tegorman13"> 
+<span class="menu-text"><i class="fa-brands fa-github fa-2x" aria-label="github"></i></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://osf.io/s8m2x/" rel="" target="">
- <span class="menu-text"><i class="ai  ai-osf ai-2x"></i></span></a>
+    <a class="nav-link" href="https://osf.io/s8m2x/"> 
+<span class="menu-text"><i class="ai  ai-osf ai-2x"></i></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -172,6 +173,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 </header>
+
 
 <ul>
 <li>This page is still under construction</li>
@@ -367,15 +369,38 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
     stripColumnClz(note)
-    if (id.startsWith('sec-')) {
+    const typesetMath = (el) => {
+      if (window.MathJax) {
+        // MathJax Typeset
+        window.MathJax.typeset([el]);
+      } else if (window.katex) {
+        // KaTeX Render
+        var mathElements = el.getElementsByClassName("math");
+        var macros = [];
+        for (var i = 0; i < mathElements.length; i++) {
+          var texText = mathElements[i].firstChild;
+          if (mathElements[i].tagName == "SPAN") {
+            window.katex.render(texText.data, mathElements[i], {
+              displayMode: mathElements[i].classList.contains('display'),
+              throwOnError: false,
+              macros: macros,
+              fleqn: false
+            });
+          }
+        }
+      }
+    }
+    if (id === null || id.startsWith('sec-')) {
       // Special case sections, only their first couple elements
       const container = document.createElement("div");
       if (note.children && note.children.length > 2) {
         for (let i = 0; i < 2; i++) {
           container.appendChild(note.children[i].cloneNode(true));
         }
+        typesetMath(container);
         return container.innerHTML
       } else {
+        typesetMath(note);
         return note.innerHTML;
       }
     } else {
@@ -384,6 +409,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (anchorLink) {
         anchorLink.remove();
       }
+      typesetMath(note);
       return note.innerHTML;
     }
   }
@@ -426,6 +452,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             instance.show();
           });
         }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
       }
     }, function(instance) {
     });
@@ -497,6 +546,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
