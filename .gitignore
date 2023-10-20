@@ -6,6 +6,7 @@
 *.history
 *.RData
 *.rds
+/.quarto/
 
 # Image/output files unless otherwise specified
 
@@ -27,8 +28,8 @@
 
 # Other
 *.httr-oauth
-*.DS_Store
 .DS_Store
+
 
 # MTurk credentials and data
 auth.json
@@ -41,4 +42,4 @@ mturk-and-gmail.txt
 !/original....pdf
 .Rproj.user
 
-/.quarto/
+
