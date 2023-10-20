@@ -53,12 +53,26 @@ bandLines4 <- list(geom_segment(data=vbRect,aes(x=vbLag,xend=vbLead,y=highBound,
 
 ```
 
-In all of these projects, my goal is to understand and explain the patterns of performance observed, and to identify the cognitive and computational mechanisms that underlie learning and transfer. By exploring these topics, I hope to contribute to a better understanding of how we learn and generalize.
+## Labs & Collaborators 
+
+[Percepts and Concepts Lab](https://pc.cogs.indiana.edu/)
+
+[Learning and Transfer Lab](https://greenlab.psych.wisc.edu/)
+
+
+_______________________________________________________________
+
+
+
+
 
 
 
 
 ## Primary PhD Work
+
+In all of these projects, my goal is to understand and explain the patterns of performance observed, and to identify the cognitive and computational mechanisms that underlie learning and transfer. By exploring these topics, I hope to contribute to a better understanding of how we learn and generalize.
+
 
 ### Variability and Visuomotor Learning
 

@@ -4,7 +4,7 @@ date: last-modified
 ---
 
 
-You can also check my [<u>my Google Scholar page</u>](https://scholar.google.com/citations?user=USMVPjEAAAAJ&hl=en){target="_blank"} for an updated list of my works. 
+You can also check my [<u>Google Scholar page</u>](https://scholar.google.com/citations?user=USMVPjEAAAAJ&hl=en){target="_blank"} for an updated list of my works. 
 
 -----
 

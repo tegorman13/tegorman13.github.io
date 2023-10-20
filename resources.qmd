@@ -2,19 +2,12 @@
 title: "Resources"
 ---
 
-* This page is still under construction
+A haphhazard collection of some of the books/websites/courses I've found helpful over the years. 
 
 
 
-# Labs & Collaborators 
 
-[Percepts and Concepts Lab](https://pc.cogs.indiana.edu/)
-
-[Learning and Transfer Lab](https://greenlab.psych.wisc.edu/)
-
-
-
-# Cognitive Modeling
+## Cognitive Modeling
 
 
 [Farrell & Lewandowsky's Computational Modeling of Cognition and Behavior](https://psy-farrell.github.io/computational-modelling/) \
@@ -30,13 +23,15 @@ title: "Resources"
 [MIT Center For Minds and Machines](https://www.youtube.com/c/MITCBMM/videos) \ 
 
 [CMP Lab Video Series on Mathematical Psychology](https://www.youtube.com/channel/UChQucsNNsryDVOoawPZeZBw/videos) \
+
+[Catlearn - Cognitive Modeling package for R](https://github.com/ajwills72/catlearn) \
 \
 \
 
-# Statistics
+## Statistics
 
 
-## Statistics For Psychology
+### Statistics For Psychology
 
 https://statsthinking21.github.io/statsthinking21-R-site/
 
@@ -56,7 +51,7 @@ https://rpsychologist.com/viz
 \
 \
 
-# Experimental Design
+## Experimental Design
 
 
 [Experimentology Book](https://langcog.github.io/experimentology/index.html)
@@ -69,7 +64,7 @@ https://rpsychologist.com/viz
 \
 
 
-# Datasets
+## Datasets
 
 
 https://github.com/
@@ -80,9 +75,17 @@ https://zenodo.org
 
 https://figshare.com
 
+https://data.mendeley.com/
+
 https://openneuro.org
 
 https://datadryad.org/stash/
+
+https://datasetsearch.research.google.com/
+
+https://openpsychologydata.metajnl.com/
+
+https://openpsychometrics.org/_rawdata/
 
 https://codeocean.com/
 
