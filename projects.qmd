@@ -73,8 +73,15 @@ _______________________________________________________________
 
 In all of these projects, my goal is to understand and explain the patterns of performance observed, and to identify the cognitive and computational mechanisms that underlie learning and transfer. By exploring these topics, I hope to contribute to a better understanding of how we learn and generalize.
 
+[Link to working version of my dissertation](https://tegorman13.github.io/Dissertation/paper.html)
 
 ### Variability and Visuomotor Learning
+
+[pdf of the journal
+article](https://tegorman13.github.io/pdf/Gorman_Goldstone_2022_Instance-based_model_varied_practice.pdf){target="_blank"}\
+[Link to online version of journal
+article](https://www.sciencedirect.com/science/article/abs/pii/S0010028522000299){target="_blank"}
+
 
 ```{r echo=FALSE,fig.height=2.5, fig.width=5}
 #, out.width= "85%", out.extra='style="float:right; padding:2px"'
