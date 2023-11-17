@@ -35,15 +35,19 @@ website:
       - text: "{{< ai google-scholar size=2x >}}"
         aria-label: Google Scholar
         href: https://scholar.google.com/citations?user=USMVPjEAAAAJ&hl=en
+        target: _blank
       - text: "{{< ai researchgate size=2x >}}"
         aria-label: Research Gate
         href: https://www.researchgate.net/profile/Thomas-Gorman-3
+        target: _blank
       - text: "{{< fa brands github size=2x >}}"
         aria-label: GitHub
         href: https://github.com/tegorman13
+        target: _blank
       - text: "{{< ai osf size=2x >}}"
         aria-label: ai-osf
         href: https://osf.io/s8m2x/
+        target: _blank
   page-footer:
     left: "© 2023 Thomas Gorman"
     center: "powered by [quarto](https://quarto.org)"
@@ -51,15 +55,19 @@ website:
       - text: "{{< ai google-scholar size=2x >}}"
         aria-label: Google Scholar
         href: https://scholar.google.com/citations?user=USMVPjEAAAAJ&hl=en
+        target: _blank
       - text: "{{< ai researchgate size=2x >}}"
         aria-label: Research Gate
         href: https://www.researchgate.net/profile/Thomas-Gorman-3
+        target: _blank
       - text: "{{< fa brands github size=2x >}}"
         aria-label: GitHub
+        target: _blank
         href: https://github.com/tegorman13
       - text: "{{< ai osf size=2x >}}"
         aria-label: ai-osf
         href: https://osf.io/s8m2x/
+        target: _blank
       # make the icons bigger
 
 
