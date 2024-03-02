@@ -1,0 +1,19 @@
+project:
+  output-dir: .
+  render: 
+    - "cv_pdf.qmd"
+
+
+execute: 
+  warning: false
+  eval: true
+  include: true
+  freeze: auto
+  
+
+# profile:
+#   group: 
+#     - [plain, nice, thesis, ms, md]
+
+# execute:
+#   freeze: auto

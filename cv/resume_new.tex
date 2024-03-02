@@ -1,0 +1,331 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 2.0 (19/3/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%!TEX program = xelatex
+% NOTICE: This template must be compiled with XeLaTeX, the line above should
+% ensure this happens automatically but if it doesn't you will need to specify 
+% XeLaTeX as the engine in your editor or script
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+
+\input{structure.tex} % Include the file that specifies the document structure
+
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example right footer:
+%\rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{paracol}{2} % Begin the multi-column environment
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CURRICULUM VITAE TEXT
+%----------------------------------------------------------------------------------------
+
+% Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
+\parbox[top][0.00\textheight][c]{\linewidth}{ 
+	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\centering % Centre text
+	{\Huge \textbf{LUKE STRICKLAND}}
+	%\\\medskip % Your name
+%	{\Huge\color{headings}\cvtextfont Curriculum Vitae}
+        }
+
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+% ----------------------------------------------------------------------------------------
+\section{About me}
+I'm a scientist and computational modeller. In my current position at Curtin’s Future of Work Institute, I develop biomathematical models of fatigue. I apply these models to predict human fatigue in the workplace, informing work design. In my previous work, I focused on developing computational models of cognition, in order to understand how people perform cognitively demanding, safety-critical workplace tasks.
+
+
+% \medskip % Extra whitespace before the next section
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+\section{Work Experience}
+
+\workposition{2020-present} % Duration
+{} % FT/PT (full time or part time)
+{Curtin University} % Employer
+{Post-doctoral Research Fellow}
+{Developing Bayesian methods to evaluate and apply models of human fatigue. Predicting fatigue to inform  rostering decisions.} % Description
+
+\workposition{2019} % Duration
+{} % FT/PT (full time or part time)
+{University of Western Australia} % Employer
+{Research Associate} % Job title
+{Statistical modelling in R and Python. Writing scientific manuscripts. Supervising the research projects of PhD and honours students. Programming experiments.} % Description
+
+\workposition{2016 - 2018} % Duration
+{} % FT/PT (full time or part time)
+{University of Tasmania} % Employer
+{Post-doctoral Research Fellow} % Job title
+{Coordinating a highly successful research program across three universities. Developing Bayesian methods to estimate the parameters of computational cognitive models and to evaluate the models. Programming experiments.} % Description
+
+
+%------------------------------------------------
+      
+
+\section{Technical Skills}
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+
+	%------------------------------------------------
+	\tableentry{}{\textbf{Advanced R, Python, Bash, SQL}}{}
+	\tableentry{}{\textit{Programming}}{spaceafter}
+	%------------------------------------------------
+        \tableentry{}{\textbf{Unix, Git and GitHub, LaTeX}}{}
+	\tableentry{}{\textit{Computing}}{spaceafter}
+	%------------------------------------------------
+	
+	%------------------------------------------------
+	\tableentry{}{\textbf{Dynamic data visualisation and document creation}}{}
+	\tableentry{}{\textit{Computing}}{spaceafter}
+	%------------------------------------------------	
+	
+	\tableentry{}{\textbf{Advanced statistical modelling}}{}
+	\tableentry{}{\textit{Statistics}}{spaceafter}
+	%------------------------------------------------
+	
+	\tableentry{}{\textbf{Developing and evaluating bespoke computational models}}{}
+	\tableentry{}{\textit{Statistics}}{spaceafter}
+	%------------------------------------------------
+	
+	
+	
+\end{supertabular}
+
+
+\section{Research}
+
+\begin{supertabular}{rl}
+
+	
+	%------------------------------------------------
+	\tableentry{}{{- Thirteen high-impact publications }}{}
+	%------------------------------------------------
+	 
+	%------------------------------------------------
+	\tableentry{}{{- Eleven conference presentations and an invited keynote lecture}}{}
+	%------------------------------------------------
+
+	%------------------------------------------------
+	\tableentry{}{{- Peer-reviewed R software}}{}
+	%------------------------------------------------
+
+	
+
+\end{supertabular}
+
+\switchcolumn % Switch to the next paracol column
+
+%----------------------------------------------------------------------------------------
+%	COLOURED CONTACT DETAILS BOX
+%----------------------------------------------------------------------------------------
+\parbox[top][0.05\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
+	\vspace{-0.05\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\colorbox{white}{ % Create the coloured box
+		\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+                	% \raisebox{-1pt}{\faHome} & Social Science Building, Sandy Bay Campus, Room 228 \\ % Address
+			\raisebox{-1pt}{\faPhone} & +61 (0) 406 285 449 \\ % Phone number
+			\raisebox{0pt}{\small\faEnvelope} & \href{mailto:lukejgstrickland@gmail.com}{lukejgstrickland@gmail.com} \\ % Email address
+			\raisebox{-1pt}{\faGithub1} & \href{https://lukestrickland.github.io}{https://lukestrickland.github.io} \\ % GitHub profile
+                        
+		\end{supertabular}
+	}
+}
+
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education} 
+
+% Blank \educationentry{} command to add another degree:
+
+%\educationentry{} % Duration
+%{} % Degree
+%{} % Honours, achievements or distinctions (e.g. first class honours)
+%{} % Department
+%{} % Institution
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+
+	%------------------------------------------------
+	\educationentry{2012 -- 2017} % Duration
+	{Doctor of Philosophy} % Degree
+	{Dean's list} % Honours, achievements or distinctions (e.g. first class honours)
+	{Psychology} % Department
+	{University of Western Australia} % Institution
+
+% {\raggedright\textbf{``Decision making in visual search: a dual-modelling 
+% approach to examine the influences of attentional templates on response time distributions."}\\\medskip}
+
+	%------------------------------------------------
+	\educationentry{2011} % Duration
+	{Bachelor of Arts, Honours} % Degree
+	{First class} % Honours, achievements or distinctions (e.g. first class honours)
+	{Psychology} % Department
+	{University of Western Australia} % Institution
+	
+	%------------------------------------------------
+ 	\educationentry{2008 -- 2010} % Duration
+ 	{Bachelor of Arts, Major in Psychology} % Degree
+ 	{}
+ 	{}
+ 	{University of Western Australia} % Institution
+	
+
+      \end{supertabular}
+
+
+% \vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+\section{Awards}
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	\tableentry{2020-2023}{\textbf{ARC Discovery Project}}{}
+	\tableentry{}{\textit{University of Western Australia}}{spaceafter}
+	%------------------------------------------------
+
+	%------------------------------------------------
+	\tableentry{2020}{\textbf{Curtinnovation Finalist}}{}
+	\tableentry{}{\textit{Curtin University}}{spaceafter}
+	%------------------------------------------------
+
+
+	%------------------------------------------------
+	\tableentry{2019}{\textbf{Research Highlight}}{}
+	\tableentry{}{\textit{Nature Human Behaviour}}{spaceafter}
+	%------------------------------------------------
+
+
+	%------------------------------------------------
+	\tableentry{2019}{\textbf{Early Career Publication Impact Award}}{}
+	\tableentry{}{\textit{University of Western Australia}}{spaceafter}
+	%------------------------------------------------
+
+	%------------------------------------------------
+	\tableentry{2016-2019}{\textbf{Collaborative Research Project}}{}
+	\tableentry{}{\textit{CSIRO, University of Tasmania, UniSA}}{spaceafter}
+	%------------------------------------------------
+
+	%------------------------------------------------
+	\tableentry{2018}{\textbf{Invited Keynote Presentation}}{}
+	\tableentry{}{\textit{Heidelberg University}}{spaceafter}
+	%------------------------------------------------
+		
+	
+	%------------------------------------------------
+	\tableentry{2017}{\textbf{Honourable mention, Dean's list, PhD thesis}}{}
+	\tableentry{}{\textit{University of Western Australia}}{spaceafter}
+	%------------------------------------------------
+
+
+\end{supertabular}
+
+
+
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	REFERENCES
+%----------------------------------------------------------------------------------------
+\section{References}
+
+% \textit{References available on request}
+
+%------------------------------------------------
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	\tableentry{}{\textbf{On request}}{spaceafter}
+
+\end{supertabular}
+
+\end{paracol}
+
+\clearpage
+     
+\section{Peer-Reviewed Publications}
+
+\longformpublication{\textbf{Strickland, L.}, Loft, S., Remington, R.W., \& Heathcote, A. (2018).  Racing to remember: A theory of decision control in event-based prospective memory
+\textit{Psychological Review}, \textit{125}, 851-887.}
+
+\longformpublication{\textbf{Strickland, L.}, Heathcote, A., Remington, R.W., \& Loft, S. (accepted 13/10/2020).   Target learning in event-based prospective memory.
+\textit{Journal of Experimental Psychology: Learning, Memory \& Cognition}.}
+
+\longformpublication{\textbf{Strickland, L.}, Heathcote, A., Remington, R.W., \& Loft, S. (2017).   Accumulating evidence about what prospective memory costs actually reveal.
+\textit{Journal of Experimental Psychology: Learning, Memory \& Cognition}, \textit{43}, 1616-1629.}
+
+\longformpublication{\textbf{Strickland, L.}, Elliott, D., Wilson, M.D., Loft, S., Neal, A., \& Heathcote, A.(2019). Prospective memory in the red zone: Cognitive control and capacity sharing in a complex, multi-stimulus task.
+\textit{Journal of Experimental Psychology: Applied}, \textit{25}, 695-715.}
+
+\longformpublication{\textbf{Strickland, L.}, Loft, S., \& Heathcote, A.(2020). Investigating the effects of ongoing-task bias on prospective memory.
+\textit{Quarterly Journal of Experimental Psychology}, \textit{73}, 1495-1513.}
+
+\longformpublication{Boag, R., \textbf{Strickland, L.}, Loft., S. \& Heathcote, A. (2019). Strategic attention and decision control support prospective memory in a complex dual-task environment
+\textit{Cognition}, \textit{191}, 103974.}
+
+\longformpublication{Boag, R., \textbf{Strickland, L.}, Heathcote, A., Neal, A., \& Loft., S.(2019).  Cognitive Control and Capacity for Prospective Memory in Simulated Air Traffic Control
+\textit{Journal of Experimental Psychology: General}, \textit{148}, 2181-2206.}
+
+\longformpublication{Heathcote, Lin, Y.-S., Reynolds, A., \textbf{Strickland, L.}, Gretton, M., \& Matzke, D. (2019). 
+Dynamic models of choice. \textit{Behavior Research Methods}, \textit{51}, 961-985}
+
+\longformpublication{Wilson, M. D., \textbf{Strickland, L.},  \& Ballard, T. (2020). FIPS: An R Package for Biomathematical Modelling of Human Fatigue Related Impairment. \textit{Journal of Open Source Software}.}
+
+\longformpublication{Wilson, M. D., \textbf{Strickland, L.}, Farrell, S., Visser, T. A. W., \& Loft, S. (2019). Prospective Memory Performance in Simulated Air Traffic Control: Robust to Interruptions but Impaired by Retention Interval. \textit{Human Factors}.}
+
+\longformpublication{Wilson, M. D., Boag, R. J., \& \textbf{Strickland, L.} (2019). All models are wrong, some are useful, but are they reproducible? Commentary on Lee et al. (2019). \textit{Computational Brain \& Behavior}, \textit{2}, 239-240.}
+
+\longformpublication{Lin, Y.-S., \& \textbf{Strickland, L.} (2019). Evidence accumulation models with R: A practical guide to hierarchical Bayesian methods.\textit{The Quantitative Methods for Psychology}, \textit{16}, 133-153}
+
+\longformpublication{\textbf{Strickland, L.}, Loft, S., \& Heathcote, A. (2019). Evidence Accumulation Modeling of Event-Based Prospective Memory. In J. Rummel \& M.A. McDaniel (Eds), \textit{Current Issues in Memory: Prospective Memory} (pp. 78-94). London, United Kingdom: Taylor \& Francis.}
+
+\end{document}

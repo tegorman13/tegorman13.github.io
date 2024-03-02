@@ -1,0 +1,49 @@
+
+.popover-title{
+    background: #ffff99;
+}
+
+div.callout-note2.callout-captioned .callout-icon::before{
+  font-family: FontAwesome;
+  content: "\f253";
+  background-image: none
+}
+
+div.cBook.callout-captioned .callout-icon::before{
+  font-family: FontAwesome;
+  content: "\f02d";
+  background-image: none
+}
+
+div.cTool.callout-captioned .callout-icon::before{
+  font-family: FontAwesome;
+  content: "\f7d9";
+  background-image: none
+}
+
+
+
+/* https://fontawesome.com/v5/cheatsheet */
+
+div.callout-todo.callout-style-default>.callout-header{
+  background-color: #a1252c;
+  font-family: FontAwesome;
+  content: '\f099';
+  
+}
+
+div.callout-note2.callout-style-default>.callout-header{
+  background-color: #256aa1c4;
+}
+
+.callout.callout {
+  border-left-color:#087ce3
+
+}
+.callout-todo.callout-style-default{
+  background-color: #e6effb;
+}
+
+div.callout-todo .callout-toggle::before{
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>')" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>)
+}

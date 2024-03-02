@@ -7,11 +7,12 @@ project:
     - "*.qmd"
     - "!_*" # ignore any file that starts with a _
     - "!quarto_shiny.qmd"
+    - "!cv/*"
     
 exclude: ["*.rds","*.tex","*.csl","*.bib","docs*","_old*","out.bib",
 "*.R",".obsidian","Rproj","R","Bib","exp","HTW_Analysis/**","*HTW_Modelling/**","Motivated*","Manuscript*"]
 
-# Exclude all files in HTW_Analysis folder, recursively
+
 website:
   title: "Thomas Gorman"
   repo-url: https://github.com/tegorman13
@@ -22,6 +23,7 @@ website:
   navbar:
     background: primary
     search: true
+    collapse-below: sm
     left:
       - text: "Projects"
         href: projects.qmd
@@ -29,42 +31,44 @@ website:
         href:  pubs.qmd
       - text: "Resources"
         href: resources.qmd
-      - text: "Contact"
-        href: contact.qmd
+      - text: CV
+        href: cv.qmd
+      # - text: "Contact"
+      #   href: contact.qmd
     right: 
-      - text: "{{< ai google-scholar size=2x >}}"
+      - text: "{{< ai google-scholar size=2.1x >}}"
         aria-label: Google Scholar
         href: https://scholar.google.com/citations?user=USMVPjEAAAAJ&hl=en
         target: _blank
-      - text: "{{< ai researchgate size=2x >}}"
+      - text: "{{< ai researchgate size=2.1x >}}"
         aria-label: Research Gate
         href: https://www.researchgate.net/profile/Thomas-Gorman-3
         target: _blank
-      - text: "{{< fa brands github size=2x >}}"
+      - text: "{{< fa brands github size=2.1x >}}"
         aria-label: GitHub
         href: https://github.com/tegorman13
         target: _blank
-      - text: "{{< ai osf size=2x >}}"
+      - text: "{{< ai osf size=2.1x >}}"
         aria-label: ai-osf
         href: https://osf.io/s8m2x/
         target: _blank
   page-footer:
-    left: "© 2023 Thomas Gorman"
-    center: "powered by [quarto](https://quarto.org)"
+    left: "© 2024 Thomas Gorman"
+    center: "site created with [R](https://cran.r-project.org/) and [quarto](https://quarto.org)"
     right: 
-      - text: "{{< ai google-scholar size=2x >}}"
+      - text: "{{< ai google-scholar size=1.5x >}}"
         aria-label: Google Scholar
         href: https://scholar.google.com/citations?user=USMVPjEAAAAJ&hl=en
         target: _blank
-      - text: "{{< ai researchgate size=2x >}}"
+      - text: "{{< ai researchgate size=1.5x >}}"
         aria-label: Research Gate
         href: https://www.researchgate.net/profile/Thomas-Gorman-3
         target: _blank
-      - text: "{{< fa brands github size=2x >}}"
+      - text: "{{< fa brands github size=1.5x >}}"
         aria-label: GitHub
         target: _blank
         href: https://github.com/tegorman13
-      - text: "{{< ai osf size=2x >}}"
+      - text: "{{< ai osf size=1.5x >}}"
         aria-label: ai-osf
         href: https://osf.io/s8m2x/
         target: _blank
@@ -85,6 +89,9 @@ format:
     #css: ["Assets/Style/lux-modified.scss", "Assets/Style/calloutTG.css"]
     css: 
       - css/academicons.css
+      - css/custom.css
+      - css/lux_bootstrap.css
+      #- css/lux-modified.scss
     page-layout: full
     toc: true
     toc-location: right
@@ -103,7 +110,8 @@ format:
     link-external-newwindow: true
     link-external-filter: '^(?:http:|https:)\/\/www\.tegorman13.github.io\/custom'
 
-
+execute:
+  freeze: auto
 
 # name: Thomas Gorman
 # output_dir: "."

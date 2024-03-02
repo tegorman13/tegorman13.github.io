@@ -55,9 +55,13 @@ bandLines4 <- list(geom_segment(data=vbRect,aes(x=vbLag,xend=vbLead,y=highBound,
 
 ## Labs & Collaborators 
 
-[Percepts and Concepts Lab](https://pc.cogs.indiana.edu/)
+Rob Goldstone - [Percepts and Concepts Lab](https://pc.cogs.indiana.edu/)
 
-[Learning and Transfer Lab](https://greenlab.psych.wisc.edu/)
+Rob Nosofsky - [Nosofsky Lab](https://nosofsky.cogs.indiana.edu/)
+
+Chen Yu - [Developmental Intelligence Lab](https://www.la.utexas.edu/users/dil/)
+
+C. Shawn Green - [Learning and Transfer Lab](https://greenlab.psych.wisc.edu/)
 
 
 _______________________________________________________________
