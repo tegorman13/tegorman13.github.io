@@ -41,6 +41,7 @@
 
 \usepackage{fontspec}
 \usepackage{fontawesome5}
+\usepackage{academicons}
 \usepackage{sectsty}
 
 %----------------------------------------------------------------------------------------
@@ -73,6 +74,8 @@
 \pagestyle{fancy}
 %\usepackage[colorlinks, allcolors=sectcol]{hyperref}
 \usepackage[colorlinks, linkcolor=sectcol, citecolor=sectcol, urlcolor=sectcol]{hyperref}
+\hypersetup{urlcolor=sectcol, linkcolor=sectcol, colorlinks=true}
+
 \usepackage{float}
 
 %less space between header and content
@@ -179,9 +182,15 @@
 
 % Redefine subsection command
 \titleformat{\subsection}
-  {\color{headings}\normalfont\large\bfseries}
+  {\normalfont\footnotesize\bfseries} % This makes the font size smaller for subsections
   {\thesubsection}{1em}{}
 
+
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries}
+  {\thesubsubsection}{1em}{}
+
+  
 %----------------------------------------------------------------------------------------
 %	 CV EVENT
 %----------------------------------------------------------------------------------------
@@ -251,9 +260,12 @@ $endfor$
 \textcolor{softcol}{\hrule}
 \vspace{6pt}
 
+
 \normalsize
 
 \vspace{-6pt}
+
+
 $body$
 
 %--------------------------------------------------------------------------------------------------

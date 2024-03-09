@@ -113,22 +113,31 @@ ul.task-list li input[type="checkbox"] {
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="https://scholar.google.com/citations?user=USMVPjEAAAAJ&amp;hl=en" target="_blank"> 
-<span class="menu-text"><i class="ai  ai-google-scholar" style="font-size:2.1x"></i></span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-list" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-list" role="img">
+</i> 
+ <span class="menu-text"></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-bi-list">    
+        <li>
+    <a class="dropdown-item" href="https://scholar.google.com/citations?user=USMVPjEAAAAJ&amp;hl=en" target="_blank">
+ <span class="dropdown-text"><i class="ai  ai-google-scholar"></i></span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://www.researchgate.net/profile/Thomas-Gorman-3" target="_blank"> 
-<span class="menu-text"><i class="ai  ai-researchgate" style="font-size:2.1x"></i></span></a>
+        <li>
+    <a class="dropdown-item" href="https://www.researchgate.net/profile/Thomas-Gorman-3" target="_blank">
+ <span class="dropdown-text"><i class="ai  ai-researchgate"></i></span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://github.com/tegorman13" target="_blank"> 
-<span class="menu-text"><i class="fa-brands fa-github fa-2.1x" aria-label="github"></i></span></a>
+        <li>
+    <a class="dropdown-item" href="https://github.com/tegorman13" target="_blank">
+ <span class="dropdown-text"><i class="fa-brands fa-github" aria-label="github"></i></span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://osf.io/s8m2x/" target="_blank"> 
-<span class="menu-text"><i class="ai  ai-osf" style="font-size:2.1x"></i></span></a>
+        <li>
+    <a class="dropdown-item" href="https://orcid.org/0000-0001-5366-5442" target="_blank">
+ <span class="dropdown-text"><i class="ai  ai-orcid"></i></span></a>
   </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
@@ -175,65 +184,97 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>A haphhazard collection of some of the books/websites/courses I’ve found helpful over the years.</p>
+<style>
+details > summary {
+  padding: 10px;
+  cursor: pointer;
+  /* color: navy; */
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 0.5em 0.5em 0;
+}
+</style>
 <section id="cognitive-modeling" class="level2">
 <h2 class="anchored" data-anchor-id="cognitive-modeling">Cognitive Modeling</h2>
-<p><a href="https://psy-farrell.github.io/computational-modelling/">Farrell &amp; Lewandowsky’s Computational Modeling of Cognition and Behavior</a><br>
-</p>
-<p><a href="https://vasishth.github.io/bayescogsci/book/">An Introduction to Bayesian Data Analysis for Cognitive Science</a></p>
-<p><a href="https://yxlin.github.io/">Modelling Cognitive Processes</a><br>
-</p>
-<p><a href="https://cosmos-konstanz.github.io/materials/">COSMOS workshop</a> &nbsp;</p>
-<p><a href="https://www.youtube.com/c/RandallOReilly/videos">Randy O’Reily’s Youtube Channel</a><br>
-</p>
-<p><a href="https://www.youtube.com/c/MITCBMM/videos">MIT Center For Minds and Machines</a> &nbsp;</p>
-<p><a href="https://www.youtube.com/channel/UChQucsNNsryDVOoawPZeZBw/videos">CMP Lab Video Series on Mathematical Psychology</a><br>
-</p>
-<p><a href="https://github.com/ajwills72/catlearn">Catlearn - Cognitive Modeling package for R</a><br>
-<br>
-<br>
-</p>
+<details>
+<summary>
+<b>Expand/Collapse</b>
+</summary>
+<ul>
+<li><a href="https://psy-farrell.github.io/computational-modelling/">Farrell &amp; Lewandowsky’s Computational Modeling of Cognition and Behavior</a></li>
+<li><a href="https://vasishth.github.io/bayescogsci/book/">An Introduction to Bayesian Data Analysis for Cognitive Science</a></li>
+<li><a href="https://yxlin.github.io/">Modelling Cognitive Processes</a></li>
+<li><a href="https://cosmos-konstanz.github.io/materials/">COSMOS workshop</a></li>
+<li><a href="https://www.youtube.com/c/RandallOReilly/videos">Randy O’Reily’s Youtube Channel</a></li>
+<li><a href="https://www.youtube.com/c/MITCBMM/videos">MIT Center For Minds and Machines</a></li>
+<li><a href="https://www.youtube.com/channel/UChQucsNNsryDVOoawPZeZBw/videos">CMP Lab Video Series on Mathematical Psychology</a></li>
+<li><a href="https://github.com/ajwills72/catlearn">Catlearn - Cognitive Modeling package for R</a></li>
+</ul>
+</details>
 </section>
 <section id="statistics" class="level2">
 <h2 class="anchored" data-anchor-id="statistics">Statistics</h2>
+<details>
+<summary>
+<b>Expand/Collapse</b>
+</summary>
 <section id="statistics-for-psychology" class="level3">
 <h3 class="anchored" data-anchor-id="statistics-for-psychology">Statistics For Psychology</h3>
-<p>https://statsthinking21.github.io/statsthinking21-R-site/</p>
-<p>https://ajwills72.github.io/rminr/</p>
-<p>https://glennwilliams.me/r4psych/</p>
-<p>https://www.sas.upenn.edu/~baron/from_cattell/rpsych/rpsych.html</p>
-<p>https://learningstatisticswithr.com/</p>
-<p>https://psyteachr.github.io/</p>
-<p>https://rpsychologist.com/viz</p>
-<p><br>
-<br>
-</p>
+<ul>
+<li><a href="https://statsthinking21.github.io/statsthinking21-R-site/">StatsThinking21</a></li>
+<li><a href="https://ajwills72.github.io/rminr/">RMInr</a></li>
+<li><a href="https://glennwilliams.me/r4psych/">R for Psych</a></li>
+<li><a href="https://www.sas.upenn.edu/~baron/from_cattell/rpsych/rpsych.html">From Cattell to Rpsych</a></li>
+<li><a href="https://learningstatisticswithr.com/">Learning Statistics with R</a></li>
+<li><a href="https://psyteachr.github.io/">PsyTeachR</a></li>
+<li><a href="https://rpsychologist.com/viz">Rpsychologist Viz</a></li>
+</ul>
+</section></details>
 </section>
-</section>
+
 <section id="experimental-design" class="level2">
 <h2 class="anchored" data-anchor-id="experimental-design">Experimental Design</h2>
-<p><a href="https://langcog.github.io/experimentology/index.html">Experimentology Book</a></p>
-<p><a href="https://crumplab.com/programmingforpsych/">Matt Crump’s Programming For Psychologists Book</a></p>
-<p><br>
-<br>
-</p>
+<details>
+<summary>
+<b>Expand/Collapse</b>
+</summary>
+<ul>
+<li><a href="https://langcog.github.io/experimentology/index.html">Experimentology Book</a></li>
+<li><a href="https://crumplab.com/programmingforpsych/">Programming For Psychologists by Matt Crump</a></li>
+</ul>
+</details>
 </section>
 <section id="datasets" class="level2">
 <h2 class="anchored" data-anchor-id="datasets">Datasets</h2>
-<p>https://github.com/</p>
-<p>https://osf.io/</p>
-<p>https://zenodo.org</p>
-<p>https://figshare.com</p>
-<p>https://data.mendeley.com/</p>
-<p>https://openneuro.org</p>
-<p>https://datadryad.org/stash/</p>
-<p>https://datasetsearch.research.google.com/</p>
-<p>https://openpsychologydata.metajnl.com/</p>
-<p>https://openpsychometrics.org/_rawdata/</p>
-<p>https://codeocean.com/</p>
-<p>https://bitbucket.org/product/</p>
-<p>https://dataspace.princeton.edu</p>
-<p>https://kilthub.cmu.edu</p>
-<p>https://paperswithcode.com/datasets?q=neuro&amp;v=lst&amp;o=match</p>
+<details>
+<summary>
+<b>Expand/Collapse</b>
+</summary>
+<ul>
+<li><a href="https://github.com/">GitHub</a></li>
+<li><a href="https://osf.io/">OSF</a></li>
+<li><a href="https://zenodo.org">Zenodo</a></li>
+<li><a href="https://figshare.com">Figshare</a></li>
+<li><a href="https://data.mendeley.com/">Mendeley Data</a></li>
+<li><a href="https://openneuro.org">OpenNeuro</a></li>
+<li><a href="https://datadryad.org/stash/">Datadryad</a></li>
+<li><a href="https://datasetsearch.research.google.com/">Google Dataset Search</a></li>
+<li><a href="https://openpsychologydata.metajnl.com/">Journal of Open Psychology Data</a></li>
+<li><a href="https://openpsychometrics.org/_rawdata/">Open Psychometrics</a></li>
+<li><a href="https://codeocean.com/">Code Ocean</a></li>
+<li><a href="https://bitbucket.org/product/">Bitbucket</a></li>
+<li><a href="https://dataspace.princeton.edu">Princeton Dataspace</a></li>
+<li><a href="https://kilthub.cmu.edu">KiltHub</a></li>
+<li><a href="https://paperswithcode.com/datasets?q=neuro&amp;v=lst&amp;o=match">Papers With Code (Datasets)</a></li>
+</ul>
+</details>
 
 
 </section>
@@ -668,11 +709,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <li class="nav-item">
     <a class="nav-link" href="https://github.com/tegorman13" target="_blank">
 <p><i class="fa-brands fa-github fa-1.5x" aria-label="github"></i></p>
-</a>
-  </li>  
-    <li class="nav-item">
-    <a class="nav-link" href="https://osf.io/s8m2x/" target="_blank">
-<p><i class="ai  ai-osf" style="font-size:1.5x"></i></p>
 </a>
   </li>  
 </ul>

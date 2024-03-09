@@ -1,5 +1,89 @@
 [
   {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "PDF Version"
+  },
+  {
+    "objectID": "cv.html#education",
+    "href": "cv.html#education",
+    "title": "Curriculum Vitae",
+    "section": " Education",
+    "text": "Education\n\n\n\n\n\n\n\n2017 - May 2024\n\n\n\nUniversity of Indiana - Bloomington\n- PhD in Psychology and Cognitive Science\n\n\n\n\n\n2011 - 2015\n\n\n\nUniversity of Wisconsin – Madison\n- B.Sc. in Psychology"
+  },
+  {
+    "objectID": "cv.html#research-experience",
+    "href": "cv.html#research-experience",
+    "title": "Curriculum Vitae",
+    "section": " Research Experience",
+    "text": "Research Experience\nPercepts and Concepts Lab\n\nPrincipal Investigator: Robert Goldstone, PhD\nGraduate Student (2017 - Present)\n\nLearning and Transfer Lab (University of Wisconsin-Madison)\n\nPrincipal Investigator: C. Shawn Green, PhD\nLab Manager / Research Coordinator (2015-2017)\nUndergraduate Research Assistant (2013 - May 2015)\n\nAlexander Lab – Medical Physics (University of Wisconsin-Madison)\n\nPrincipal Investigator: Andrew Alexander, PhD\nResearch Coordinator (2015 – 2017)\n\nCenter for Healthy Minds (University of Wisconsin-Madison)\n\nPrincipal Investigator: Richard J. Davidson, PhD\nUndergraduate Research Assistant (January 2014 - May 2015)"
+  },
+  {
+    "objectID": "cv.html#skills",
+    "href": "cv.html#skills",
+    "title": "Curriculum Vitae",
+    "section": " Skills",
+    "text": "Skills\n\n\n\n\n\n\n\nCategory\nSkills\n\n\n\n\nProgramming\n- R (Quarto, Rmarkdown, Shiny )  - JavaScript  - Python (jupyter, torch, tensorflow)  - Bash (Shell scripting, Workflow automation)  - MATLAB (psychtoolbox)\n\n\nComputational Modeling\n- Artificial Neural Networks  - Exemplar Models  - Bayesian Statistics  - Mixed Effect Models  - Similarity Scaling  - Approximate Bayesian Computation  - Individual Differences\n\n\nData Analysis\n- Multilevel Modeling  - Bayesian Statistics  - Mixed Effects Models  - Dimensionality Reduction  - Frequentist ANOVA/Regression \n\n\nExperimental Skills\n- Behavioral Tasks  - Online Data Collection (jsPsych for web-based experiments)  - Survey Data Collection (Qualtrics)  - Mechanical Turk  - MRI & EEG\n\n\nWorkflow Automation & Version Control\n- Multi-language workflows (integrating R, Bash, Python)  - Git (Documentation, backup, branching, collaboration)\n\n\nTools\n- RStudio  - VS Code  - Vim/Neovim  - Obsidian \n\n\nMiscellaneous Skills\n- Web Scraping  - SQL  - Website Design"
+  },
+  {
+    "objectID": "cv.html#journal-articles-and-conference-proceedings",
+    "href": "cv.html#journal-articles-and-conference-proceedings",
+    "title": "Curriculum Vitae",
+    "section": " Journal Articles and Conference Proceedings",
+    "text": "Journal Articles and Conference Proceedings\n\nGorman, T. E., & Goldstone, R. L. (2022). An instance-based model account of the benefits of varied practice in visuomotor skill. Cognitive Psychology, 137, 101491.\nBazyldo, A., Kecskemeti, S., Cochrane, A., Gorman, T., Rokers, B., Dean, D., Green, C. S., & Alexander, A. L. (2021). Assessment of R1 Relaxometry Changes Induced via Repeated Videogame Training as a Measure of Neuroplasticity in College-aged Brains. In Proceedings of the ISMRM & SMRT Annual Meeting & Exhibition. An Online Experience. link\nPatrick, A., Dean, D., Gorman, T., Green, C. S., & Alexander, A. (2019). Assessment of Microstructural Changes Induced via Repeated Videogame Training as a Measure of Neuroplasticity in Normal Developing, College-age Brains. In Proceedings of the 27th Annual Meeting & Exhibition of the International Society for Magnetic Resonance in Medicine. Montréal, QC, Canada. link\nDean, C. D., Patrick, A. M., Gorman, T., Green, C. S., & Alexander, A. L. (2018). Neuroplastic Changes of Myelin Microstructure With Video Game Play. In Proceedings of the Joint Annual Meeting ISMRM-ESMRMB. Paris, France. link\nKattner, F., Cochrane, A., Cox, C. R., Gorman, T. E., & Green, C. S. (2017). Perceptual learning generalization from sequential perceptual training as a change in learning rate. Current Biology, 27(6), 840-846.\nGorman, T.E., & Green, C.S. (2016). Short-term mindfulness intervention reduces the negative attentional effects associated with heavy media multitasking. Scientific Reports, 6."
+  },
+  {
+    "objectID": "cv.html#book-chapters",
+    "href": "cv.html#book-chapters",
+    "title": "Curriculum Vitae",
+    "section": " Book Chapters",
+    "text": "Book Chapters\n\nGorman, T.E., Gentile, D.A., & Green, C.S. Video game addiction: a short primer (2018). American Journal of Play, 10 (3), 309-327\nGorman, T.E., & Green, C.S. (2017). Young minds on video games. In F. Blumberg & P. Brooks, (Eds.), Cognitive development in digital contexts. 121-143.\nGreen, C. S., Gorman, T., & Bavelier, D. (2016). Action Video-Game Training and Its Effects on Perception and Attentional Control. In Cognitive Training (pp. 107-116). Springer International Publishing."
+  },
+  {
+    "objectID": "cv.html#presentations",
+    "href": "cv.html#presentations",
+    "title": "Curriculum Vitae",
+    "section": " Presentations",
+    "text": "Presentations\n\nHalf Day Tutorial on Measuring Mindfulness Behaviorally: Onsite/Online Data Col-lection with jsPsych\n\nCognitive Science Conference – 2018\n\nDoes interleaving go the distance? Exploring the effect of dissimilarity on interleaved category learning\n\nMath Psych/ICCM 2018\n\nShort term mindfulness intervention reduces cognitive deficits in heavy media multi-taskers\n\nUndergraduate Research Symposium – UW-Madison – April 16th, 2015"
+  },
+  {
+    "objectID": "cv.html#awards",
+    "href": "cv.html#awards",
+    "title": "Curriculum Vitae",
+    "section": " Awards",
+    "text": "Awards\nIU-Bloomington – Development Training Grant – beginning Fall 2019\nIU-Bloomington - Steinmetz Summer Research Award - 2018\nUW-Madison - Undergraduate Research Scholar Award – 2015\nUW-Madison - Hilldale Undergraduate/Faculty Research Fellowship – 2014"
+  },
+  {
+    "objectID": "cv.html#peer-review",
+    "href": "cv.html#peer-review",
+    "title": "Curriculum Vitae",
+    "section": " Peer Review",
+    "text": "Peer Review\nCognitive Science\nJournal of Experimental Psychology: General\nJournal of Experimental Psychology: Human Perception and Performance\nContemporary Educational Psychology"
+  },
+  {
+    "objectID": "cv.html#conferences",
+    "href": "cv.html#conferences",
+    "title": "Curriculum Vitae",
+    "section": " Conferences",
+    "text": "Conferences\nCognitive Science Conference - 2021\nCognitive Science Conference - 2018\nMathematical Psychology & ICCM 2018\nBoston Meeting on Methods in Cognitive Training (NSF Sponsored) – May 2017"
+  },
+  {
+    "objectID": "pubs.html",
+    "href": "pubs.html",
+    "title": "Publications",
+    "section": "",
+    "text": "You can also check my Google Scholar page for an updated list of my works.\n\n\nArticles\nGorman, T. E., & Goldstone, R. L. (2022). An instance-based model account of the benefits of varied practice in visuomotor skill. Cognitive Psychology, 137, 101491. https://doi.org/10.1016/j.cogpsych.2022.101491 pdf\n\nBazyldo, A., Kecskemeti, S., Cochrane, A., Gorman, T., Rokers, B., Dean, D., Green, C. S., & Alexander, A. L. (2021). Assessment of R1 Relaxometry Changes Induced via Repeated Videogame Training as a Measure of Neuroplasticity in College-aged Brains. In Proceedings of the ISMRM & SMRT Annual Meeting & Exhibition. An Online Experience. link\n\nPatrick, A., Dean, D., Gorman, T., Green, C. S., & Alexander, A. (2019). Assessment of Microstructural Changes Induced via Repeated Videogame Training as a Measure of Neuroplasticity in Normal Developing, College-age Brains. In Proceedings of the 27th Annual Meeting & Exhibition of the International Society for Magnetic Resonance in Medicine. Montréal, QC, Canada. link\n\nDean, C. D., Patrick, A. M., Gorman, T., Green, C. S., & Alexander, A. L. (2018). Neuroplastic Changes of Myelin Microstructure With Video Game Play. In Proceedings of the Joint Annual Meeting ISMRM-ESMRMB. Paris, France. link\n\nKattner, F., Cochrane, A., Cox, C. R., Gorman, T. E., & Green, C. S. (2017). Perceptual learning generalization from sequential perceptual training as a change in learning rate. Current Biology, 27(6), 840–846. pdf\n\nGorman, T. E., & Green, C. S. (2016). Short-term mindfulness intervention reduces the negative attentional effects associated with heavy media multitasking. Scientific Reports, 6. https://doi.org/10.1038/srep24542 pdf\n\n\n\n\nBook Chapters\nGorman, T. E., Gentile, D. A., & Green, C. S. (2018). Problem gaming: A short primer. American Journal of Play, 10(3), 309–327. pdf\n\nGorman, T. E., & Green, C. S. (2017). Young minds on video games. In Cognitive development in digital contexts (pp. 121–143). Academic Press.\n\nGreen, C. S., Gorman, T., & Bavelier, D. (2016). Action Video-Game Training and Its Effects on Perception and Attentional Control. In T. Strobach & J. Karbach (Eds.), Cognitive Training (pp. 107–116). Springer International Publishing. https://doi.org/10.1007/978-3-319-42662-4_10 pdf\n\n\n\n\n\n\nConference Presentations\nHalf Day Tutorial on Measuring Mindfulness Behaviorally: Onsite/Online Data Col-lection with jsPsych -Cognitive Science Conference – 2018\nDoes interleaving go the distance? Exploring the effect of dissimilarity on interleaved category learning -Math Psych/ICCM 2018\nShort term mindfulness intervention reduces cognitive deficits in heavy media multi-taskers -Undergraduate Research Symposium – UW-Madison – April 16th, 2015\n\n\n\nPreprints"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Thomas E. Gorman",
+    "section": "",
+    "text": "I’m currently a PhD student in Cognitive Science at Indiana University - Bloomington. My research interests center on learning transfer and generalization, which I investigate in a variety of domains (e.g. category learning, visuomotor skill learning, and decision making). To explore these topics, I use a combination of experimental and computational modeling approaches."
+  },
+  {
     "objectID": "resources.html",
     "href": "resources.html",
     "title": "Resources",
@@ -11,28 +95,42 @@
     "href": "resources.html#cognitive-modeling",
     "title": "Resources",
     "section": "Cognitive Modeling",
-    "text": "Cognitive Modeling\nFarrell & Lewandowsky’s Computational Modeling of Cognition and Behavior\n\nAn Introduction to Bayesian Data Analysis for Cognitive Science\nModelling Cognitive Processes\n\nCOSMOS workshop  \nRandy O’Reily’s Youtube Channel\n\nMIT Center For Minds and Machines  \nCMP Lab Video Series on Mathematical Psychology\n\nCatlearn - Cognitive Modeling package for R"
+    "text": "Cognitive Modeling\n\n\nExpand/Collapse\n\n\nFarrell & Lewandowsky’s Computational Modeling of Cognition and Behavior\nAn Introduction to Bayesian Data Analysis for Cognitive Science\nModelling Cognitive Processes\nCOSMOS workshop\nRandy O’Reily’s Youtube Channel\nMIT Center For Minds and Machines\nCMP Lab Video Series on Mathematical Psychology\nCatlearn - Cognitive Modeling package for R"
   },
   {
     "objectID": "resources.html#statistics",
     "href": "resources.html#statistics",
     "title": "Resources",
     "section": "Statistics",
-    "text": "Statistics\n\nStatistics For Psychology\nhttps://statsthinking21.github.io/statsthinking21-R-site/\nhttps://ajwills72.github.io/rminr/\nhttps://glennwilliams.me/r4psych/\nhttps://www.sas.upenn.edu/~baron/from_cattell/rpsych/rpsych.html\nhttps://learningstatisticswithr.com/\nhttps://psyteachr.github.io/\nhttps://rpsychologist.com/viz"
+    "text": "Statistics\n\n\nExpand/Collapse\n\n\nStatistics For Psychology\n\nStatsThinking21\nRMInr\nR for Psych\nFrom Cattell to Rpsych\nLearning Statistics with R\nPsyTeachR\nRpsychologist Viz"
   },
   {
     "objectID": "resources.html#experimental-design",
     "href": "resources.html#experimental-design",
     "title": "Resources",
     "section": "Experimental Design",
-    "text": "Experimental Design\nExperimentology Book\nMatt Crump’s Programming For Psychologists Book"
+    "text": "Experimental Design\n\n\nExpand/Collapse\n\n\nExperimentology Book\nProgramming For Psychologists by Matt Crump"
   },
   {
     "objectID": "resources.html#datasets",
     "href": "resources.html#datasets",
     "title": "Resources",
     "section": "Datasets",
-    "text": "Datasets\nhttps://github.com/\nhttps://osf.io/\nhttps://zenodo.org\nhttps://figshare.com\nhttps://data.mendeley.com/\nhttps://openneuro.org\nhttps://datadryad.org/stash/\nhttps://datasetsearch.research.google.com/\nhttps://openpsychologydata.metajnl.com/\nhttps://openpsychometrics.org/_rawdata/\nhttps://codeocean.com/\nhttps://bitbucket.org/product/\nhttps://dataspace.princeton.edu\nhttps://kilthub.cmu.edu\nhttps://paperswithcode.com/datasets?q=neuro&v=lst&o=match"
+    "text": "Datasets\n\n\nExpand/Collapse\n\n\nGitHub\nOSF\nZenodo\nFigshare\nMendeley Data\nOpenNeuro\nDatadryad\nGoogle Dataset Search\nJournal of Open Psychology Data\nOpen Psychometrics\nCode Ocean\nBitbucket\nPrinceton Dataspace\nKiltHub\nPapers With Code (Datasets)"
+  },
+  {
+    "objectID": "resources.html#cognitive-modeling2",
+    "href": "resources.html#cognitive-modeling2",
+    "title": "Resources",
+    "section": "Cognitive Modeling2",
+    "text": "Cognitive Modeling2"
+  },
+  {
+    "objectID": "resources.html#cognitive-modeling3",
+    "href": "resources.html#cognitive-modeling3",
+    "title": "Resources",
+    "section": "Cognitive Modeling3",
+    "text": "Cognitive Modeling3"
   },
   {
     "objectID": "projects.html",
@@ -63,143 +161,10 @@
     "text": "Other Projects\n\nLearning the Structure of the Environment\n\n\nEffect of Distance and Sequence in Category Learning\n\nPresented at MathPsych/ICCM Conference (2018)\n\n\n\nSkewed vs. Uniform Frequency Distributions in Cross-Situational Learning"
   },
   {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
-    "section": "",
-    "text": "Email\n\ntegorman@iu.edu\ntegorman13@gmail.com\n\n\n\nOffice\n\nGeology 6050L"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Thomas Gorman",
-    "section": "",
-    "text": "Welcome to my personal website! I’m Thomas, a PhD student in Cognitive Science at Indiana University - Bloomington. My research interests center on learning transfer and generalization, and I have conducted studies in the domains of visuomotor and category learning. To explore these topics, I use a combination of experimental and computational modeling approaches."
-  },
-  {
-    "objectID": "pubs.html",
-    "href": "pubs.html",
-    "title": "Publications",
-    "section": "",
-    "text": "You can also check my Google Scholar page for an updated list of my works.\n\n\nArticles\nGorman, T. E., & Goldstone, R. L. (2022). An instance-based model account of the benefits of varied practice in visuomotor skill. Cognitive Psychology, 137, 101491. https://doi.org/10.1016/j.cogpsych.2022.101491 pdf\n\nBazyldo, A., Kecskemeti, S., Cochrane, A., Gorman, T., Rokers, B., Dean, D., Green, C. S., & Alexander, A. L. (2021). Assessment of R1 Relaxometry Changes Induced via Repeated Videogame Training as a Measure of Neuroplasticity in College-aged Brains. In Proceedings of the ISMRM & SMRT Annual Meeting & Exhibition. An Online Experience. link\n\nPatrick, A., Dean, D., Gorman, T., Green, C. S., & Alexander, A. (2019). Assessment of Microstructural Changes Induced via Repeated Videogame Training as a Measure of Neuroplasticity in Normal Developing, College-age Brains. In Proceedings of the 27th Annual Meeting & Exhibition of the International Society for Magnetic Resonance in Medicine. Montréal, QC, Canada. link\n\nDean, C. D., Patrick, A. M., Gorman, T., Green, C. S., & Alexander, A. L. (2018). Neuroplastic Changes of Myelin Microstructure With Video Game Play. In Proceedings of the Joint Annual Meeting ISMRM-ESMRMB. Paris, France. link\n\nKattner, F., Cochrane, A., Cox, C. R., Gorman, T. E., & Green, C. S. (2017). Perceptual learning generalization from sequential perceptual training as a change in learning rate. Current Biology, 27(6), 840–846. pdf\n\nGorman, T. E., & Green, C. S. (2016). Short-term mindfulness intervention reduces the negative attentional effects associated with heavy media multitasking. Scientific Reports, 6. https://doi.org/10.1038/srep24542 pdf\n\n\n\n\nBook Chapters\nGorman, T. E., Gentile, D. A., & Green, C. S. (2018). Problem gaming: A short primer. American Journal of Play, 10(3), 309–327. pdf\n\nGorman, T. E., & Green, C. S. (2017). Young minds on video games. In Cognitive development in digital contexts (pp. 121–143). Academic Press.\n\nGreen, C. S., Gorman, T., & Bavelier, D. (2016). Action Video-Game Training and Its Effects on Perception and Attentional Control. In T. Strobach & J. Karbach (Eds.), Cognitive Training (pp. 107–116). Springer International Publishing. https://doi.org/10.1007/978-3-319-42662-4_10 pdf\n\n\n\n\n\n\nConference Presentations\nHalf Day Tutorial on Measuring Mindfulness Behaviorally: Onsite/Online Data Col-lection with jsPsych -Cognitive Science Conference – 2018\nDoes interleaving go the distance? Exploring the effect of dissimilarity on interleaved category learning -Math Psych/ICCM 2018\nShort term mindfulness intervention reduces cognitive deficits in heavy media multi-taskers -Undergraduate Research Symposium – UW-Madison – April 16th, 2015\n\n\n\nPreprints"
-  },
-  {
-    "objectID": "cv.html",
-    "href": "cv.html",
+    "objectID": "cv.html#ad-hoc-reviewer",
+    "href": "cv.html#ad-hoc-reviewer",
     "title": "Curriculum Vitae",
-    "section": "",
-    "text": "download pdf of cv"
-  },
-  {
-    "objectID": "cv.html#education",
-    "href": "cv.html#education",
-    "title": "Curriculum Vitae",
-    "section": " Education",
-    "text": "Education\n\n\n\n\n\n\n\n2017 - May 2024\n\n\n\nUniversity of Indiana - Bloomington\n- PhD in Psychology and Cognitive Science\n\n\n\n\n\n2011 - 2015\n\n\n\nUniversity of Wisconsin – Madison\n- B.Sc. in Psychology"
-  },
-  {
-    "objectID": "cv.html#research-experience",
-    "href": "cv.html#research-experience",
-    "title": "Curriculum Vitae",
-    "section": " Research Experience",
-    "text": "Research Experience\nPercepts and Concepts Lab\n\nPrincipal Investigator: Robert Goldstone, PhD\nGraduate Student (2017 - Present)\n\nLearning and Transfer Lab (University of Wisconsin-Madison)\n\nPrincipal Investigator: C. Shawn Green, PhD\nLab Manager / Research Coordinator (2015-2017)\nUndergraduate Research Assistant (2013 - May 2015)\n\nAlexander Lab – Medical Physics (University of Wisconsin-Madison)\n\nPrincipal Investigator: Andrew Alexander, PhD\nResearch Coordinator (2015 – 2017)\n\nCenter for Healthy Minds (University of Wisconsin-Madison)\n\nPrincipal Investigator: Richard J. Davidson, PhD\nUndergraduate Research Assistant (January 2014 - May 2015)"
-  },
-  {
-    "objectID": "cv.html#skills-and-experience",
-    "href": "cv.html#skills-and-experience",
-    "title": "PhD Student",
-    "section": "SKILLS AND EXPERIENCE:",
-    "text": "SKILLS AND EXPERIENCE:\n Data Collection  Behavioral/cognitive tasks  MRI/fMRI  EEG  Data Analysis (R/MATLAB/SPSS) • Cognitive task data • Structural MRI data • Dimensionality reduction (PCA/EFA) • Descriptive and Inferential statistics  Experimental Task Design (MATLAB/Psychtoolbox)  Participant Recruitment  Research Assistant Training/Supervision  Scientific Writing  Grant Proposals  Peer Review  Proofreading Grants/Project Proposals  Literature Review  Project Execution  MRI Safety screening  Budget management  Collaborative Informatics and Neuroimaging Suite (COINS)  Creating and updating IRB protocols"
-  },
-  {
-    "objectID": "cv.html#publications",
-    "href": "cv.html#publications",
-    "title": "Thomas Gorman",
-    "section": " Publications",
-    "text": "Publications\n\nGorman, T. E., & Goldstone, R. L. (2022). An instance-based model account of the benefits of varied practice in visuomotor skill. Cognitive Psychology, 137, 101491.\nKattner, F., Cochrane, A., Cox, C. R., Gorman, T. E., & Green, C. S. (2017). Perceptual learning generalization from sequential perceptual training as a change in learning rate. Current Biology, 27(6), 840-846.\nGorman, T.E., & Green, C.S. (2016). Short-term mindfulness intervention reduces the negative attentional effects associated with heavy media multitasking. Scientific Reports, 6."
-  },
-  {
-    "objectID": "cv.html#presentations",
-    "href": "cv.html#presentations",
-    "title": "Curriculum Vitae",
-    "section": " Presentations",
-    "text": "Presentations\n\nHalf Day Tutorial on Measuring Mindfulness Behaviorally: Onsite/Online Data Col-lection with jsPsych\n\nCognitive Science Conference – 2018\n\nDoes interleaving go the distance? Exploring the effect of dissimilarity on interleaved category learning\n\nMath Psych/ICCM 2018\n\nShort term mindfulness intervention reduces cognitive deficits in heavy media multi-taskers\n\nUndergraduate Research Symposium – UW-Madison – April 16th, 2015"
-  },
-  {
-    "objectID": "cv.html#awards",
-    "href": "cv.html#awards",
-    "title": "Curriculum Vitae",
-    "section": " Awards",
-    "text": "Awards\nIU-Bloomington – Development Training Grant – beginning Fall 2019\nIU-Bloomington - Steinmetz Summer Research Award - 2018\nUW-Madison - Undergraduate Research Scholar Award – 2015\nUW-Madison - Hilldale Undergraduate/Faculty Research Fellowship – 2014"
-  },
-  {
-    "objectID": "cv.html#ad-hoc-reviewing",
-    "href": "cv.html#ad-hoc-reviewing",
-    "title": "Thomas Gorman",
-    "section": " AD-HOC REVIEWING",
-    "text": "AD-HOC REVIEWING\nJournal of Experimental Psychology: General\nJournal of Experimental Psychology: Human Perception and Performance\nContemporary Educational Psychology"
-  },
-  {
-    "objectID": "cv.html#conferences",
-    "href": "cv.html#conferences",
-    "title": "Curriculum Vitae",
-    "section": " Conferences",
-    "text": "Conferences\nCognitive Science Conference - 2021\nCognitive Science Conference - 2018\nMathematical Psychology & ICCM 2018\nBoston Meeting on Methods in Cognitive Training (NSF Sponsored) – May 2017"
-  },
-  {
-    "objectID": "cv.html#book-chapters",
-    "href": "cv.html#book-chapters",
-    "title": "Curriculum Vitae",
-    "section": " Book Chapters",
-    "text": "Book Chapters\n\nGorman, T.E., Gentile, D.A., & Green, C.S. Video game addiction: a short primer (2018). American Journal of Play, 10 (3), 309-327\nGorman, T.E., & Green, C.S. (2017). Young minds on video games. In F. Blumberg & P. Brooks, (Eds.), Cognitive development in digital contexts. 121-143.\nGreen, C. S., Gorman, T., & Bavelier, D. (2016). Action Video-Game Training and Its Effects on Perception and Attentional Control. In Cognitive Training (pp. 107-116). Springer International Publishing."
-  },
-  {
-    "objectID": "cv.html#skills",
-    "href": "cv.html#skills",
-    "title": "Curriculum Vitae",
-    "section": " Skills",
-    "text": "Skills\n\n\n\n\n\n\n\n\n\n\nProgramming\nComputational\nExperimental\n\n\n\n\nR - Rmarkdown - Quarto\nNeural Networks\nBehavioral Tasks\n\n\nJavaScript\nExemplar Models\nOnline Data Collection - JsPsych\n\n\nBash\nBayesian Statistics\nSurvey Data - Qualtrics\n\n\nPython\nMixed Effect Models\nMechanical Turk\n\n\n\n\nMRI"
-  },
-  {
-    "objectID": "cv.html#grants-and-awards",
-    "href": "cv.html#grants-and-awards",
-    "title": "Thomas Gorman",
-    "section": " GRANTS and AWARDS",
-    "text": "GRANTS and AWARDS\nIU-Bloomington – Development Training Grant – beginning Fall 2019\nIU-Bloomington - Steinmetz Summer Research Award - 2018\nUW-Madison - Undergraduate Research Scholar Award – 2015\nUW-Madison - Hilldale Undergraduate/Faculty Research Fellowship – 2014"
-  },
-  {
-    "objectID": "pubs.html#bold-text",
-    "href": "pubs.html#bold-text",
-    "title": "Publications",
-    "section": "bold text",
-    "text": "bold text"
-  },
-  {
-    "objectID": "pubs.html#t",
-    "href": "pubs.html#t",
-    "title": "Publications",
-    "section": "t",
-    "text": "t"
-  },
-  {
-    "objectID": "cv.html#peer-review",
-    "href": "cv.html#peer-review",
-    "title": "Curriculum Vitae",
-    "section": " Peer Review",
-    "text": "Peer Review\nCognitive Science\nJournal of Experimental Psychology: General\nJournal of Experimental Psychology: Human Perception and Performance\nContemporary Educational Psychology"
-  },
-  {
-    "objectID": "cv.html#presentations-1",
-    "href": "cv.html#presentations-1",
-    "title": "Thomas Gorman",
-    "section": " Presentations",
-    "text": "Presentations\nHalf Day Tutorial on Measuring Mindfulness Behaviorally: Onsite/Online Data Col-lection with jsPsych -Cognitive Science Conference – 2018\nDoes interleaving go the distance? Exploring the effect of dissimilarity on interleaved category learning -Math Psych/ICCM 2018\nShort term mindfulness intervention reduces cognitive deficits in heavy media multi-taskers -Undergraduate Research Symposium – UW-Madison – April 16th, 2015"
-  },
-  {
-    "objectID": "cv.html#journal-articles-and-conference-proceedings",
-    "href": "cv.html#journal-articles-and-conference-proceedings",
-    "title": "Curriculum Vitae",
-    "section": " Journal Articles and Conference Proceedings",
-    "text": "Journal Articles and Conference Proceedings\n\nGorman, T. E., & Goldstone, R. L. (2022). An instance-based model account of the benefits of varied practice in visuomotor skill. Cognitive Psychology, 137, 101491.\nBazyldo, A., Kecskemeti, S., Cochrane, A., Gorman, T., Rokers, B., Dean, D., Green, C. S., & Alexander, A. L. (2021). Assessment of R1 Relaxometry Changes Induced via Repeated Videogame Training as a Measure of Neuroplasticity in College-aged Brains. In Proceedings of the ISMRM & SMRT Annual Meeting & Exhibition. An Online Experience. link\nPatrick, A., Dean, D., Gorman, T., Green, C. S., & Alexander, A. (2019). Assessment of Microstructural Changes Induced via Repeated Videogame Training as a Measure of Neuroplasticity in Normal Developing, College-age Brains. In Proceedings of the 27th Annual Meeting & Exhibition of the International Society for Magnetic Resonance in Medicine. Montréal, QC, Canada. link\nDean, C. D., Patrick, A. M., Gorman, T., Green, C. S., & Alexander, A. L. (2018). Neuroplastic Changes of Myelin Microstructure With Video Game Play. In Proceedings of the Joint Annual Meeting ISMRM-ESMRMB. Paris, France. link\nKattner, F., Cochrane, A., Cox, C. R., Gorman, T. E., & Green, C. S. (2017). Perceptual learning generalization from sequential perceptual training as a change in learning rate. Current Biology, 27(6), 840-846.\nGorman, T.E., & Green, C.S. (2016). Short-term mindfulness intervention reduces the negative attentional effects associated with heavy media multitasking. Scientific Reports, 6."
+    "section": " Ad-hoc Reviewer",
+    "text": "Ad-hoc Reviewer\nCognitive Science\nJournal of Experimental Psychology: General\nJournal of Experimental Psychology: Human Perception and Performance\nContemporary Educational Psychology"
   }
 ]

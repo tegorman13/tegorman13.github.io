@@ -6,94 +6,89 @@ A haphhazard collection of some of the books/websites/courses I've found helpful
 
 
 
+<style>
+details > summary {
+  padding: 10px;
+  cursor: pointer;
+  /* color: navy; */
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 0.5em 0.5em 0;
+}
+</style>
+
+
+
 
 ## Cognitive Modeling
 
+<details>
+<summary><b>Expand/Collapse</b></summary>
 
-[Farrell & Lewandowsky's Computational Modeling of Cognition and Behavior](https://psy-farrell.github.io/computational-modelling/) \
+- [Farrell & Lewandowsky's Computational Modeling of Cognition and Behavior](https://psy-farrell.github.io/computational-modelling/)
+- [An Introduction to Bayesian Data Analysis for Cognitive Science](https://vasishth.github.io/bayescogsci/book/)
+- [Modelling Cognitive Processes](https://yxlin.github.io/)
+- [COSMOS workshop](https://cosmos-konstanz.github.io/materials/)
+- [Randy O'Reily's Youtube Channel](https://www.youtube.com/c/RandallOReilly/videos)
+- [MIT Center For Minds and Machines](https://www.youtube.com/c/MITCBMM/videos)
+- [CMP Lab Video Series on Mathematical Psychology](https://www.youtube.com/channel/UChQucsNNsryDVOoawPZeZBw/videos)
+- [Catlearn - Cognitive Modeling package for R](https://github.com/ajwills72/catlearn)
 
-[An Introduction to Bayesian Data Analysis for Cognitive Science](https://vasishth.github.io/bayescogsci/book/)
+</details>
 
-[Modelling Cognitive Processes](https://yxlin.github.io/) \
-
-[COSMOS workshop](https://cosmos-konstanz.github.io/materials/) \ 
-
-[Randy O'Reily's Youtube Channel](https://www.youtube.com/c/RandallOReilly/videos) \
-
-[MIT Center For Minds and Machines](https://www.youtube.com/c/MITCBMM/videos) \ 
-
-[CMP Lab Video Series on Mathematical Psychology](https://www.youtube.com/channel/UChQucsNNsryDVOoawPZeZBw/videos) \
-
-[Catlearn - Cognitive Modeling package for R](https://github.com/ajwills72/catlearn) \
-\
-\
 
 ## Statistics
-
+<details>
+<summary><b>Expand/Collapse</b></summary>
 
 ### Statistics For Psychology
 
-https://statsthinking21.github.io/statsthinking21-R-site/
+- [StatsThinking21](https://statsthinking21.github.io/statsthinking21-R-site/)
+- [RMInr](https://ajwills72.github.io/rminr/)
+- [R for Psych](https://glennwilliams.me/r4psych/)
+- [From Cattell to Rpsych](https://www.sas.upenn.edu/~baron/from_cattell/rpsych/rpsych.html)
+- [Learning Statistics with R](https://learningstatisticswithr.com/)
+- [PsyTeachR](https://psyteachr.github.io/)
+- [Rpsychologist Viz](https://rpsychologist.com/viz)
 
-https://ajwills72.github.io/rminr/
-
-https://glennwilliams.me/r4psych/
-
-https://www.sas.upenn.edu/~baron/from_cattell/rpsych/rpsych.html
-
-https://learningstatisticswithr.com/
-
-https://psyteachr.github.io/
-
-https://rpsychologist.com/viz
-
-
-\
-\
+</details>
 
 ## Experimental Design
 
+<details>
+<summary><b>Expand/Collapse</b></summary>
 
-[Experimentology Book](https://langcog.github.io/experimentology/index.html)
+- [Experimentology Book](https://langcog.github.io/experimentology/index.html)
+- [Programming For Psychologists by Matt Crump](https://crumplab.com/programmingforpsych/)
 
-[Matt Crump's Programming For Psychologists Book](https://crumplab.com/programmingforpsych/)
-
-
-
-\
-\
-
+</details>
 
 ## Datasets
 
+<details>
+<summary><b>Expand/Collapse</b></summary>
 
-https://github.com/
+- [GitHub](https://github.com/)
+- [OSF](https://osf.io/)
+- [Zenodo](https://zenodo.org)
+- [Figshare](https://figshare.com)
+- [Mendeley Data](https://data.mendeley.com/)
+- [OpenNeuro](https://openneuro.org)
+- [Datadryad](https://datadryad.org/stash/)
+- [Google Dataset Search](https://datasetsearch.research.google.com/)
+- [Journal of Open Psychology Data](https://openpsychologydata.metajnl.com/)
+- [Open Psychometrics](https://openpsychometrics.org/_rawdata/)
+- [Code Ocean](https://codeocean.com/)
+- [Bitbucket](https://bitbucket.org/product/)
+- [Princeton Dataspace](https://dataspace.princeton.edu)
+- [KiltHub](https://kilthub.cmu.edu)
+- [Papers With Code (Datasets)](https://paperswithcode.com/datasets?q=neuro&v=lst&o=match)
 
-https://osf.io/
-
-https://zenodo.org
-
-https://figshare.com
-
-https://data.mendeley.com/
-
-https://openneuro.org
-
-https://datadryad.org/stash/
-
-https://datasetsearch.research.google.com/
-
-https://openpsychologydata.metajnl.com/
-
-https://openpsychometrics.org/_rawdata/
-
-https://codeocean.com/
-
-https://bitbucket.org/product/
-
-https://dataspace.princeton.edu
-
-https://kilthub.cmu.edu
-
-https://paperswithcode.com/datasets?q=neuro&v=lst&o=match
-
+</details>

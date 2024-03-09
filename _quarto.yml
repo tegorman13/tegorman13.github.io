@@ -7,7 +7,7 @@ project:
     - "*.qmd"
     - "!_*" # ignore any file that starts with a _
     - "!quarto_shiny.qmd"
-    - "!cv/*"
+    #- "!cv/*"
     
 exclude: ["*.rds","*.tex","*.csl","*.bib","docs*","_old*","out.bib",
 "*.R",".obsidian","Rproj","R","Bib","exp","HTW_Analysis/**","*HTW_Modelling/**","Motivated*","Manuscript*"]
@@ -36,22 +36,27 @@ website:
       # - text: "Contact"
       #   href: contact.qmd
     right: 
-      - text: "{{< ai google-scholar size=2.1x >}}"
-        aria-label: Google Scholar
-        href: https://scholar.google.com/citations?user=USMVPjEAAAAJ&hl=en
-        target: _blank
-      - text: "{{< ai researchgate size=2.1x >}}"
-        aria-label: Research Gate
-        href: https://www.researchgate.net/profile/Thomas-Gorman-3
-        target: _blank
-      - text: "{{< fa brands github size=2.1x >}}"
-        aria-label: GitHub
-        href: https://github.com/tegorman13
-        target: _blank
-      - text: "{{< ai osf size=2.1x >}}"
-        aria-label: ai-osf
-        href: https://osf.io/s8m2x/
-        target: _blank
+      - icon: list
+        menu: 
+          - text: "{{< ai google-scholar >}}"
+            aria-label: Google Scholar
+            href: https://scholar.google.com/citations?user=USMVPjEAAAAJ&hl=en
+            target: _blank
+          - text: "{{< ai researchgate >}}"
+            aria-label: Research Gate
+            href: https://www.researchgate.net/profile/Thomas-Gorman-3
+            target: _blank
+          - text: "{{< fa brands github >}}"
+            aria-label: GitHub
+            href: https://github.com/tegorman13
+            target: _blank
+          # - text: "{{< ai osf >}}"
+          #   aria-label: ai-osf
+          #   href: https://osf.io/s8m2x/
+            # target: _blank
+          - text: "{{< ai orcid >}}"
+            href: https://orcid.org/0000-0001-5366-5442
+            target: _blank
   page-footer:
     left: "© 2024 Thomas Gorman"
     center: "site created with [R](https://cran.r-project.org/) and [quarto](https://quarto.org)"
@@ -68,10 +73,10 @@ website:
         aria-label: GitHub
         target: _blank
         href: https://github.com/tegorman13
-      - text: "{{< ai osf size=1.5x >}}"
-        aria-label: ai-osf
-        href: https://osf.io/s8m2x/
-        target: _blank
+      # - text: "{{< ai osf size=1.5x >}}"
+      #   aria-label: ai-osf
+      #   href: https://osf.io/s8m2x/
+      #   target: _blank
       # make the icons bigger
 
 

@@ -11,4 +11,6 @@ subtitle: |
 #       output_file=file.path(dirname(input_file), out_dir, '404.html'))})
 ---
 
+You may want to try using the search feature to find the page's new location.
+
 <!-- knit this file to create 404.html in root directory  -->

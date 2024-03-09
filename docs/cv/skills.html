@@ -1,0 +1,2699 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.550">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Thomas Gorman - format comparison</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="../css/academicons.css">
+<link rel="stylesheet" href="../css/custom.css">
+<link rel="stylesheet" href="../css/lux_bootstrap.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-sm " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Thomas Gorman</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../projects.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../pubs.html"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../resources.html"> 
+<span class="menu-text">Resources</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../cv.html"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-list" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-list" role="img">
+</i> 
+ <span class="menu-text"></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-bi-list">    
+        <li>
+    <a class="dropdown-item" href="https://scholar.google.com/citations?user=USMVPjEAAAAJ&amp;hl=en" target="_blank">
+ <span class="dropdown-text"><i class="ai  ai-google-scholar"></i></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://www.researchgate.net/profile/Thomas-Gorman-3" target="_blank">
+ <span class="dropdown-text"><i class="ai  ai-researchgate"></i></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://github.com/tegorman13" target="_blank">
+ <span class="dropdown-text"><i class="fa-brands fa-github" aria-label="github"></i></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://orcid.org/0000-0001-5366-5442" target="_blank">
+ <span class="dropdown-text"><i class="ai  ai-orcid"></i></span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#st" id="toc-st" class="nav-link active" data-scroll-target="#st">1st</a></li>
+  <li><a href="#nd" id="toc-nd" class="nav-link" data-scroll-target="#nd">2nd</a></li>
+  <li><a href="#rd" id="toc-rd" class="nav-link" data-scroll-target="#rd">3rd</a></li>
+  <li><a href="#fourth" id="toc-fourth" class="nav-link" data-scroll-target="#fourth">fourth</a></li>
+  <li><a href="#fifth" id="toc-fifth" class="nav-link" data-scroll-target="#fifth">Fifth</a></li>
+  <li><a href="#b" id="toc-b" class="nav-link" data-scroll-target="#b">5b</a></li>
+  <li><a href="#c" id="toc-c" class="nav-link" data-scroll-target="#c">5c</a></li>
+  <li><a href="#d" id="toc-d" class="nav-link" data-scroll-target="#d">5d</a></li>
+  <li><a href="#e" id="toc-e" class="nav-link" data-scroll-target="#e">5e</a></li>
+  <li><a href="#f" id="toc-f" class="nav-link" data-scroll-target="#f">5f</a></li>
+  <li><a href="#g" id="toc-g" class="nav-link" data-scroll-target="#g">5g</a></li>
+  <li><a href="#h" id="toc-h" class="nav-link" data-scroll-target="#h">5h</a></li>
+  <li><a href="#i" id="toc-i" class="nav-link" data-scroll-target="#i">5i</a></li>
+  <li><a href="#j" id="toc-j" class="nav-link" data-scroll-target="#j">5j</a></li>
+  <li><a href="#k" id="toc-k" class="nav-link" data-scroll-target="#k">5k</a></li>
+  <li><a href="#l" id="toc-l" class="nav-link" data-scroll-target="#l">5l</a></li>
+  <li><a href="#m" id="toc-m" class="nav-link" data-scroll-target="#m">5m</a></li>
+  <li><a href="#sixth" id="toc-sixth" class="nav-link" data-scroll-target="#sixth">Sixth</a>
+  <ul class="collapse">
+  <li><a href="#computational-and-programming-skills" id="toc-computational-and-programming-skills" class="nav-link" data-scroll-target="#computational-and-programming-skills">Computational and Programming Skills</a></li>
+  <li><a href="#data-analysis-skills" id="toc-data-analysis-skills" class="nav-link" data-scroll-target="#data-analysis-skills">Data Analysis Skills</a></li>
+  <li><a href="#computational-modelling-skills" id="toc-computational-modelling-skills" class="nav-link" data-scroll-target="#computational-modelling-skills">Computational Modelling Skills</a></li>
+  <li><a href="#experimental-skills-1" id="toc-experimental-skills-1" class="nav-link" data-scroll-target="#experimental-skills-1">Experimental Skills</a></li>
+  </ul></li>
+  <li><a href="#seventh---condensed" id="toc-seventh---condensed" class="nav-link" data-scroll-target="#seventh---condensed">Seventh - Condensed</a></li>
+  <li><a href="#eigth" id="toc-eigth" class="nav-link" data-scroll-target="#eigth">Eigth</a>
+  <ul class="collapse">
+  <li><a href="#computational-and-programming-skills-1" id="toc-computational-and-programming-skills-1" class="nav-link" data-scroll-target="#computational-and-programming-skills-1">Computational and Programming Skills</a></li>
+  <li><a href="#data-analysis-skills-1" id="toc-data-analysis-skills-1" class="nav-link" data-scroll-target="#data-analysis-skills-1">Data Analysis Skills</a></li>
+  <li><a href="#computational-modelling-skills-1" id="toc-computational-modelling-skills-1" class="nav-link" data-scroll-target="#computational-modelling-skills-1">Computational Modelling Skills</a></li>
+  <li><a href="#experimental-skills-3" id="toc-experimental-skills-3" class="nav-link" data-scroll-target="#experimental-skills-3">Experimental Skills</a></li>
+  <li><a href="#computational-and-programming-skills-2" id="toc-computational-and-programming-skills-2" class="nav-link" data-scroll-target="#computational-and-programming-skills-2">Computational and Programming Skills</a></li>
+  <li><a href="#data-analysis-skills-2" id="toc-data-analysis-skills-2" class="nav-link" data-scroll-target="#data-analysis-skills-2">Data Analysis Skills</a></li>
+  <li><a href="#computational-modeling-skills" id="toc-computational-modeling-skills" class="nav-link" data-scroll-target="#computational-modeling-skills">Computational Modeling Skills</a></li>
+  <li><a href="#experimental-skills-4" id="toc-experimental-skills-4" class="nav-link" data-scroll-target="#experimental-skills-4">Experimental Skills</a></li>
+  <li><a href="#ninth" id="toc-ninth" class="nav-link" data-scroll-target="#ninth">Ninth</a></li>
+  </ul></li>
+  <li><a href="#tenth" id="toc-tenth" class="nav-link" data-scroll-target="#tenth">Tenth</a></li>
+  <li><a href="#th" id="toc-th" class="nav-link" data-scroll-target="#th">11th</a></li>
+  <li><a href="#th-1" id="toc-th-1" class="nav-link" data-scroll-target="#th-1">12th</a></li>
+  <li><a href="#th-2" id="toc-th-2" class="nav-link" data-scroll-target="#th-2">13th</a></li>
+  <li><a href="#th-3" id="toc-th-3" class="nav-link" data-scroll-target="#th-3">14th</a></li>
+  <li><a href="#th-4" id="toc-th-4" class="nav-link" data-scroll-target="#th-4">15th</a></li>
+  <li><a href="#th-5" id="toc-th-5" class="nav-link" data-scroll-target="#th-5">16th</a></li>
+  <li><a href="#th-6" id="toc-th-6" class="nav-link" data-scroll-target="#th-6">17th</a></li>
+  <li><a href="#th-7" id="toc-th-7" class="nav-link" data-scroll-target="#th-7">18th</a></li>
+  <li><a href="#th-8" id="toc-th-8" class="nav-link" data-scroll-target="#th-8">19th</a></li>
+  <li><a href="#th-9" id="toc-th-9" class="nav-link" data-scroll-target="#th-9">20th</a></li>
+  <li><a href="#st-1" id="toc-st-1" class="nav-link" data-scroll-target="#st-1">21st</a></li>
+  <li><a href="#nd-1" id="toc-nd-1" class="nav-link" data-scroll-target="#nd-1">22nd</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content column-page-left" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">format comparison</h1>
+</div>
+
+
+
+<div class="quarto-title-meta column-page-left">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="st" class="level1">
+<h1>1st</h1>
+<table class="table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Skill Category</th>
+<th>Skills/Tools/Workflows</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Multi-Language Workflows</td>
+<td>- Image analysis pipeline with Python and R <br> - Model report pipeline with R, Bash, Python, and JavaScript (Quarto) <br> - Backup MD pipeline <br> - MRI analysis pipeline with MATLAB, Bash, and Python</td>
+</tr>
+<tr class="even">
+<td>Workflow Scripts</td>
+<td>- Organizing and comparing statistical results</td>
+</tr>
+<tr class="odd">
+<td>Version Control</td>
+<td>- Git for documentation, backup, collaboration, and branches for major alterations or exploration</td>
+</tr>
+<tr class="even">
+<td>Data Collection</td>
+<td>- Qualtrics, Mechanical Turk <br> - Creating tasks in JavaScript (jsPsych) for collecting human subject data</td>
+</tr>
+<tr class="odd">
+<td>Data Quality Assessment</td>
+<td>- Assessing respondent quality/good-faith via analysis of respondent reaction times, uniformity of response patterns, fitting contaminant models</td>
+</tr>
+<tr class="even">
+<td>R Programming</td>
+<td>- Multilevel modeling <br> - Parallel computing and remote workflows (deploying jobs across remote cluster, using supercomputer) <br> - Quarto and Rmarkdown websites for efficient documentation and communication <br> - Purrr for manipulating hierarchically structured data <br> - Web scraping <br> - Profile customization and environment handling</td>
+</tr>
+<tr class="odd">
+<td>Tidyverse (R)</td>
+<td>- Dplyr and Tidyr for data wrangling and summarizing <br> - Purrr for fitting models</td>
+</tr>
+<tr class="even">
+<td>Shell Scripting</td>
+<td>- Bash scripting</td>
+</tr>
+<tr class="odd">
+<td>SQL</td>
+<td>- Data manipulation and querying</td>
+</tr>
+<tr class="even">
+<td>Jupyter</td>
+<td>- Interactive computing and data analysis</td>
+</tr>
+<tr class="odd">
+<td>Tools</td>
+<td>- RStudio, VS Code, Vim/Neovim <br> - Obsidian</td>
+</tr>
+<tr class="even">
+<td>Computational Modeling</td>
+<td>- Neural Networks <br> - Exemplar Models <br> - Similarity Scaling <br> - Approximate Bayesian Computation <br> - Individual Differences</td>
+</tr>
+<tr class="odd">
+<td>Data Analysis</td>
+<td>- Mixed Effects Models <br> - Bayesian Statistics <br> - Dimensionality reduction <br> - Frequentist ANOVA/ANCOVA/Regression</td>
+</tr>
+<tr class="even">
+<td>R Libraries</td>
+<td>- Data.table <br> - Ggplot <br> - Shiny <br> - Brms</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="nd" class="level1">
+<h1>2nd</h1>
+<table class="table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 73%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Skills/Tools</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Programming Languages</strong></td>
+<td>R, Python, Bash, MATLAB, JavaScript</td>
+</tr>
+<tr class="even">
+<td><strong>Data Analysis</strong></td>
+<td>Mixed Effects Models, Bayesian Statistics, Dimensionality Reduction, Frequentist ANOVA/ANCOVA/Regression</td>
+</tr>
+<tr class="odd">
+<td><strong>Statistical Software</strong></td>
+<td>R (Tidyverse, Data.table, Ggplot, Shiny, Brms, Rmarkdown/quarto)</td>
+</tr>
+<tr class="even">
+<td><strong>Workflow Automation</strong></td>
+<td>Multi-language workflows (R, Bash, Python, MATLAB), Workflow Scripts for statistical results, Quarto, Jupyter</td>
+</tr>
+<tr class="odd">
+<td><strong>Version Control</strong></td>
+<td>Git (documentation, branching, collaboration)</td>
+</tr>
+<tr class="even">
+<td><strong>Web Technologies</strong></td>
+<td>Qualtrics, Mechanical Turk, JavaScript (jsPsych for human subject data collection)</td>
+</tr>
+<tr class="odd">
+<td><strong>Computational Modeling</strong></td>
+<td>Neural Networks, Exemplar Models, Similarity Scaling, Approximate Bayesian Computation, Individual Differences</td>
+</tr>
+<tr class="even">
+<td><strong>Parallel Computing &amp; Remote Workflows</strong></td>
+<td>Deploying jobs across remote clusters, Supercomputer usage</td>
+</tr>
+<tr class="odd">
+<td><strong>Software &amp; Tools</strong></td>
+<td>RStudio, VS Code, Vim/Neovim, Obsidian</td>
+</tr>
+<tr class="even">
+<td><strong>Data Manipulation &amp; Visualization</strong></td>
+<td>Tidyverse (dplyr, tidyr, purrr), Data.table, Ggplot, Shiny</td>
+</tr>
+<tr class="odd">
+<td><strong>Document Creation &amp; Reporting</strong></td>
+<td>Quarto, Rmarkdown, Jupyter for documenting and communicating code, results, visuals</td>
+</tr>
+<tr class="even">
+<td><strong>Online Data Collection &amp; Analysis</strong></td>
+<td>Assessing respondent quality, reaction times analysis, contaminant models fitting</td>
+</tr>
+<tr class="odd">
+<td><strong>Shell Scripting</strong></td>
+<td>Bash</td>
+</tr>
+<tr class="even">
+<td><strong>Database Management</strong></td>
+<td>SQL</td>
+</tr>
+<tr class="odd">
+<td><strong>Professional Development</strong></td>
+<td>Avid consumer of R packages and best practices, regular follower of R Bloggers and R-related forums</td>
+</tr>
+<tr class="even">
+<td><strong>Data Collection &amp; Experimentation</strong></td>
+<td>Creating tasks for collecting human subject data (ratings, surveys, value judgements) with JavaScript</td>
+</tr>
+<tr class="odd">
+<td><strong>Miscellaneous</strong></td>
+<td>Web scraping, Profile customization and environment handling</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="rd" class="level1">
+<h1>3rd</h1>
+<p>Here’s a markdown table of your computational/technical/programming skills based on the unorganized list you provided:</p>
+<table class="table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Skill</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Multi-language workflows</td>
+<td>- Mixing R, bash, python, MATLAB <br> - Image analysis pipeline with python and R <br> - Model report pipeline: R -&gt; bash + python + javascript - quarto <br> - Backup md pipeline <br> - MRI analysis pipeline: MATLAB - bash - python</td>
+</tr>
+<tr class="even">
+<td>Workflow scripts</td>
+<td>For organizing and comparing statistical results</td>
+</tr>
+<tr class="odd">
+<td>Git</td>
+<td>- Documentation and backup <br> - Branches for major alterations or exploration <br> - Collaboration</td>
+</tr>
+<tr class="even">
+<td>Qualtrics, Mechanical Turk</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td>JavaScript (jspsych)</td>
+<td>Experience creating tasks for collecting human subject data (including ratings, survey responses, value judgments)</td>
+</tr>
+<tr class="even">
+<td>Respondent quality assessment</td>
+<td>Assessing respondent quality/good-faith via analysis of respondent reaction times, uniformity of response patterns, fitting contaminant models</td>
+</tr>
+<tr class="odd">
+<td>R</td>
+<td>- Multilevel modeling <br> - Parallel computing and remote workflows (deploying jobs across remote cluster, using supercomputer) <br> - Quarto and Rmarkdown websites for efficient documentation and communication of code, statistical results, and visuals <br> - Avid consumer of the latest R packages and best practices <br> - purrr for manipulating hierarchically structured data <br> - Web scraping <br> - Profile customization and environment handling</td>
+</tr>
+<tr class="even">
+<td>Tidyverse</td>
+<td>Engaging with the tidyverse on a daily basis, using dplyr and tidyr for the past 4 years for wrangling and summarizing dataframes, purrr for the past year for fitting models, etc.</td>
+</tr>
+<tr class="odd">
+<td>Data analysis</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Shell scripting/bash</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td>SQL</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Jupyter</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td>Version control</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>Tools</td>
+<td>Rstudio, Vs Code, Vim/Neovim, Obsidian</td>
+</tr>
+<tr class="odd">
+<td>Computational Modeling</td>
+<td>- Neural Networks <br> - Exemplar Models <br> - Similarity Scaling <br> - Approximate Bayesian Computation <br> - Individual Differences</td>
+</tr>
+<tr class="even">
+<td>Data Analysis</td>
+<td>- Mixed Effects Models <br> - Bayesian Statistics <br> - Dimensionality reduction <br> - Frequentist ANOVA/ANCOVA/Regression</td>
+</tr>
+<tr class="odd">
+<td>R</td>
+<td>- Tidyverse: dplyr, purrr <br> - Data.table <br> - Ggplot <br> - Shiny <br> - Brms <br> - Rmarkdown/quarto</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="fourth" class="level1">
+<h1>fourth</h1>
+<section id="programming" class="level3">
+<h3 class="anchored" data-anchor-id="programming">Programming</h3>
+<ul>
+<li>R
+<ul>
+<li>Rmarkdown</li>
+<li>Quarto</li>
+</ul></li>
+<li>JavaScript</li>
+<li>Bash</li>
+<li>Python</li>
+</ul>
+</section>
+<section id="computational" class="level3">
+<h3 class="anchored" data-anchor-id="computational">Computational</h3>
+<ul>
+<li>Artificial Neural Networks</li>
+<li>Exemplar Models</li>
+<li>Bayesian Statistics</li>
+<li>Mixed Effect Models</li>
+</ul>
+</section>
+<section id="experimental" class="level3">
+<h3 class="anchored" data-anchor-id="experimental">Experimental</h3>
+<ul>
+<li>Behavioral Tasks</li>
+<li>Online Data Collection - JsPsych</li>
+<li>Survey Data - Qualtrics</li>
+<li>Mechanical Turk</li>
+<li>MRI</li>
+</ul>
+</section>
+<section id="other-skills" class="level3">
+<h3 class="anchored" data-anchor-id="other-skills">Other Skills</h3>
+<ul>
+<li>Multi-language workflows
+<ul>
+<li>Mixing R, bash, python, MATLAB</li>
+<li>Image analysis pipeline with python and R</li>
+<li>Model report pipeline: R -&gt; bash + python + javascript - quarto</li>
+<li>Backup md pipeline</li>
+<li>MRI analysis pipeline: MATLAB - bash - python</li>
+</ul></li>
+<li>Workflow Scripts for organizing and comparing statistical results</li>
+<li>Git
+<ul>
+<li>Documentation and backup</li>
+<li>Branches for major alterations or exploration</li>
+<li>Collaboration</li>
+</ul></li>
+<li>Experience creating tasks in JavaScript (jspsych) for collecting human subject data (including ratings, survey responses, value judgments)</li>
+<li>Assessing respondent quality/good-faith via analysis of respondent reaction times, uniformity of response patterns, fitting contaminant models</li>
+<li>Multilevel modeling</li>
+<li>Parallel computing and remote workflows
+<ul>
+<li>Deploying jobs across remote cluster</li>
+<li>Using supercomputer</li>
+</ul></li>
+<li>Quarto and Rmarkdown websites for efficient documentation and communication of code, statistical results, and visuals</li>
+<li>Avid consumer of the latest R packages and best practices
+<ul>
+<li>Perusing R Bloggers and various R-related subreddits weekly</li>
+<li>GitHub explore page geared around suggesting popular R repos</li>
+</ul></li>
+<li>purrr for manipulating hierarchically structured data</li>
+<li>Web scraping</li>
+<li>Profile customization and environment handling</li>
+<li>Tidyverse
+<ul>
+<li>Daily engagement with the tidyverse</li>
+<li>Using dplyr and tidyr for the past 4 years for wrangling and summarizing dataframes</li>
+<li>Using purrr for the past year for fitting models, etc.</li>
+</ul></li>
+<li>Data analysis</li>
+<li>Shell scripting/bash</li>
+<li>SQL</li>
+<li>Jupyter</li>
+<li>Version control</li>
+<li>Tools: Rstudio, Vs Code, Vim/Neovim, Obsidian</li>
+</ul>
+</section>
+</section>
+<section id="fifth" class="level1">
+<h1>Fifth</h1>
+<section id="programming-languages" class="level3">
+<h3 class="anchored" data-anchor-id="programming-languages">Programming Languages</h3>
+<ul>
+<li><strong>R</strong> (Rmarkdown, Quarto, Tidyverse including dplyr and tidyr, Data.table, Ggplot, Shiny, Brms)</li>
+<li><strong>JavaScript</strong> (Experience creating tasks for collecting human subject data with jspsych)</li>
+<li><strong>Bash</strong> (Shell scripting, Workflow automation)</li>
+<li><strong>Python</strong> (Data analysis, Scripting for various pipelines)</li>
+</ul>
+</section>
+<section id="computational-skills" class="level3">
+<h3 class="anchored" data-anchor-id="computational-skills">Computational Skills</h3>
+<ul>
+<li><strong>Artificial Neural Networks</strong></li>
+<li><strong>Exemplar Models</strong></li>
+<li><strong>Bayesian Statistics</strong></li>
+<li><strong>Mixed Effect Models</strong></li>
+<li><strong>Similarity Scaling</strong></li>
+<li><strong>Approximate Bayesian Computation</strong></li>
+<li><strong>Individual Differences</strong></li>
+</ul>
+</section>
+<section id="data-analysis-techniques" class="level3">
+<h3 class="anchored" data-anchor-id="data-analysis-techniques">Data Analysis Techniques</h3>
+<ul>
+<li><strong>Multilevel Modeling</strong></li>
+<li><strong>Bayesian Statistics</strong></li>
+<li><strong>Mixed Effects Models</strong></li>
+<li><strong>Dimensionality Reduction</strong></li>
+<li><strong>Frequentist ANOVA/ANCOVA/Regression</strong></li>
+<li><strong>Parallel Computing and Remote Workflows</strong> (Deploying jobs across remote clusters, Using supercomputers)</li>
+</ul>
+</section>
+<section id="experimental-skills" class="level3">
+<h3 class="anchored" data-anchor-id="experimental-skills">Experimental Skills</h3>
+<ul>
+<li><strong>Behavioral Tasks</strong></li>
+<li><strong>Online Data Collection</strong> (jsPsych for web-based experiments)</li>
+<li><strong>Survey Data Collection</strong> (Qualtrics)</li>
+<li><strong>Use of Mechanical Turk for data collection</strong></li>
+<li><strong>MRI Data Analysis</strong></li>
+</ul>
+</section>
+<section id="workflow-automation-version-control" class="level3">
+<h3 class="anchored" data-anchor-id="workflow-automation-version-control">Workflow Automation &amp; Version Control</h3>
+<ul>
+<li>Multi-language workflows (integrating R, Bash, Python, MATLAB)</li>
+<li>Git (Documentation, backup, branching for major alterations or explorations, collaboration)</li>
+</ul>
+</section>
+<section id="professional-development-tools" class="level3">
+<h3 class="anchored" data-anchor-id="professional-development-tools">Professional Development &amp; Tools</h3>
+<ul>
+<li>Avid consumer of the latest R packages and best practices, regular engagement with R Bloggers and various R-related forums.</li>
+<li><strong>Tools</strong>: RStudio, VS Code, Vim/Neovim, Obsidian.</li>
+</ul>
+</section>
+<section id="miscellaneous-skills" class="level3">
+<h3 class="anchored" data-anchor-id="miscellaneous-skills">Miscellaneous Skills</h3>
+<ul>
+<li><strong>Web Scraping</strong></li>
+<li><strong>SQL for Database Management</strong></li>
+<li><strong>Jupyter for Interactive Notebooks</strong></li>
+<li><strong>Profile Customization and Environment Handling</strong></li>
+</ul>
+</section>
+</section>
+<section id="b" class="level1">
+<h1>5b</h1>
+<table class="table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Skills</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Programming Languages</strong></td>
+<td><strong>R</strong> (Rmarkdown, Quarto, Tidyverse including dplyr and tidyr, Data.table, Ggplot, Shiny, Brms), <strong>JavaScript</strong> (Experience creating tasks for collecting human subject data with jspsych), <strong>Bash</strong> (Shell scripting, Workflow automation), <strong>Python</strong> (Data analysis, Scripting for various pipelines)</td>
+</tr>
+<tr class="even">
+<td><strong>Computational Skills</strong></td>
+<td><strong>Artificial Neural Networks</strong>, <strong>Exemplar Models</strong>, <strong>Bayesian Statistics</strong>, <strong>Mixed Effect Models</strong>, <strong>Similarity Scaling</strong>, <strong>Approximate Bayesian Computation</strong>, <strong>Individual Differences</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Data Analysis Techniques</strong></td>
+<td><strong>Multilevel Modeling</strong>, <strong>Bayesian Statistics</strong>, <strong>Mixed Effects Models</strong>, <strong>Dimensionality Reduction</strong>, <strong>Frequentist ANOVA/ANCOVA/Regression</strong>, <strong>Parallel Computing and Remote Workflows</strong> (Deploying jobs across remote clusters, Using supercomputers)</td>
+</tr>
+<tr class="even">
+<td><strong>Experimental Skills</strong></td>
+<td><strong>Behavioral Tasks</strong>, <strong>Online Data Collection</strong> (jsPsych for web-based experiments), <strong>Survey Data Collection</strong> (Qualtrics), <strong>Use of Mechanical Turk for data collection</strong>, <strong>MRI Data Analysis</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Workflow Automation and Version Control</strong></td>
+<td>Multi-language workflows (integrating R, Bash, Python, MATLAB), <strong>Git</strong> (Documentation, backup, branching for major alterations or explorations, collaboration)</td>
+</tr>
+<tr class="even">
+<td><strong>Professional Development and Tools</strong></td>
+<td>Avid consumer of the latest R packages and best practices, regular engagement with R Bloggers and various R-related forums. <strong>Tools</strong>: RStudio, VS Code, Vim/Neovim, Obsidian.</td>
+</tr>
+<tr class="odd">
+<td><strong>Miscellaneous Skills</strong></td>
+<td><strong>Web Scraping</strong>, <strong>SQL for Database Management</strong>, <strong>Jupyter for Interactive Notebooks</strong>, <strong>Profile Customization and Environment Handling</strong></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="c" class="level1">
+<h1>5c</h1>
+<table class="table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 76%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Skills</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Programming Languages</strong></td>
+<td>- R (Rmarkdown, Quarto, Tidyverse including dplyr and tidyr, Data.table, Ggplot, Shiny, Brms)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>- JavaScript (Experience creating tasks for collecting human subject data with jspsych)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>- Bash (Shell scripting, Workflow automation)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>- Python (Data analysis, Scripting for various pipelines)</td>
+</tr>
+<tr class="odd">
+<td><strong>Computational Skills</strong></td>
+<td>- Artificial Neural Networks</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>- Exemplar Models</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>- Bayesian Statistics</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>- Mixed Effect Models</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>- Similarity Scaling</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>- Approximate Bayesian Computation</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>- Individual Differences</td>
+</tr>
+<tr class="even">
+<td><strong>Data Analysis Techniques</strong></td>
+<td>- Multilevel Modeling</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>- Bayesian Statistics</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>- Mixed Effects Models</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>- Dimensionality Reduction</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>- Frequentist ANOVA/ANCOVA/Regression</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>- Parallel Computing and Remote Workflows (Deploying jobs across remote clusters, Using supercomputers)</td>
+</tr>
+<tr class="even">
+<td><strong>Experimental Skills</strong></td>
+<td>- Behavioral Tasks</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>- Online Data Collection (jsPsych for web-based experiments)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>- Survey Data Collection (Qualtrics)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>- Use of Mechanical Turk for data collection</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>- MRI Data Analysis</td>
+</tr>
+<tr class="odd">
+<td><strong>Workflow Automation and Version Control</strong></td>
+<td>- Multi-language workflows (integrating R, Bash, Python, MATLAB)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>- Git (Documentation, backup, branching for major alterations or explorations, collaboration)</td>
+</tr>
+<tr class="odd">
+<td><strong>Professional Development and Tools</strong></td>
+<td>- Avid consumer of the latest R packages and best practices, regular engagement with R Bloggers and various R-related forums.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>- Tools: RStudio, VS Code, Vim/Neovim, Obsidian.</td>
+</tr>
+<tr class="odd">
+<td><strong>Miscellaneous Skills</strong></td>
+<td>- Web Scraping</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>- SQL for Database Management</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>- Jupyter for Interactive Notebooks</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>- Profile Customization and Environment Handling</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="d" class="level1">
+<h1>5d</h1>
+<p><strong>Programming Languages</strong></p>
+<ul>
+<li><strong>R</strong> (Rmarkdown, Quarto, Tidyverse including dplyr and tidyr, Data.table, Ggplot, Shiny, Brms)</li>
+<li><strong>JavaScript</strong> (Experience creating tasks for collecting human subject data with jspsych)</li>
+<li><strong>Bash</strong> (Shell scripting, Workflow automation)</li>
+<li><strong>Python</strong> (Data analysis, Scripting for various pipelines)</li>
+</ul>
+<p><strong>Computational Skills</strong></p>
+<ul>
+<li><strong>Artificial Neural Networks</strong></li>
+<li><strong>Exemplar Models</strong></li>
+<li><strong>Bayesian Statistics</strong></li>
+<li><strong>Mixed Effect Models</strong></li>
+<li><strong>Similarity Scaling</strong></li>
+<li><strong>Approximate Bayesian Computation</strong></li>
+<li><strong>Individual Differences</strong></li>
+</ul>
+<p><strong>Data Analysis Techniques</strong></p>
+<ul>
+<li><strong>Multilevel Modeling</strong></li>
+<li><strong>Bayesian Statistics</strong></li>
+<li><strong>Mixed Effects Models</strong></li>
+<li><strong>Dimensionality Reduction</strong></li>
+<li><strong>Frequentist ANOVA/ANCOVA/Regression</strong></li>
+<li><strong>Parallel Computing and Remote Workflows</strong> (Deploying jobs across remote clusters, Using supercomputers)</li>
+</ul>
+<p><strong>Experimental Skills</strong></p>
+<ul>
+<li><strong>Behavioral Tasks</strong></li>
+<li><strong>Online Data Collection</strong> (jsPsych for web-based experiments)</li>
+<li><strong>Survey Data Collection</strong> (Qualtrics)</li>
+<li><strong>Use of Mechanical Turk for data collection</strong></li>
+<li><strong>MRI Data Analysis</strong></li>
+</ul>
+<p><strong>Workflow Automation &amp; Version Control</strong></p>
+<ul>
+<li>Multi-language workflows (integrating R, Bash, Python, MATLAB)</li>
+<li>Git (Documentation, backup, branching for major alterations or explorations, collaboration)</li>
+<li><strong>Tools</strong>: RStudio, VS Code, Vim/Neovim, Obsidian.</li>
+</ul>
+<p><strong>Miscellaneous Skills</strong></p>
+<ul>
+<li><strong>Web Scraping</strong></li>
+<li><strong>SQL for Database Management</strong></li>
+<li><strong>Jupyter for Interactive Notebooks</strong></li>
+<li><strong>Profile Customization and Environment Handling</strong></li>
+</ul>
+</section>
+<section id="e" class="level1">
+<h1>5e</h1>
+<p>Programming Languages<br>
+- <strong>R</strong> (Rmarkdown, Quarto, Tidyverse including dplyr and tidyr, Data.table, Ggplot, Shiny, Brms)<br>
+- <strong>JavaScript</strong> (Experience creating tasks for collecting human subject data with jspsych)<br>
+- <strong>Bash</strong> (Shell scripting, Workflow automation)<br>
+- <strong>Python</strong> (Data analysis, Scripting for various pipelines)</p>
+<p>Computational Skills<br>
+- <strong>Artificial Neural Networks</strong><br>
+- <strong>Exemplar Models</strong><br>
+- <strong>Bayesian Statistics</strong><br>
+- <strong>Mixed Effect Models</strong><br>
+- <strong>Similarity Scaling</strong><br>
+- <strong>Approximate Bayesian Computation</strong><br>
+- <strong>Individual Differences</strong></p>
+<p>Data Analysis Techniques<br>
+- <strong>Multilevel Modeling</strong><br>
+- <strong>Bayesian Statistics</strong><br>
+- <strong>Mixed Effects Models</strong><br>
+- <strong>Dimensionality Reduction</strong><br>
+- <strong>Frequentist ANOVA/ANCOVA/Regression</strong><br>
+- <strong>Parallel Computing and Remote Workflows</strong> (Deploying jobs across remote clusters, Using supercomputers)</p>
+<p>Experimental Skills<br>
+- <strong>Behavioral Tasks</strong><br>
+- <strong>Online Data Collection</strong> (jsPsych for web-based experiments)<br>
+- <strong>Survey Data Collection</strong> (Qualtrics)<br>
+- <strong>Use of Mechanical Turk for data collection</strong><br>
+- <strong>MRI Data Analysis</strong></p>
+<p>Workflow Automation &amp; Version Control<br>
+- Multi-language workflows (integrating R, Bash, Python, MATLAB)<br>
+- Git (Documentation, backup, branching for major alterations or explorations, collaboration)</p>
+<ul>
+<li><strong>Tools</strong>: RStudio, VS Code, Vim/Neovim, Obsidian.</li>
+</ul>
+<p>Miscellaneous Skills<br>
+- <strong>Web Scraping</strong><br>
+- <strong>SQL for Database Management</strong><br>
+- <strong>Jupyter for Interactive Notebooks</strong><br>
+- <strong>Profile Customization and Environment Handling</strong></p>
+</section>
+<section id="f" class="level1">
+<h1>5f</h1>
+<table class="table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Skills</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Programming Languages</td>
+<td>R, JavaScript, Bash, Python</td>
+</tr>
+<tr class="even">
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td>R Packages</td>
+<td>Rmarkdown, Quarto, Tidyverse (dplyr, tidyr), Data.table, Ggplot, Shiny, Brms</td>
+</tr>
+<tr class="even">
+<td>JavaScript Libraries</td>
+<td>jsPsych</td>
+</tr>
+<tr class="odd">
+<td>Bash</td>
+<td>Shell scripting, Workflow automation</td>
+</tr>
+<tr class="even">
+<td>Python</td>
+<td>Data analysis, Scripting for various pipelines</td>
+</tr>
+<tr class="odd">
+<td>Computational Skills</td>
+<td>Artificial Neural Networks, Exemplar Models, Bayesian Statistics, Mixed Effect Models, Similarity Scaling, Approximate Bayesian Computation, Individual Differences</td>
+</tr>
+<tr class="even">
+<td>Data Analysis Techniques</td>
+<td>Multilevel Modeling, Bayesian Statistics, Mixed Effects Models, Dimensionality Reduction, Frequentist ANOVA/ANCOVA/Regression, Parallel Computing and Remote Workflows</td>
+</tr>
+<tr class="odd">
+<td>Experimental Skills</td>
+<td>Behavioral Tasks, Online Data Collection, Survey Data Collection, Use of Mechanical Turk for data collection, MRI Data Analysis</td>
+</tr>
+<tr class="even">
+<td>Workflow Automation &amp; Version Control</td>
+<td>Multi-language workflows, Git</td>
+</tr>
+<tr class="odd">
+<td>Tools</td>
+<td>RStudio, VS Code, Vim/Neovim, Obsidian, Jupyter</td>
+</tr>
+<tr class="even">
+<td>Miscellaneous Skills</td>
+<td>Web Scraping, SQL for Database Management, Profile Customization and Environment Handling</td>
+</tr>
+</tbody>
+</table>
+<p>In this format, the skills are organized into categories in a table format, which may make it easier to read and compare skills across categories. The first column lists the category, and the second column lists the corresponding skills. For some categories, there are subcategories listed in the first column to provide more specific information about the skills.</p>
+</section>
+<section id="g" class="level1">
+<h1>5g</h1>
+<p><strong>Programming Languages:</strong><br>
+R (Rmarkdown, Quarto, Tidyverse, Data.table, Ggplot, Shiny, Brms), JavaScript (jspsych), Bash (Shell scripting, Workflow automation), Python (Data analysis, Scripting)</p>
+<p><strong>Computational Skills:</strong><br>
+Artificial Neural Networks, Exemplar Models, Bayesian Statistics, Mixed Effect Models, Similarity Scaling, Approximate Bayesian Computation, Individual Differences</p>
+<p><strong>Data Analysis Techniques:</strong><br>
+Multilevel Modeling, Bayesian Statistics, Mixed Effects Models, Dimensionality Reduction, Frequentist ANOVA/ANCOVA/Regression, Parallel Computing and Remote Workflows</p>
+<p><strong>Experimental Skills:</strong><br>
+Behavioral Tasks, Online Data Collection (jsPsych), Survey Data Collection (Qualtrics), Use of Mechanical Turk, MRI Data Analysis</p>
+<p><strong>Workflow Automation &amp; Version Control:</strong><br>
+Multi-language workflows (R, Bash, Python, MATLAB), Git (Documentation, backup, branching, collaboration)</p>
+<p><strong>Tools:</strong><br>
+RStudio, VS Code, Vim/Neovim, Obsidian</p>
+<p><strong>Miscellaneous Skills:</strong><br>
+Web Scraping, SQL for Database Management, Jupyter for Interactive Notebooks, Profile Customization and Environment Handling</p>
+</section>
+<section id="h" class="level1">
+<h1>5h</h1>
+<table class="table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Skills</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Programming Languages</td>
+<td>R (Rmarkdown, Quarto, Tidyverse including dplyr and tidyr, Data.table, Ggplot, Shiny, Brms), JavaScript (Experience creating tasks for collecting human subject data with jspsych), Bash (Shell scripting, Workflow automation), Python (Data analysis, Scripting for various pipelines)</td>
+</tr>
+<tr class="even">
+<td>Computational Skills</td>
+<td>Artificial Neural Networks, Exemplar Models, Bayesian Statistics, Mixed Effect Models, Similarity Scaling, Approximate Bayesian Computation, Individual Differences</td>
+</tr>
+<tr class="odd">
+<td>Data Analysis Techniques</td>
+<td>Multilevel Modeling, Bayesian Statistics, Mixed Effects Models, Dimensionality Reduction, Frequentist ANOVA/ANCOVA/Regression, Parallel Computing and Remote Workflows (Deploying jobs across remote clusters, Using supercomputers)</td>
+</tr>
+<tr class="even">
+<td>Experimental Skills</td>
+<td>Behavioral Tasks, Online Data Collection (jsPsych for web-based experiments), Survey Data Collection (Qualtrics), Use of Mechanical Turk for data collection, MRI Data Analysis</td>
+</tr>
+<tr class="odd">
+<td>Workflow Automation &amp; Version Control</td>
+<td>Multi-language workflows (integrating R, Bash, Python, MATLAB), Git (Documentation, backup, branching for major alterations or explorations, collaboration)</td>
+</tr>
+<tr class="even">
+<td>Tools</td>
+<td>RStudio, VS Code, Vim/Neovim, Obsidian, Jupyter</td>
+</tr>
+<tr class="odd">
+<td>Miscellaneous Skills</td>
+<td>Web Scraping, SQL for Database Management, Profile Customization and Environment Handling</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="i" class="level1">
+<h1>5i</h1>
+<p><strong>Programming Languages:</strong> R (Rmarkdown, Quarto, Tidyverse including dplyr and tidyr, Data.table, Ggplot, Shiny, Brms), JavaScript (Experience creating tasks for collecting human subject data with jspsych), Bash (Shell scripting, Workflow automation), Python (Data analysis, Scripting for various pipelines).</p>
+<p><strong>Computational Skills:</strong> Artificial Neural Networks, Exemplar Models, Bayesian Statistics, Mixed Effect Models, Similarity Scaling, Approximate Bayesian Computation, Individual Differences.</p>
+<p><strong>Data Analysis Techniques:</strong> Multilevel Modeling, Bayesian Statistics, Mixed Effects Models, Dimensionality Reduction, Frequentist ANOVA/ANCOVA/Regression, Parallel Computing and Remote Workflows (Deploying jobs across remote clusters, Using supercomputers).</p>
+<p><strong>Experimental Skills:</strong> Behavioral Tasks, Online Data Collection (jsPsych for web-based experiments), Survey Data Collection (Qualtrics), Use of Mechanical Turk for data collection, MRI Data Analysis.</p>
+<p><strong>Workflow Automation &amp; Version Control:</strong> Multi-language workflows (integrating R, Bash, Python, MATLAB), Git (Documentation, backup, branching for major alterations or explorations, collaboration).</p>
+<p><strong>Tools:</strong> RStudio, VS Code, Vim/Neovim, Obsidian.</p>
+<p><strong>Miscellaneous Skills:</strong> Web Scraping, SQL for Database Management, Jupyter for Interactive Notebooks, Profile Customization and Environment Handling.</p>
+</section>
+<section id="j" class="level1">
+<h1>5j</h1>
+<table class="table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Skills</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Programming Languages</td>
+<td>- R: Rmarkdown, Quarto, Tidyverse (dplyr, tidyr), Data.table, Ggplot, Shiny, Brms <br> - JavaScript: Experience with jspsych for human subject data collection <br> - Bash: Shell scripting, Workflow automation <br> - Python: Data analysis, Scripting</td>
+</tr>
+<tr class="even">
+<td>Computational Skills</td>
+<td>- Artificial Neural Networks <br> - Exemplar Models <br> - Bayesian Statistics <br> - Mixed Effect Models <br> - Similarity Scaling <br> - Approximate Bayesian Computation <br> - Individual Differences</td>
+</tr>
+<tr class="odd">
+<td>Data Analysis Techniques</td>
+<td>- Multilevel Modeling <br> - Bayesian Statistics <br> - Mixed Effects Models <br> - Dimensionality Reduction <br> - Frequentist ANOVA/ANCOVA/Regression <br> - Parallel Computing and Remote Workflows: Deploying jobs across remote clusters, Using supercomputers</td>
+</tr>
+<tr class="even">
+<td>Experimental Skills</td>
+<td>- Behavioral Tasks <br> - Online Data Collection: jsPsych <br> - Survey Data Collection: Qualtrics <br> - Use of Mechanical Turk for data collection <br> - MRI Data Analysis</td>
+</tr>
+<tr class="odd">
+<td>Workflow Automation &amp; Version Control</td>
+<td>- Multi-language workflows: Integrating R, Bash, Python, MATLAB <br> - Git: Documentation, backup, branching for major alterations or explorations, collaboration</td>
+</tr>
+<tr class="even">
+<td>Tools</td>
+<td>- RStudio <br> - VS Code <br> - Vim/Neovim <br> - Obsidian <br> - Jupyter</td>
+</tr>
+<tr class="odd">
+<td>Miscellaneous Skills</td>
+<td>- Web Scraping <br> - SQL for Database Management <br> - Profile Customization and Environment Handling</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="k" class="level1">
+<h1>5k</h1>
+<table class="table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Skills</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Programming Languages</td>
+<td>- R (Rmarkdown, Quarto, Tidyverse including dplyr and tidyr, Data.table, Ggplot, Shiny, Brms) <br> - JavaScript (Experience creating tasks for collecting human subject data with jspsych) <br> - Bash (Shell scripting, Workflow automation) <br> - Python (Data analysis, Scripting for various pipelines)</td>
+</tr>
+<tr class="even">
+<td>Computational Skills</td>
+<td>- Artificial Neural Networks <br> - Exemplar Models <br> - Bayesian Statistics <br> - Mixed Effect Models <br> - Similarity Scaling <br> - Approximate Bayesian Computation <br> - Individual Differences</td>
+</tr>
+<tr class="odd">
+<td>Data Analysis Techniques</td>
+<td>- Multilevel Modeling <br> - Bayesian Statistics <br> - Mixed Effects Models <br> - Dimensionality Reduction <br> - Frequentist ANOVA/ANCOVA/Regression <br> - Parallel Computing and Remote Workflows (Deploying jobs across remote clusters, Using supercomputers)</td>
+</tr>
+<tr class="even">
+<td>Experimental Skills</td>
+<td>- Behavioral Tasks <br> - Online Data Collection (jsPsych for web-based experiments) <br> - Survey Data Collection (Qualtrics) <br> - Use of Mechanical Turk for data collection <br> - MRI Data Analysis</td>
+</tr>
+<tr class="odd">
+<td>Workflow Automation &amp; Version Control</td>
+<td>- Multi-language workflows (integrating R, Bash, Python, MATLAB) <br> - Git (Documentation, backup, branching for major alterations or explorations, collaboration)</td>
+</tr>
+<tr class="even">
+<td>Tools</td>
+<td>- RStudio <br> - VS Code <br> - Vim/Neovim <br> - Obsidian <br> - Jupyter</td>
+</tr>
+<tr class="odd">
+<td>Miscellaneous Skills</td>
+<td>- Web Scraping <br> - SQL for Database Management <br> - Profile Customization and Environment Handling</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="l" class="level1">
+<h1>5l</h1>
+<table class="table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Skills</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Programming Languages</td>
+<td>- R <br> - JavaScript <br> - Bash <br> - Python</td>
+<td>R: Rmarkdown, Quarto, Tidyverse (dplyr, tidyr), Data.table, Ggplot, Shiny, Brms <br> JavaScript: Experience with jspsych for human subject data collection <br> Bash: Shell scripting, Workflow automation <br> Python: Data analysis, Scripting</td>
+</tr>
+<tr class="even">
+<td>Computational Skills</td>
+<td>- Artificial Neural Networks <br> - Exemplar Models <br> - Bayesian Statistics <br> - Mixed Effect Models <br> - Similarity Scaling <br> - Approximate Bayesian Computation <br> - Individual Differences</td>
+<td>Utilizing complex models and statistical approaches for data analysis and predictive modeling</td>
+</tr>
+<tr class="odd">
+<td>Data Analysis Techniques</td>
+<td>- Multilevel Modeling <br> - Bayesian Statistics <br> - Mixed Effects Models <br> - Dimensionality Reduction <br> - Frequentist Statistics <br> - Parallel Computing</td>
+<td>Advanced statistical methods for data analysis, including use of remote workflows and computing resources</td>
+</tr>
+<tr class="even">
+<td>Experimental Skills</td>
+<td>- Behavioral Tasks <br> - Online Data Collection <br> - Survey Data Collection <br> - Use of Mechanical Turk <br> - MRI Data Analysis</td>
+<td>Designing and conducting experiments, collecting and analyzing data from various sources</td>
+</tr>
+<tr class="odd">
+<td>Workflow Automation &amp; Version Control</td>
+<td>- Multi-language workflows <br> - Git</td>
+<td>Integrating R, Bash, Python, MATLAB for streamlined processes; using Git for version control</td>
+</tr>
+<tr class="even">
+<td>Tools</td>
+<td>- RStudio <br> - VS Code <br> - Vim/Neovim <br> - Obsidian <br> - Jupyter</td>
+<td>Essential software tools for development, analysis, and documentation</td>
+</tr>
+<tr class="odd">
+<td>Miscellaneous Skills</td>
+<td>- Web Scraping <br> - SQL <br> - Profile Customization <br> - Environment Handling</td>
+<td>Techniques for data extraction, database management, and optimizing computing environments</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="m" class="level1">
+<h1>5m</h1>
+</section>
+<section id="sixth" class="level1">
+<h1>Sixth</h1>
+<section id="computational-and-programming-skills" class="level2">
+<h2 class="anchored" data-anchor-id="computational-and-programming-skills">Computational and Programming Skills</h2>
+<ul>
+<li><p><strong>Programming Languages:</strong> Proficient in R (Rmarkdown, Quarto), JavaScript, Bash, and Python. Experience with multi-language workflows, including mixing R, Bash, Python, and MATLAB.</p>
+<ul>
+<li><p><strong>R:</strong> Skilled in multilevel modeling, parallel computing, and remote workflows. Experience with Quarto and Rmarkdown for efficient documentation and communication of code, statistical results, and visuals. Avid consumer of the latest R packages and best practices. Proficient in using purrr to manipulate hierarchically structured data and web scraping.</p></li>
+<li><p><strong>Tidyverse:</strong> Daily engagement with the tidyverse, using dplyr and tidyr for the past 4 years for data wrangling and summarizing. Proficient in using purrr for fitting models.</p></li>
+<li><p><strong>Python:</strong> Experience with image analysis pipeline and MRI analysis pipeline using Python.</p></li>
+<li><p><strong>Bash:</strong> Experience with shell scripting and workflow scripts for organizing and comparing statistical results.</p></li>
+<li><p><strong>JavaScript:</strong> Experience creating tasks for collecting human subject data using jsPsych.</p></li>
+</ul></li>
+<li><p><strong>Version Control:</strong> Proficient in using Git for documentation, backup, collaboration, and branching for major alterations or exploration.</p></li>
+<li><p><strong>Tools:</strong> Experience with RStudio, VS Code, Vim/Neovim, Obsidian, Jupyter, and SQL.</p></li>
+</ul>
+</section>
+<section id="data-analysis-skills" class="level2">
+<h2 class="anchored" data-anchor-id="data-analysis-skills">Data Analysis Skills</h2>
+<ul>
+<li><p><strong>Statistical Analysis:</strong> Proficient in Mixed Effects Models, Bayesian Statistics, Frequentist ANOVA/ANCOVA/Regression, and Dimensionality Reduction. Experience with brms package in R for Bayesian modeling.</p></li>
+<li><p><strong>Data Wrangling and Visualization:</strong> Proficient in using data.table, ggplot, and Shiny in R for data manipulation, visualization, and creating interactive web applications.</p></li>
+<li><p><strong>Data Collection and Quality Assessment:</strong> Experience with online data collection using Qualtrics and Mechanical Turk. Skilled in assessing respondent quality/good-faith via analysis of respondent reaction times, uniformity of response patterns, and fitting contaminant models.</p></li>
+</ul>
+</section>
+<section id="computational-modelling-skills" class="level2">
+<h2 class="anchored" data-anchor-id="computational-modelling-skills">Computational Modelling Skills</h2>
+<ul>
+<li><p><strong>Neural Networks:</strong> Experience with Artificial Neural Networks for computational modeling.</p></li>
+<li><p><strong>Exemplar Models:</strong> Experience with Exemplar Models for computational modeling.</p></li>
+<li><p><strong>Similarity Scaling:</strong> Experience with Similarity Scaling for computational modeling.</p></li>
+<li><p><strong>Approximate Bayesian Computation:</strong> Experience with Approximate Bayesian Computation for computational modeling.</p></li>
+<li><p><strong>Individual Differences:</strong> Experience with modeling Individual Differences in computational modeling.</p></li>
+</ul>
+</section>
+<section id="experimental-skills-1" class="level2">
+<h2 class="anchored" data-anchor-id="experimental-skills-1">Experimental Skills</h2>
+<ul>
+<li><p><strong>Behavioral Tasks:</strong> Experience with creating and conducting behavioral tasks.</p></li>
+<li><p><strong>Online Data Collection:</strong> Experience with online data collection using tools like JsPsych.</p></li>
+<li><p><strong>Survey Data:</strong> Experience with collecting and analyzing survey data using Qualtrics.</p></li>
+<li><p><strong>MRI:</strong> Experience with MRI data analysis pipeline using MATLAB, Bash, and Python.</p></li>
+</ul>
+</section>
+</section>
+<section id="seventh---condensed" class="level1">
+<h1>Seventh - Condensed</h1>
+<section id="programming-languages-and-tools" class="level3">
+<h3 class="anchored" data-anchor-id="programming-languages-and-tools">Programming Languages and Tools</h3>
+<ul>
+<li><strong>R</strong>: Advanced data analysis, visualization (Ggplot, Shiny), modeling (Brms), and automation (Rmarkdown, Quarto).</li>
+<li><strong>Python</strong>: Data processing, modeling, and analysis in cognitive science research.</li>
+<li><strong>MATLAB</strong>: Experience with MRI data analysis and modeling workflows.</li>
+<li><strong>Bash</strong>: Scripting for data processing and automation of workflows.</li>
+<li><strong>JavaScript</strong>: Developing behavioral and cognitive tasks with jsPsych for online data collection.</li>
+</ul>
+</section>
+<section id="computational-modeling-and-data-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="computational-modeling-and-data-analysis">Computational Modeling and Data Analysis</h3>
+<ul>
+<li><strong>Artificial Neural Networks &amp; Exemplar Models</strong>: Expertise in simulating cognitive processes and pattern recognition.</li>
+<li><strong>Bayesian Statistics &amp; Mixed Effect Models</strong>: Advanced statistical analysis for cognitive science research.</li>
+<li><strong>Approximate Bayesian Computation &amp; Dimensionality Reduction</strong>: Techniques for complex model fitting and data simplification.</li>
+<li><strong>Multilevel Modeling</strong>: Handling nested or hierarchical data structures common in cognitive and behavioral data.</li>
+</ul>
+</section>
+<section id="experimental-skills-2" class="level3">
+<h3 class="anchored" data-anchor-id="experimental-skills-2">Experimental Skills</h3>
+<ul>
+<li><strong>Online Data Collection</strong>: Designing and implementing studies using Qualtrics and jsPsych.</li>
+<li><strong>MRI Data Analysis</strong>: Processing and analyzing neuroimaging data to understand cognitive functions.</li>
+</ul>
+</section>
+<section id="version-control-and-collaboration" class="level3">
+<h3 class="anchored" data-anchor-id="version-control-and-collaboration">Version Control and Collaboration</h3>
+<ul>
+<li><strong>Git</strong>: Proficient in using Git for version control, collaboration, and documentation of research projects.</li>
+</ul>
+</section>
+<section id="professional-engagement" class="level3">
+<h3 class="anchored" data-anchor-id="professional-engagement">Professional Engagement</h3>
+<ul>
+<li>Active participant in the computational cognitive science community, staying updated with the latest methods and practices through forums, blogs, and GitHub.</li>
+</ul>
+</section>
+</section>
+<section id="eigth" class="level1">
+<h1>Eigth</h1>
+<section id="computational-and-programming-skills-1" class="level2">
+<h2 class="anchored" data-anchor-id="computational-and-programming-skills-1">Computational and Programming Skills</h2>
+<ul>
+<li><p><strong>Programming Languages:</strong> Proficient in R, Python, and Bash. Experience with multi-language workflows, including mixing R, Bash, and Python.</p>
+<ul>
+<li><p><strong>R:</strong> Skilled in multilevel modeling, parallel computing, and remote workflows. Experience with Rmarkdown and Quarto for efficient documentation and communication of code, statistical results, and visuals. Proficient in using purrr to manipulate hierarchically structured data.</p></li>
+<li><p><strong>Python:</strong> Experience with image analysis pipeline and MRI analysis pipeline using Python.</p></li>
+<li><p><strong>Bash:</strong> Experience with shell scripting and workflow scripts for organizing and comparing statistical results.</p></li>
+</ul></li>
+<li><p><strong>Version Control:</strong> Proficient in using Git for documentation, backup, collaboration, and branching for major alterations or exploration.</p></li>
+<li><p><strong>Tools:</strong> Experience with RStudio, VS Code, Jupyter, and SQL.</p></li>
+</ul>
+</section>
+<section id="data-analysis-skills-1" class="level2">
+<h2 class="anchored" data-anchor-id="data-analysis-skills-1">Data Analysis Skills</h2>
+<ul>
+<li><p><strong>Statistical Analysis:</strong> Proficient in Mixed Effects Models, Bayesian Statistics, and Dimensionality Reduction. Experience with brms package in R for Bayesian modeling.</p></li>
+<li><p><strong>Data Wrangling and Visualization:</strong> Proficient in using data.table and ggplot in R for data manipulation and visualization.</p></li>
+</ul>
+</section>
+<section id="computational-modelling-skills-1" class="level2">
+<h2 class="anchored" data-anchor-id="computational-modelling-skills-1">Computational Modelling Skills</h2>
+<ul>
+<li><p><strong>Neural Networks:</strong> Experience with Artificial Neural Networks for computational modeling.</p></li>
+<li><p><strong>Exemplar Models:</strong> Experience with Exemplar Models for computational modeling.</p></li>
+<li><p><strong>Approximate Bayesian Computation:</strong> Experience with Approximate Bayesian Computation for computational modeling.</p></li>
+<li><p><strong>Individual Differences:</strong> Experience with modeling Individual Differences in computational modeling.</p></li>
+</ul>
+</section>
+<section id="experimental-skills-3" class="level2">
+<h2 class="anchored" data-anchor-id="experimental-skills-3">Experimental Skills</h2>
+<ul>
+<li><p><strong>Behavioral Tasks:</strong> Experience with creating and conducting behavioral tasks.</p></li>
+<li><p><strong>Online Data Collection:</strong> Experience with online data collection using tools like JsPsych.</p></li>
+<li><p><strong>MRI:</strong> Experience with MRI data analysis pipeline using MATLAB, Bash, and Python.Geplaatst Sure, here’s a more condensed version of your computational and programming skills, tailored for a post-doctoral computational cognitive modeling CV:</p></li>
+</ul>
+</section>
+<section id="computational-and-programming-skills-2" class="level2">
+<h2 class="anchored" data-anchor-id="computational-and-programming-skills-2">Computational and Programming Skills</h2>
+<ul>
+<li><strong>Languages:</strong> Proficient in R, Python, and Bash. Experience with multi-language workflows.
+<ul>
+<li><strong>R:</strong> Skilled in multilevel modeling, parallel computing, and remote workflows. Experience with Rmarkdown and Quarto for documentation. Proficient in using purrr for data manipulation.</li>
+<li><strong>Python:</strong> Experience with image and MRI analysis pipelines.</li>
+<li><strong>Bash:</strong> Experience with shell scripting and workflow organization.</li>
+</ul></li>
+<li><strong>Version Control:</strong> Proficient in Git for documentation, backup, and collaboration.</li>
+<li><strong>Tools:</strong> Experience with RStudio, VS Code, Jupyter, and SQL.</li>
+</ul>
+</section>
+<section id="data-analysis-skills-2" class="level2">
+<h2 class="anchored" data-anchor-id="data-analysis-skills-2">Data Analysis Skills</h2>
+<ul>
+<li><strong>Statistical Analysis:</strong> Proficient in Mixed Effects Models, Bayesian Statistics, and Dimensionality Reduction. Experience with brms package in R for Bayesian modeling.</li>
+<li><strong>Data Wrangling and Visualization:</strong> Proficient in using data.table and ggplot in R.</li>
+</ul>
+</section>
+<section id="computational-modeling-skills" class="level2">
+<h2 class="anchored" data-anchor-id="computational-modeling-skills">Computational Modeling Skills</h2>
+<ul>
+<li><strong>Neural Networks:</strong> Experience with Artificial Neural Networks.</li>
+<li><strong>Exemplar Models:</strong> Experience with Exemplar Models.</li>
+<li><strong>Approximate Bayesian Computation:</strong> Experience with Approximate Bayesian Computation.</li>
+<li><strong>Individual Differences:</strong> Experience with modeling Individual Differences.</li>
+</ul>
+</section>
+<section id="experimental-skills-4" class="level2">
+<h2 class="anchored" data-anchor-id="experimental-skills-4">Experimental Skills</h2>
+<ul>
+<li><strong>Behavioral Tasks:</strong> Experience with creating and conducting behavioral tasks.</li>
+<li><strong>Online Data Collection:</strong> Experience with online data collection using tools like JsPsych.</li>
+<li><strong>MRI:</strong> Experience with MRI data analysis pipeline using MATLAB, Bash, and Python.</li>
+</ul>
+</section>
+<section id="ninth" class="level2">
+<h2 class="anchored" data-anchor-id="ninth">Ninth</h2>
+<section id="programming-1" class="level3">
+<h3 class="anchored" data-anchor-id="programming-1">Programming</h3>
+<ul>
+<li>R (Tidyverse, dplyr, purrr, data.table, ggplot, shiny, brms, Rmarkdown, Quarto)</li>
+<li>JavaScript (jspsych for online experiments)</li>
+<li>Bash</li>
+<li>Python</li>
+</ul>
+</section>
+<section id="computational-modeling" class="level3">
+<h3 class="anchored" data-anchor-id="computational-modeling">Computational Modeling</h3>
+<ul>
+<li>Artificial Neural Networks</li>
+<li>Exemplar Models</li>
+<li>Bayesian Statistics</li>
+<li>Mixed Effect Models</li>
+<li>Approximate Bayesian Computation</li>
+<li>Individual Differences Modeling</li>
+</ul>
+</section>
+<section id="data-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="data-analysis">Data Analysis</h3>
+<ul>
+<li>Multilevel/Hierarchical Modeling</li>
+<li>Bayesian Analysis</li>
+<li>Dimensionality Reduction</li>
+<li>ANOVA/ANCOVA/Regression</li>
+</ul>
+</section>
+<section id="experimental-1" class="level3">
+<h3 class="anchored" data-anchor-id="experimental-1">Experimental</h3>
+<ul>
+<li>Behavioral Tasks</li>
+<li>Online Data Collection (JsPsych, Mechanical Turk)</li>
+<li>Survey Data (Qualtrics)</li>
+<li>MRI Analysis Pipeline (MATLAB, bash, python)</li>
+</ul>
+</section>
+<section id="workflows-and-tools" class="level3">
+<h3 class="anchored" data-anchor-id="workflows-and-tools">Workflows and Tools</h3>
+<ul>
+<li>Multi-language Workflows (R, bash, python, MATLAB)</li>
+<li>Parallel Computing and Remote Workflows (Cluster, Supercomputer)</li>
+<li>Git (Version Control, Collaboration, Branching)</li>
+<li>Quarto and Rmarkdown (Documentation and Communication)</li>
+<li>Rstudio, Vs Code, Vim/Neovim, Obsidian</li>
+<li>Web Scraping</li>
+<li>Environment Handling and Profile Customization</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="tenth" class="level1">
+<h1>Tenth</h1>
+<p><strong>Programming</strong></p>
+<ul>
+<li><strong>R:</strong> Proficient in Rmarkdown and Quarto; strong understanding of Tidyverse principles (dplyr, purrr, tidyr) and data.table</li>
+<li><strong>Python:</strong> Experience with image analysis and report generation pipelines</li>
+<li><strong>JavaScript:</strong> Used to design jsPsych tasks for human subject data collection</li>
+<li><strong>Bash:</strong> Utilized for workflow scripts and MRI analysis pipelines</li>
+</ul>
+<p><strong>Data Analysis</strong></p>
+<ul>
+<li><strong>Statistical Techniques:</strong> Mixed effect models, Bayesian statistics, frequentist approaches (ANOVA/ANCOVA/regression), dimensionality reduction</li>
+<li><strong>R Packages:</strong> brms, ggplot2, Shiny</li>
+<li><strong>Data Cleaning &amp; QA:</strong> Contaminant model fitting, reaction time/response pattern analysis for respondent quality assessment</li>
+</ul>
+<p><strong>Computational Modeling</strong></p>
+<ul>
+<li>Artificial neural networks</li>
+<li>Exemplar models</li>
+<li>Similarity scaling</li>
+<li>Approximate Bayesian Computation</li>
+<li>Individual differences modeling</li>
+</ul>
+<p><strong>Workflow Expertise</strong></p>
+<ul>
+<li><strong>Multi-language Integration:</strong> Successfully combine R, bash, python, and MATLAB in analysis pipelines</li>
+<li><strong>Git:</strong> Utilizing Git for version control, documentation, backup, and collaboration</li>
+<li><strong>Remote Workflows:</strong> Experience deploying jobs to remote clusters and on supercomputers</li>
+<li><strong>Documentation:</strong> Employing Quarto and Rmarkdown for reproducible, web-based reporting</li>
+</ul>
+<p><strong>Additional Skills</strong></p>
+<ul>
+<li><strong>Qualtrics &amp; Mechanical Turk:</strong> Task creation, data handling</li>
+<li><strong>Web Scraping</strong></li>
+<li><strong>Shell Scripting</strong> (bash)</li>
+<li><strong>SQL</strong></li>
+<li><strong>Jupyter</strong></li>
+<li><strong>Environment Customization</strong> Proficient in RStudio, VS Code, Vim/Neovim, and Obsidian</li>
+</ul>
+</section>
+<section id="th" class="level1">
+<h1>11th</h1>
+<p><strong>Skills</strong></p>
+<ul>
+<li><strong>Programming:</strong> R (Tidyverse, data.table), Python, JavaScript, Bash</li>
+<li><strong>Computational Modeling:</strong> Neural networks, exemplar models, similarity scaling, Approximate Bayesian Computation, individual differences modeling</li>
+<li><strong>Statistical Analysis:</strong> Mixed-effects models, Bayesian statistics</li>
+<li><strong>Data Analysis (R):</strong> brms, ggplot2</li>
+<li><strong>Workflows:</strong> Multi-language integration (R, Python, bash, MATLAB), Git (version control, collaboration, documentation)</li>
+<li><strong>Data Collection (Online):</strong> Experience with jsPsych, Qualtrics, Mechanical Turk, including respondent quality assessment</li>
+</ul>
+<p><strong>Additional Relevant Skills</strong></p>
+<ul>
+<li>Data cleaning and wrangling</li>
+<li>Workflow optimization and scripting</li>
+<li>Experience with remote computing resources</li>
+<li>Strong communication and documentation skills using Quarto/Rmarkdown</li>
+</ul>
+</section>
+<section id="th-1" class="level1">
+<h1>12th</h1>
+<table class="table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 71%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Area</th>
+<th>Skills &amp; Tools</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Programming Languages</strong></td>
+<td>R (Ggplot, Shiny, Brms, Rmarkdown, Quarto), Python, MATLAB, Bash, JavaScript (jsPsych)</td>
+</tr>
+<tr class="even">
+<td><strong>Computational Modeling</strong></td>
+<td>Artificial Neural Networks, Exemplar Models, Bayesian Statistics, Mixed Effect Models, Approximate Bayesian Computation, Dimensionality Reduction</td>
+</tr>
+<tr class="odd">
+<td><strong>Data Analysis</strong></td>
+<td>Multilevel Modeling, Bayesian Statistics, Dimensionality Reduction</td>
+</tr>
+<tr class="even">
+<td><strong>Experimental Skills</strong></td>
+<td>Online Data Collection (Qualtrics, jsPsych), MRI Data Analysis</td>
+</tr>
+<tr class="odd">
+<td><strong>Version Control</strong></td>
+<td>Git (Version control, Collaboration, Documentation)</td>
+</tr>
+<tr class="even">
+<td><strong>Professional Engagement</strong></td>
+<td>Active in computational cognitive science community forums, blogs, and GitHub</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="th-2" class="level1">
+<h1>13th</h1>
+<table class="table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Skills</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Programming Languages</strong></td>
+<td>R, Python, Bash</td>
+</tr>
+<tr class="even">
+<td><strong>Multilevel Modeling</strong></td>
+<td>R</td>
+</tr>
+<tr class="odd">
+<td><strong>Parallel Computing</strong></td>
+<td>R</td>
+</tr>
+<tr class="even">
+<td><strong>Remote Workflows</strong></td>
+<td>R</td>
+</tr>
+<tr class="odd">
+<td><strong>Documentation</strong></td>
+<td>Rmarkdown, Quarto</td>
+</tr>
+<tr class="even">
+<td><strong>Data Manipulation</strong></td>
+<td>purrr</td>
+</tr>
+<tr class="odd">
+<td><strong>Image Analysis</strong></td>
+<td>Python</td>
+</tr>
+<tr class="even">
+<td><strong>MRI Analysis</strong></td>
+<td>Python</td>
+</tr>
+<tr class="odd">
+<td><strong>Shell Scripting</strong></td>
+<td>Bash</td>
+</tr>
+<tr class="even">
+<td><strong>Workflow Organization</strong></td>
+<td>Bash</td>
+</tr>
+<tr class="odd">
+<td><strong>Version Control</strong></td>
+<td>Git</td>
+</tr>
+<tr class="even">
+<td><strong>Tools</strong></td>
+<td>RStudio, VS Code, Jupyter, SQL</td>
+</tr>
+<tr class="odd">
+<td><strong>Statistical Analysis</strong></td>
+<td>Mixed Effects Models, Bayesian Statistics, Dimensionality Reduction</td>
+</tr>
+<tr class="even">
+<td><strong>Bayesian Modeling</strong></td>
+<td>brms (R package)</td>
+</tr>
+<tr class="odd">
+<td><strong>Data Wrangling</strong></td>
+<td>data.table (R package)</td>
+</tr>
+<tr class="even">
+<td><strong>Data Visualization</strong></td>
+<td>ggplot (R package)</td>
+</tr>
+<tr class="odd">
+<td><strong>Neural Networks</strong></td>
+<td>Artificial Neural Networks</td>
+</tr>
+<tr class="even">
+<td><strong>Exemplar Models</strong></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Approximate Bayesian Computation</strong></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>Individual Differences</strong></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Behavioral Tasks</strong></td>
+<td>Creation and conduction</td>
+</tr>
+<tr class="even">
+<td><strong>Online Data Collection</strong></td>
+<td>JsPsych</td>
+</tr>
+<tr class="odd">
+<td><strong>MRI Data Analysis</strong></td>
+<td>MATLAB, Bash, Python</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="th-3" class="level1">
+<h1>14th</h1>
+<table class="table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Programming</th>
+<th>Computational Modeling</th>
+<th>Data Analysis</th>
+<th>Experimental</th>
+<th>Workflows and Tools</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>- R (Tidyverse, dplyr, purrr, data.table, ggplot, shiny, brms, Rmarkdown, Quarto)</td>
+<td>- Artificial Neural Networks</td>
+<td>- Multilevel/Hierarchical Modeling</td>
+<td>- Behavioral Tasks</td>
+<td>- Multi-language Workflows (R, bash, python, MATLAB)</td>
+</tr>
+<tr class="even">
+<td>- JavaScript (jspsych for online experiments)</td>
+<td>- Exemplar Models</td>
+<td>- Bayesian Analysis</td>
+<td>- Online Data Collection (JsPsych, Mechanical Turk)</td>
+<td>- Parallel Computing and Remote Workflows (Cluster, Supercomputer)</td>
+</tr>
+<tr class="odd">
+<td>- Bash</td>
+<td>- Bayesian Statistics</td>
+<td>- Dimensionality Reduction</td>
+<td>- Survey Data (Qualtrics)</td>
+<td>- Git (Version Control, Collaboration, Branching)</td>
+</tr>
+<tr class="even">
+<td>- Python</td>
+<td>- Mixed Effect Models</td>
+<td>- ANOVA/ANCOVA/Regression</td>
+<td>- MRI Analysis Pipeline (MATLAB, bash, python)</td>
+<td>- Quarto and Rmarkdown (Documentation and Communication)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>- Approximate Bayesian Computation</td>
+<td></td>
+<td></td>
+<td>- Rstudio, Vs Code, Vim/Neovim, Obsidian</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>- Individual Differences Modeling</td>
+<td></td>
+<td></td>
+<td>- Web Scraping</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>- Environment Handling and Profile Customization</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="th-4" class="level1">
+<h1>15th</h1>
+<table class="table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Skills</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Programming</strong></td>
+<td>R (Tidyverse, data.table), Python, JavaScript, Bash</td>
+</tr>
+<tr class="even">
+<td><strong>Computational Modeling</strong></td>
+<td>Neural networks, exemplar models, similarity scaling, Approximate Bayesian Computation, individual differences modeling</td>
+</tr>
+<tr class="odd">
+<td><strong>Statistical Analysis</strong></td>
+<td>Mixed-effects models, Bayesian statistics (brms)</td>
+</tr>
+<tr class="even">
+<td><strong>Data Visualization</strong></td>
+<td>ggplot2</td>
+</tr>
+<tr class="odd">
+<td><strong>Workflows</strong></td>
+<td>Multi-language integration (R, Python, bash, MATLAB), Git (version control, collaboration, documentation), Remote computing</td>
+</tr>
+<tr class="even">
+<td><strong>Online Data Collection</strong></td>
+<td>jsPsych, Qualtrics, Mechanical Turk (including respondent quality assessment)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="th-5" class="level1">
+<h1>16th</h1>
+<section id="skills-table" class="level3">
+<h3 class="anchored" data-anchor-id="skills-table">Skills Table</h3>
+<table class="table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 74%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Skill Area</th>
+<th>Tools &amp; Techniques</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Data Manipulation</strong></td>
+<td>dplyr, tidyr, data.table, purrr</td>
+</tr>
+<tr class="even">
+<td><strong>Data Visualization</strong></td>
+<td>ggplot2, patchwork, ggstance</td>
+</tr>
+<tr class="odd">
+<td><strong>Statistical Modeling</strong></td>
+<td>Bayesian Statistics, Mixed Effects Models, Dimensionality Reduction</td>
+</tr>
+<tr class="even">
+<td><strong>Computational Modeling</strong></td>
+<td>Neural Networks, Exemplar Models, Similarity Scaling, Approximate Bayesian Computation</td>
+</tr>
+<tr class="odd">
+<td><strong>Simulation &amp; Analysis</strong></td>
+<td>Custom simulation functions, Model fitting and evaluation with ABC</td>
+</tr>
+<tr class="even">
+<td><strong>Workflow Automation</strong></td>
+<td>Rmarkdown, Quarto, here, future, furrr</td>
+</tr>
+<tr class="odd">
+<td><strong>Version Control &amp; Collaboration</strong></td>
+<td>Git</td>
+</tr>
+<tr class="even">
+<td><strong>Experimentation Tools</strong></td>
+<td>Online Data Collection (Qualtrics, Mechanical Turk), JavaScript (jsPsych)</td>
+</tr>
+<tr class="odd">
+<td><strong>Advanced R Usage</strong></td>
+<td>Advanced function development, Use of parallel computing for efficient data processing</td>
+</tr>
+<tr class="even">
+<td><strong>Statistical Packages</strong></td>
+<td>Use of specialized statistical packages like brms for Bayesian modeling</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="th-6" class="level1">
+<h1>17th</h1>
+<section id="write-up" class="level3">
+<h3 class="anchored" data-anchor-id="write-up">Write-Up:</h3>
+<p>In my recent projects, I have demonstrated a comprehensive ability to utilize R for advanced computational modeling, data analysis, and simulation tasks. My work encompasses developing and implementing complex models, such as Artificial Learning Models (ALM) and Examination Models (Exam Models), to simulate cognitive processes and predict experimental outcomes. I am proficient in using a wide array of R packages (<code>dplyr</code>, <code>purrr</code>, <code>tidyr</code>, <code>ggplot2</code>, <code>data.table</code>, <code>future</code>, <code>furrr</code>, <code>abc</code>, and others) for data manipulation, visualization, parallel computing, and statistical analysis.</p>
+<p>I have developed sophisticated simulation functions to analyze and predict behaviors in cognitive experiments. These functions incorporate advanced statistical techniques, including Bayesian Statistics, Approximate Bayesian Computation, and Mixed Effects Models, to interpret the nuanced dynamics of cognitive phenomena. My expertise also includes designing and executing simulations that account for individual differences and learning patterns across varied conditions and tasks.</p>
+<p>I am adept at leveraging R’s capabilities for efficient data processing, from preprocessing and cleaning to complex transformations and analyses. My approach to data analysis is both methodical and innovative, ensuring that insights drawn are both robust and insightful. I have extensively used RMarkdown and Quarto for reproducible research, enabling clear documentation and dissemination of findings. My work demonstrates a commitment to advancing the field of cognitive modeling through rigorous analysis, creative problem-solving, and the application of cutting-edge computational techniques.</p>
+</section>
+<section id="table-format" class="level3">
+<h3 class="anchored" data-anchor-id="table-format">Table Format:</h3>
+<table class="table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 79%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Skill Area</th>
+<th>Tools &amp; Techniques</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Programming &amp; Scripting</td>
+<td>R, RMarkdown, Quarto, Bash, JavaScript</td>
+</tr>
+<tr class="even">
+<td>Computational Modeling</td>
+<td>Artificial Neural Networks, Exemplar Models, Bayesian Statistics, Mixed Effect Models, Approximate Bayesian Computation</td>
+</tr>
+<tr class="odd">
+<td>Data Manipulation &amp; Analysis</td>
+<td><code>dplyr</code>, <code>purrr</code>, <code>tidyr</code>, <code>ggplot2</code>, <code>data.table</code></td>
+</tr>
+<tr class="even">
+<td>Statistical Analysis</td>
+<td>Bayesian Statistics, Mixed Effects Models, Dimensionality Reduction, Frequentist ANOVA/ANCOVA/Regression</td>
+</tr>
+<tr class="odd">
+<td>Visualization</td>
+<td><code>ggplot2</code>, <code>patchwork</code>, Visualization of Computational Models and Statistical Results</td>
+</tr>
+<tr class="even">
+<td>Parallel &amp; Distributed Computing</td>
+<td><code>future</code>, <code>furrr</code> for efficient handling of computational tasks in parallel</td>
+</tr>
+<tr class="odd">
+<td>Reproducible Research</td>
+<td>RMarkdown, Quarto for documentation and presentation of research findings</td>
+</tr>
+<tr class="even">
+<td>Software &amp; Tools</td>
+<td>RStudio, VS Code, Git for version control and collaboration</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="th-7" class="level1">
+<h1>18th</h1>
+<section id="skills-table-1" class="level3">
+<h3 class="anchored" data-anchor-id="skills-table-1">Skills Table</h3>
+<table class="table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 82%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Skill Area</th>
+<th>Proficiencies</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Data Manipulation</strong></td>
+<td>Proficient with <code>dplyr</code>, <code>purrr</code>, <code>tidyr</code>, <code>data.table</code> for complex data wrangling tasks.</td>
+</tr>
+<tr class="even">
+<td><strong>Data Visualization</strong></td>
+<td>Advanced use of <code>ggplot2</code> for creating informative and complex plots.</td>
+</tr>
+<tr class="odd">
+<td><strong>Statistical Analysis</strong></td>
+<td>Experience with Bayesian statistics, mixed effects models, dimensionality reduction, frequentist ANOVA/ANCOVA/Regression.</td>
+</tr>
+<tr class="even">
+<td><strong>Computational Modeling</strong></td>
+<td>Implementation of Approximate Bayesian Computation (ABC), artificial neural networks, exemplar models, and more.</td>
+</tr>
+<tr class="odd">
+<td><strong>Simulation Functions</strong></td>
+<td>Custom simulation functions for cognitive models, demonstrating a deep understanding of the modeling process.</td>
+</tr>
+<tr class="even">
+<td><strong>Parallel Computing</strong></td>
+<td>Utilizing <code>future</code> and <code>furrr</code> for parallel processing to optimize computational efficiency.</td>
+</tr>
+<tr class="odd">
+<td><strong>Version Control</strong></td>
+<td>Using Git for source code management, indicating good practices in software development and collaboration.</td>
+</tr>
+<tr class="even">
+<td><strong>Package Management</strong></td>
+<td>Using <code>pacman</code> for package management to streamline workflow and ensure reproducibility.</td>
+</tr>
+<tr class="odd">
+<td><strong>Scripting &amp; Automation</strong></td>
+<td>Writing complex scripts for automating data analysis, model fitting, and reporting results, showcasing a high level of automation in R.</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="th-8" class="level1">
+<h1>19th</h1>
+<section id="writeup" class="level3">
+<h3 class="anchored" data-anchor-id="writeup">Writeup</h3>
+<p>I am proficient in developing complex data analysis pipelines and computational models using R, focusing on cognitive science research. My expertise encompasses the entire data science workflow, from preprocessing and analysis to modeling and visualization. I have designed and implemented advanced computational models, including artificial neural networks and exemplar models, to investigate cognitive processes. My work often involves multi-language workflows, integrating R with Bash, Python, MATLAB, and JavaScript, to create robust analysis pipelines.</p>
+<p>In my recent projects, I’ve utilized a variety of R packages and methodologies to perform sophisticated statistical analyses and modeling, including Bayesian statistics, mixed effect models, and dimensionality reduction. My proficiency in Rmarkdown and Quarto enables me to efficiently document and communicate code, statistical results, and visuals. I actively contribute to collaborative projects using Git for version control and collaboration, ensuring reproducibility and efficient team workflow.</p>
+</section>
+<section id="table-of-programming-and-modellingstatistics-skills-with-r" class="level3">
+<h3 class="anchored" data-anchor-id="table-of-programming-and-modellingstatistics-skills-with-r">Table of Programming and Modelling/Statistics Skills with R</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>| Skill Area                | Tools &amp; Methods                                                                                              |</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>|---------------------------|--------------------------------------------------------------------------------------------------------------|</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>| **Data Manipulation**     | dplyr, tidyr, data.table                                                                                     |</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>| **Data Visualization**    | ggplot2, patchwork                                                                                           |</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>| **Statistical Analysis**  | Bayesian Statistics, Mixed Effects Models, Dimensionality Reduction, Frequentist Statistics                  |</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>| **Computational Modeling**| Neural Networks, Exemplar Models, Similarity Scaling, Approximate Bayesian Computation                      |</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>| **Simulation**            | Custom simulation functions for modeling and data analysis                                                   |</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>| **Documenting &amp; Reporting**| Rmarkdown, Quarto, knitr, flextable, htmltools, kableExtra                                                   |</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>| **Version Control &amp; Collaboration**| Git                                                                                                           |</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>| **Workflow Automation**   | purrr, future, furrr for parallel computing                                                                  |</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>| **Web Scraping**          | rvest (not explicitly mentioned but inferred as a common task requiring R skills)                            |</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>| **Environment &amp; Project Management**| here, conflicted (for namespace management)                                                                  |</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>| **Interactive Web Applications**| Shiny (for building web apps based on R)                                                                       |</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="th-9" class="level1">
+<h1>20th</h1>
+<ul>
+<li><strong>Utilize various R packages:</strong> You effectively use packages like <code>dplyr</code>, <code>purrr</code>, <code>tidyr</code>, <code>ggplot2</code>, <code>data.table</code>, and others for data manipulation, analysis, and visualization.</li>
+<li><strong>Implement advanced statistical techniques:</strong> You implement Approximate Bayesian Computation (ABC) for parameter estimation, showcasing your understanding of Bayesian methods and complex algorithms.</li>
+<li><strong>Develop custom functions:</strong> You create various functions like <code>samp_priors</code>, <code>reject_abc</code>, and <code>run_abc_tests</code> to modularize your code and perform specific tasks, demonstrating good programming practices.</li>
+<li><strong>Work with complex data structures:</strong> You handle data frames, lists, and matrices efficiently, showcasing your ability to manage different data formats.</li>
+<li><strong>Perform data cleaning and manipulation:</strong> You use functions like <code>filter</code>, <code>mutate</code>, and <code>group_by</code> to clean and prepare data for analysis.</li>
+<li><strong>Generate informative visualizations:</strong> You create various plots like bar charts, line graphs, and residual plots to visualize data and model results.</li>
+<li><strong>Utilize parallel processing:</strong> You leverage packages like <code>future</code> and <code>furrr</code> to improve computational efficiency by parallelizing tasks.</li>
+</ul>
+<p><strong>Table of R Skills:</strong></p>
+<table class="table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Skill Category</th>
+<th>Specific Skills</th>
+<th>Evidence from Code</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Programming</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Data manipulation</td>
+<td><code>dplyr</code> functions (filter, mutate, group_by, etc.), data.table operations</td>
+<td>Data cleaning and preparation throughout the script</td>
+</tr>
+<tr class="odd">
+<td>Custom functions</td>
+<td>Defining and using functions with arguments and return values</td>
+<td><code>samp_priors</code>, <code>reject_abc</code>, <code>run_abc_tests</code>, etc.</td>
+</tr>
+<tr class="even">
+<td>Loops and conditionals</td>
+<td><code>for</code> loops, <code>while</code> loops, <code>ifelse</code> statements</td>
+<td>Iteration and logic control in <code>reject_abc</code></td>
+</tr>
+<tr class="odd">
+<td>Packages</td>
+<td>Loading and utilizing various R packages</td>
+<td><code>pacman::p_load</code>, specific package functions used throughout</td>
+</tr>
+<tr class="even">
+<td>Parallel processing</td>
+<td>Using <code>future</code> and <code>furrr</code> for parallel execution</td>
+<td><code>run_abc_tests</code> function</td>
+</tr>
+<tr class="odd">
+<td><strong>Modelling/Statistics</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Bayesian methods</td>
+<td>Implementing Approximate Bayesian Computation (ABC)</td>
+<td><code>reject_abc</code> function</td>
+</tr>
+<tr class="odd">
+<td>Mixed models</td>
+<td>Fitting Bayesian mixed effects regression models</td>
+<td>Code not shown, but mentioned in the write-up</td>
+</tr>
+<tr class="even">
+<td>Statistical summaries</td>
+<td>Calculating means, medians, standard deviations</td>
+<td><code>test_summary_table</code> function</td>
+</tr>
+<tr class="odd">
+<td>Data visualization</td>
+<td>Creating various plots with <code>ggplot2</code></td>
+<td>Bar charts, line graphs, residual plots</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="st-1" class="level1">
+<h1>21st</h1>
+<p><strong>Table:</strong></p>
+<table class="table">
+<colgroup>
+<col style="width: 3%">
+<col style="width: 1%">
+<col style="width: 94%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Skill</th>
+<th>Proficiency Level</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>R Programming</td>
+<td>Advanced</td>
+<td>Demonstrated ability to write clean, well-structured code using advanced R programming concepts such as functions, control structures, data manipulation, and visualization.</td>
+</tr>
+<tr class="even">
+<td>Model Implementation</td>
+<td>Advanced</td>
+<td>Implemented the Adaptive Linear Model (ALM) and its extension, the Exam Generalization, from scratch using R. Defined core functions such as input activation, output activation, output probability, mean response, and weight update mechanism based on feedback.</td>
+</tr>
+<tr class="odd">
+<td>Simulation Studies</td>
+<td>Advanced</td>
+<td>Developed and executed simulation functions to evaluate the performance of the ALM and Exam Generalization under various conditions. Utilized functions such as <code>alm.sim</code>, <code>simOrganize</code>, <code>generateSimData</code>, and <code>simulateAll</code> to generate data, simulate the training process, and test the models’ generalization abilities.</td>
+</tr>
+<tr class="even">
+<td>Data Analysis &amp; Visualization</td>
+<td>Intermediate</td>
+<td>Experience in analyzing and visualizing data using R packages such as dplyr and ggplot2. Able to create meaningful visualizations to represent complex data and relationships.</td>
+</tr>
+<tr class="odd">
+<td>Object-Oriented Programming</td>
+<td>Intermediate</td>
+<td>Familiarity with object-oriented programming concepts in R, such as creating and manipulating objects, understanding inheritance, and utilizing methods associated with objects.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="nd-1" class="level1">
+<h1>22nd</h1>
+<p>I am highly proficient in using R for data analysis, modelling and visualization. The code sample demonstrates my strong capabilities across several key areas:</p>
+<ul>
+<li><p>Data manipulation and transformation using packages like dplyr, data.table, tidyr and purrr. I can efficiently wrangle and reshape datasets into suitable formats for analysis.</p></li>
+<li><p>Parallel computing with the future and furrr packages to speed up compute-intensive tasks. I know how to leverage multi-core architectures to dramatically improve runtime.</p></li>
+<li><p>Implementation of advanced modelling techniques like Approximate Bayesian Computation (ABC) for simulation-based parameter inference. I constructed flexible functions to run the ABC algorithm under various configurations.</p></li>
+<li><p>Statistical modelling of experimental psychology data, including hierarchical models with subject-level parameters. I can fit and compare different cognitive models to behavioral data.</p></li>
+<li><p>Production of publication-quality figures using ggplot2. I created multi-panel plots to visualize model fits and compare residuals across experimental conditions.</p></li>
+<li><p>Dynamic report generation with R Markdown, knitr and related packages. The code snippets include cache settings and figure options, demonstrating knowledge of these tools.</p></li>
+</ul>
+<p>In summary, I have extensive experience applying R to real-world data analysis problems, especially in the domain of cognitive modelling. My skills span the entire pipeline from data ingestion and cleaning to statistical inference and communication of results.</p>
+<table class="table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 26%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Skill</th>
+<th>Level</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Data Manipulation</td>
+<td>Expert</td>
+<td>Fluent in dplyr, data.table, purrr, and tidyr</td>
+</tr>
+<tr class="even">
+<td>Parallel Computing</td>
+<td>Advanced</td>
+<td>Experience with future and furrr for parallel execution</td>
+</tr>
+<tr class="odd">
+<td>Statistical Modelling</td>
+<td>Expert</td>
+<td>Implemented ABC for simulation-based inference, applied to hierarchical cognitive models</td>
+</tr>
+<tr class="even">
+<td>Machine Learning</td>
+<td>Intermediate</td>
+<td>Some exposure to ML techniques like Bayesian optimization</td>
+</tr>
+<tr class="odd">
+<td>Data Visualization</td>
+<td>Expert</td>
+<td>Created publication-quality multi-panel figures with ggplot2</td>
+</tr>
+<tr class="even">
+<td>Reproducibility</td>
+<td>Advanced</td>
+<td>Used R Markdown and knitr to generate dynamic reports, set caching options</td>
+</tr>
+<tr class="odd">
+<td>Domain Expertise</td>
+<td>Advanced</td>
+<td>Deep knowledge of cognitive modelling and experimental design in psychology</td>
+</tr>
+</tbody>
+</table>
+<table class="table">
+<thead>
+<tr class="header">
+<th><i class="fa fa-envelope" aria-hidden="true" title="An envelope"></i> <a href="mailto:tegorman@iu.edu">tegorman@iu.edu</a></th>
+<th><i class="fa fa-envelope" aria-hidden="true" title="An envelope"></i> <a href="mailto:tegorman13@gmail.com">tegorman13@gmail.com</a></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><i class="ai ai-google-scholar" aria-hidden="true"></i> <a href="http://scholar.google.com/citations?hl=en&amp;user=3KRfbWUAAAAJ">Google Scholar</a></td>
+<td><i class="ai ai-orcid" aria-hidden="true"></i> <a href="https://orcid.org/0000-0001-5366-5442">ORCiD</a></td>
+</tr>
+<tr class="even">
+<td><i class="fa fa-brands fa-github" aria-hidden="true" title="GitHub logo"></i> <a href="https://github.com/tegorman13">GitHub</a></td>
+<td><i class="ai ai-researchgate" aria-hidden="true"></i> <a href="https://www.researchgate.net/profile/Thomas-Gorman-3">ResearchGate</a></td>
+</tr>
+</tbody>
+</table>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Icon</th>
+<th>Contact Information</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p><i class="fa-solid fa-envelope" title="An envelope" aria-label="envelope"></i></p></td>
+<td><a href="mailto:tegorman@iu.edu">tegorman@iu.edu</a></td>
+</tr>
+<tr class="even">
+<td><p><i class="fa-solid fa-envelope" title="An envelope" aria-label="envelope"></i></p></td>
+<td><a href="mailto:tegorman13@gmail.com">tegorman13@gmail.com</a></td>
+</tr>
+<tr class="odd">
+<td><p><i class="ai  ai-google-scholar"></i></p></td>
+<td><a href="http://scholar.google.com/citations?hl=en&amp;user=3KRfbWUAAAAJ">Google Scholar</a></td>
+</tr>
+<tr class="even">
+<td><p><i class="ai  ai-orcid"></i></p></td>
+<td><a href="https://orcid.org/0000-0001-5366-5442">ORCiD</a></td>
+</tr>
+<tr class="odd">
+<td><p><i class="fa-brands fa-github" title="GitHub logo" aria-label="github"></i></p></td>
+<td><a href="https://github.com/tegorman13">GitHub</a></td>
+</tr>
+<tr class="even">
+<td><p><i class="ai  ai-researchgate"></i></p></td>
+<td><a href="https://www.researchgate.net/profile/Thomas-Gorman-3">ResearchGate</a></td>
+</tr>
+</tbody>
+</table>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Icon</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p><i class="fa-solid fa-envelope" title="An envelope" aria-label="envelope"></i></p></td>
+<td><a href="mailto:tegorman@iu.edu">tegorman@iu.edu</a></td>
+</tr>
+<tr class="even">
+<td><p><i class="fa-solid fa-envelope" title="An envelope" aria-label="envelope"></i></p></td>
+<td><a href="mailto:tegorman13@gmail.com">tegorman13@gmail.com</a></td>
+</tr>
+<tr class="odd">
+<td><p><i class="ai  ai-google-scholar"></i></p></td>
+<td><a href="http://scholar.google.com/citations?hl=en&amp;user=3KRfbWUAAAAJ">Google Scholar</a></td>
+</tr>
+<tr class="even">
+<td><p><i class="ai  ai-orcid"></i></p></td>
+<td><a href="https://orcid.org/0000-0001-5366-5442">ORCiD</a></td>
+</tr>
+<tr class="odd">
+<td><p><i class="fa-brands fa-github" title="GitHub logo" aria-label="github"></i></p></td>
+<td><a href="https://github.com/tegorman13">GitHub</a></td>
+</tr>
+<tr class="even">
+<td><p><i class="ai  ai-researchgate"></i></p></td>
+<td><a href="https://www.researchgate.net/profile/Thomas-Gorman-3">ResearchGate</a></td>
+</tr>
+</tbody>
+</table>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Contact</th>
+<th>Profiles</th>
+<th>Research</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><i class="fa fa-envelope" aria-hidden="true" title="An envelope"></i> <a href="mailto:tegorman@iu.edu">tegorman@iu.edu</a></td>
+<td><i class="ai ai-google-scholar" aria-hidden="true"></i> <a href="http://scholar.google.com/citations?hl=en&amp;user=3KRfbWUAAAAJ">Google Scholar</a></td>
+<td><i class="fa fa-brands fa-github" aria-hidden="true" title="GitHub logo"></i> <a href="https://github.com/tegorman13">GitHub</a></td>
+</tr>
+<tr class="even">
+<td><i class="fa fa-envelope" aria-hidden="true" title="An envelope"></i> <a href="mailto:tegorman13@gmail.com">tegorman13@gmail.com</a></td>
+<td><i class="ai ai-orcid" aria-hidden="true"></i> <a href="https://orcid.org/0000-0001-5366-5442">ORCiD</a></td>
+<td><i class="ai ai-researchgate" aria-hidden="true"></i> <a href="https://www.researchgate.net/profile/Thomas-Gorman-3">ResearchGate</a></td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("^(?:http:|https:)\/\/www\.tegorman13.github.io\/custom");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2024 Thomas Gorman</p>
+</div>   
+    <div class="nav-footer-center">
+<p>site created with <a href="https://cran.r-project.org/">R</a> and <a href="https://quarto.org">quarto</a></p>
+</div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://scholar.google.com/citations?user=USMVPjEAAAAJ&amp;hl=en" target="_blank">
+<p><i class="ai  ai-google-scholar" style="font-size:1.5x"></i></p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.researchgate.net/profile/Thomas-Gorman-3" target="_blank">
+<p><i class="ai  ai-researchgate" style="font-size:1.5x"></i></p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://github.com/tegorman13" target="_blank">
+<p><i class="fa-brands fa-github fa-1.5x" aria-label="github"></i></p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

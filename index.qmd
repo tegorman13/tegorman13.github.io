@@ -1,9 +1,41 @@
 ---
-title: "Thomas Gorman"
+title: "Thomas E. Gorman"
+subtitle: |
+  PhD Student\ 
+  Cognitive Science & Cognitive Psychology\
+  Indiana University\
+toc: false
+format:
+  html:
+    page-layout: full
+image: Assets/teg13.png
+image-alt: "Thomas Gorman"
+about:
+  template: trestles
+  image-shape: round
+  image-width: 15em
+  links:
+    - icon: github
+      href: https://github.com/tegorman13
+      aria-label: Github
+    - text: "{{< ai orcid >}}"
+      href: https://orcid.org/0000-0001-5366-5442
+    - text: "{{< ai google-scholar >}}"
+      aria-label: "Google Scholar"
+      href: https://scholar.google.com/citations?user=USMVPjEAAAAJ&hl=en
+    - text: "{{< ai researchgate >}}"
+      aria-label: Research Gate
+      href: https://www.researchgate.net/profile/Thomas-Gorman-3
+    - text: "{{< ai cv size=lg >}}"
+      aria-label: cv
+      href: cv.html
+
+sidebar: false
+from: markdown+emoji
+repo-actions: false
+lightbox: true
 # date: last-modified
 ---
 
-Welcome to my personal website! I'm Thomas, a PhD student in Cognitive Science at Indiana University - Bloomington. My research interests center on learning transfer and generalization, and I have conducted studies in the domains of visuomotor and category learning. To explore these topics, I use a combination of experimental and computational modeling approaches.
-
-
+I'm currently a PhD student in Cognitive Science at Indiana University - Bloomington. My research interests center on learning transfer and generalization, which I investigate in a variety of domains (e.g. category learning, visuomotor skill learning, and decision making). To explore these topics, I use a combination of experimental and computational modeling approaches.
 

@@ -1,0 +1,26 @@
+b, strong {
+    font-weight: bold !important;
+  }
+  
+  /* If you're using Markdown syntax for bold, ensure it's covered */
+  .markdown b, .markdown strong {
+    font-weight: bold !important;
+  }
+  
+  
+  
+  h2 {
+    color: #701112;
+    text-align: center;
+  }
+  
+  h3 {
+    color: black;
+    text-align: left;
+  }
+
+  /* center title
+/* center title */
+.title {
+    text-align: center;
+}
