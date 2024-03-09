@@ -27,13 +27,13 @@ format:
   #       \fancyfoot{}
 cvfooter:
   left: "Thomas Gorman"
-  right: "tegorman13@github.io"
+  right: "[tegorman13@github.io](https://tegorman13.github.io)"
 cvcolor: 58748F #without `#`
 sectcolor: "701112"
 cvfont: tgcursor #texlive fonts like raleway,fetamont,gillius,comfortaa
 cvmeta:
   - left: Department of Psychological and Brain Sciences
-    right:  "{{< fa globe >}} [tegorman13@github.io](https://tegorman13@github.io)"
+    right:  "{{< fa globe >}} [tegorman13@github.io](https://tegorman13.github.io)"
   - title: 
     left: 1101 E. 10th St.
     right: "{{< fa brands github size=1.7x >}} [tegorman13](https://github.com/tegorman13)"
@@ -131,7 +131,7 @@ execute:
 
 ## {{< fa cogs >}} Skills
 
-
+::: {.content-visible when-format="html"}
 | Category | Skills |
 | --- | --- |
 | Programming | - R (Quarto, Rmarkdown, Shiny ) <br> - JavaScript <br> - Python (jupyter, torch, tensorflow) <br> - Bash (Shell scripting, Workflow automation) <br>  - MATLAB (psychtoolbox) |
@@ -142,6 +142,51 @@ execute:
 | Tools | - RStudio <br> - VS Code <br> - Vim/Neovim <br> - Obsidian <br> |
 | Miscellaneous Skills | - Web Scraping <br> - SQL  <br> - Website Design |
 
+:::
+
+::: {.content-visible unless-format="html"}
+
+| Category | Skills |
+| --- | --- |
+| Programming | - R (Quarto, Rmarkdown, Shiny )  | 
+|  | - JavaScript | 
+|  | - Python (jupyter, torch, tensorflow) |  
+|  | - Bash (Shell scripting, Workflow automation) |  
+|  | - MATLAB (psychtoolbox) |
+|  |
+| Computational Modeling| - Artificial Neural Networks |
+|  | - Exemplar Models |
+|  | - Bayesian Statistics | 
+|  | - Mixed Effect Models | 
+|  | - Similarity Scaling | 
+|  | - Approximate Bayesian Computation | 
+|  | - Individual Differences |
+|  |
+| Data Analysis | - Multilevel Modeling |
+|  | - Bayesian Statistics |
+|  | - Mixed Effects Models |
+|  | - Dimensionality Reduction |
+|  | - Frequentist ANOVA/Regression |
+|  |
+| Experimental Skills | - Behavioral Tasks |
+|  | - Online Data Collection (jsPsych for web-based experiments) |
+|  | - Survey Data Collection (Qualtrics) |
+|  | - Mechanical Turk |
+|  | - MRI & EEG |
+|  |
+| Workflow Automation & Version Control | - Multi-language workflows (integrating R, Bash, Python) |
+|  | - Git (Documentation, backup, branching, collaboration) |
+|  |
+| Tools | - RStudio |
+|  | - VS Code |
+|  | - Vim/Neovim |
+|  | - Obsidian |
+|  |
+| Miscellaneous Skills | - Web Scraping |
+|  | - SQL |
+|  | - Website Design |
+:::
+\
 
 ## {{< fa file-lines >}} Journal Articles and Conference Proceedings
 

@@ -456,6 +456,129 @@ Web Scraping, SQL for Database Management, Jupyter for Interactive Notebooks, Pr
 
 # 5m
 
+## Skills
+
+| Category | Skills |
+| --- | --- |
+| Programming | R (Quarto, Rmarkdown, Shiny); JavaScript; Python (jupyter, torch, tensorflow); Bash (Shell scripting, Workflow automation); MATLAB (psychtoolbox) |
+| Computational Modeling | Artificial Neural Networks; Exemplar Models; Bayesian Statistics; Mixed Effect Models; Similarity Scaling; Approximate Bayesian Computation; Individual Differences |
+| Data Analysis | Multilevel Modeling; Bayesian Statistics; Mixed Effects Models; Dimensionality Reduction; Frequentist ANOVA/Regression |
+| Experimental Skills | Behavioral Tasks; Online Data Collection (jsPsych for web-based experiments); Survey Data Collection (Qualtrics); Mechanical Turk; MRI & EEG |
+| Workflow Automation & Version Control | Multi-language workflows (integrating R, Bash, Python); Git (Documentation, backup, branching, collaboration) |
+| Tools | RStudio; VS Code; Vim/Neovim; Obsidian |
+| Miscellaneous Skills | Web Scraping; SQL; Website Design |
+
+
+
+# 5n
+
+## {{< fa cogs >}} Skills
+
+| Category | Skills |
+|:---|:---|
+| Programming | - R (Quarto, Rmarkdown, Shiny) <br> - JavaScript <br> - Python (jupyter, torch, tensorflow) <br> - Bash (Shell scripting, Workflow automation) <br> - MATLAB (psychtoolbox) |
+| Computational Modeling | - Artificial Neural Networks <br> - Exemplar Models <br> - Bayesian Statistics <br> - Mixed Effect Models <br> - Similarity Scaling <br> - Approximate Bayesian Computation <br> - Individual Differences |
+| Data Analysis | - Multilevel Modeling <br> - Bayesian Statistics <br> - Mixed Effects Models <br> - Dimensionality Reduction <br> - Frequentist ANOVA/Regression |
+| Experimental Skills | - Behavioral Tasks <br> - Online Data Collection (jsPsych for web-based experiments) <br> - Survey Data Collection (Qualtrics) <br> - Mechanical Turk <br> - MRI & EEG |
+| Workflow Automation & Version Control | - Multi-language workflows (integrating R, Bash, Python) <br> - Git (Documentation, backup, branching, collaboration) |
+| Tools | - RStudio <br> - VS Code <br> - Vim/Neovim <br> - Obsidian |
+| Miscellaneous Skills | - Web Scraping <br> - SQL <br> - Website Design |
+
+
+
+# 5m Skills
+
+| Category                 | Skills                                                                                                                                                                                                                                             |
+|--------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Programming              | - R (Quarto, Rmarkdown, Shiny) <br> - JavaScript <br> - Python (jupyter, torch, tensorflow) <br> - Bash (Shell scripting, Workflow automation) <br> - MATLAB (psychtoolbox)                                                                      |
+| Computational Modeling   | - Artificial Neural Networks <br> - Exemplar Models <br> - Bayesian Statistics <br> - Mixed Effect Models <br> - Similarity Scaling <br> - Approximate Bayesian Computation <br> - Individual Differences                                        |
+| Data Analysis            | - Multilevel Modeling <br> - Bayesian Statistics <br> - Mixed Effects Models <br> - Dimensionality Reduction <br> - Frequentist ANOVA/Regression                                                                                                  |
+| Experimental Skills      | - Behavioral Tasks <br> - Online Data Collection (jsPsych for web-based experiments) <br> - Survey Data Collection (Qualtrics) <br> - Mechanical Turk <br> - MRI & EEG                                                                             |
+| Workflow Automation & Version Control | - Multi-language workflows (integrating R, Bash, Python) <br> - Git (Documentation, backup, branching, collaboration)                                                                                                                             |
+| Tools                    | - RStudio <br> - VS Code <br> - Vim/Neovim <br> - Obsidian                                                                                                                                                                                         |
+| Miscellaneous Skills     | - Web Scraping <br> - SQL <br> - Website Design                                                                                                                                                                                                    |
+
+
+
+## Skills
+
+| Category                  | Skills |
+| ------------------------- | ------ |
+| Programming               | - R (Quarto, Rmarkdown, Shiny)  <br> - JavaScript  <br> - Python (jupyter, torch, tensorflow)  <br> - Bash (Shell scripting, Workflow automation)  <br> - MATLAB (psychtoolbox) |
+| Computational Modeling    | - Artificial Neural Networks  <br> - Exemplar Models  <br> - Bayesian Statistics  <br> - Mixed Effect Models  <br> - Similarity Scaling  <br> - Approximate Bayesian Computation  <br> - Individual Differences |
+| Data Analysis             | - Multilevel Modeling  <br> - Bayesian Statistics  <br> - Mixed Effects Models  <br> - Dimensionality Reduction  <br> - Frequentist ANOVA/Regression |
+| Experimental Skills       | - Behavioral Tasks  <br> - Online Data Collection (jsPsych for web-based experiments)  <br> - Survey Data Collection (Qualtrics)  <br> - Mechanical Turk  <br> - MRI & EEG |
+| Workflow Automation & Version Control | - Multi-language workflows (integrating R, Bash, Python)  <br> - Git (Documentation, backup, branching, collaboration) |
+| Tools                     | - RStudio  <br> - VS Code  <br> - Vim/Neovim  <br> - Obsidian |
+| Miscellaneous Skills      | - Web Scraping  <br> - SQL  <br> - Website Design |
+
+
+
+
+
+To ensure that the PDF version of your Quarto document renders the skills column with separate lines for each dashed item, you can use HTML tags within the Markdown table. Here's the updated table:
+
+## {{< fa cogs >}} Skills
+
+| Category | Skills |
+| --- | --- |
+| Programming | <ul><li>R (Quarto, Rmarkdown, Shiny )</li><li>JavaScript</li><li>Python (jupyter, torch, tensorflow)</li><li>Bash (Shell scripting, Workflow automation)</li><li>MATLAB (psychtoolbox)</li></ul> |
+| Computational Modeling| <ul><li>Artificial Neural Networks</li><li>Exemplar Models</li><li>Bayesian Statistics</li><li>Mixed Effect Models</li><li>Similarity Scaling</li><li>Approximate Bayesian Computation</li><li>Individual Differences</li></ul> |
+| Data Analysis  | <ul><li>Multilevel Modeling</li><li>Bayesian Statistics</li><li>Mixed Effects Models</li><li>Dimensionality Reduction</li><li>Frequentist ANOVA/Regression</li></ul> |
+| Experimental Skills | <ul><li>Behavioral Tasks</li><li>Online Data Collection (jsPsych for web-based experiments)</li><li>Survey Data Collection (Qualtrics)</li><li>Mechanical Turk</li><li>MRI & EEG</li></ul> |
+| Workflow Automation & Version Control | <ul><li>Multi-language workflows (integrating R, Bash, Python)</li><li>Git (Documentation, backup, branching, collaboration)</li></ul> |
+| Tools | <ul><li>RStudio</li><li>VS Code</li><li>Vim/Neovim</li><li>Obsidian</li></ul> |
+| Miscellaneous Skills | <ul><li>Web Scraping</li><li>SQL</li><li>Website Design</li></ul> |
+
+In this updated version, I replaced the dashed items with `<ul>` (unordered list) and `<li>` (list item) HTML tags. Each skill is now wrapped inside `<li>` tags, and the entire list is enclosed within `<ul>` tags.
+
+By using HTML tags, the PDF version of your Quarto document will render the skills column with separate lines for each item, just like in the HTML version.
+
+
+
+
+## {{< fa cogs >}} Skills
+
+| Category | Skills |
+| --- | --- |
+| Programming | - R (Quarto, Rmarkdown, Shiny )  | 
+|  | - JavaScript | 
+|  | - Python (jupyter, torch, tensorflow) |  
+|  | - Bash (Shell scripting, Workflow automation) |  
+|  | - MATLAB (psychtoolbox) |
+|  |
+| Computational Modeling| - Artificial Neural Networks |
+|  | - Exemplar Models |
+|  | - Bayesian Statistics | 
+|  | - Mixed Effect Models | 
+|  | - Similarity Scaling | 
+|  | - Approximate Bayesian Computation | 
+|  | - Individual Differences |
+|  |
+| Data Analysis | - Multilevel Modeling |
+|  | - Bayesian Statistics |
+|  | - Mixed Effects Models |
+|  | - Dimensionality Reduction |
+|  | - Frequentist ANOVA/Regression |
+|  |
+| Experimental Skills | - Behavioral Tasks |
+|  | - Online Data Collection (jsPsych for web-based experiments) |
+|  | - Survey Data Collection (Qualtrics) |
+|  | - Mechanical Turk |
+|  | - MRI & EEG |
+|  |
+| Workflow Automation & Version Control | - Multi-language workflows (integrating R, Bash, Python) |
+|  | - Git (Documentation, backup, branching, collaboration) |
+|  |
+| Tools | - RStudio |
+|  | - VS Code |
+|  | - Vim/Neovim |
+|  | - Obsidian |
+|  |
+| Miscellaneous Skills | - Web Scraping |
+|  | - SQL |
+|  | - Website Design |
+
 
 
 

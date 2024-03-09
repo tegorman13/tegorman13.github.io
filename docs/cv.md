@@ -77,43 +77,156 @@ href="https://www.researchgate.net/profile/Thomas-Gorman-3">ResearchGate</a></td
 <tbody>
 <tr class="odd">
 <td>Programming</td>
-<td>- R (Quarto, Rmarkdown, Shiny ) <br> - JavaScript <br> - Python
-(jupyter, torch, tensorflow) <br> - Bash (Shell scripting, Workflow
-automation) <br> - MATLAB (psychtoolbox)</td>
+<td>- R (Quarto, Rmarkdown, Shiny )</td>
 </tr>
 <tr class="even">
+<td></td>
+<td>- JavaScript</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>- Python (jupyter, torch, tensorflow)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>- Bash (Shell scripting, Workflow automation)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>- MATLAB (psychtoolbox)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
 <td>Computational Modeling</td>
-<td>- Artificial Neural Networks <br> - Exemplar Models <br> - Bayesian
-Statistics <br> - Mixed Effect Models <br> - Similarity Scaling <br> -
-Approximate Bayesian Computation <br> - Individual Differences</td>
+<td>- Artificial Neural Networks</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>- Exemplar Models</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>- Bayesian Statistics</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>- Mixed Effect Models</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>- Similarity Scaling</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>- Approximate Bayesian Computation</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>- Individual Differences</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>Data Analysis</td>
-<td>- Multilevel Modeling <br> - Bayesian Statistics <br> - Mixed
-Effects Models <br> - Dimensionality Reduction <br> - Frequentist
-ANOVA/Regression <br></td>
+<td>- Multilevel Modeling</td>
 </tr>
 <tr class="even">
+<td></td>
+<td>- Bayesian Statistics</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>- Mixed Effects Models</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>- Dimensionality Reduction</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>- Frequentist ANOVA/Regression</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
 <td>Experimental Skills</td>
-<td>- Behavioral Tasks <br> - Online Data Collection (jsPsych for
-web-based experiments) <br> - Survey Data Collection (Qualtrics) <br> -
-Mechanical Turk <br> - MRI &amp; EEG</td>
+<td>- Behavioral Tasks</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>- Online Data Collection (jsPsych for web-based experiments)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>- Survey Data Collection (Qualtrics)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>- Mechanical Turk</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>- MRI &amp; EEG</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>Workflow Automation &amp; Version Control</td>
-<td>- Multi-language workflows (integrating R, Bash, Python) <br> - Git
-(Documentation, backup, branching, collaboration)</td>
+<td>- Multi-language workflows (integrating R, Bash, Python)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>- Git (Documentation, backup, branching, collaboration)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
 </tr>
 <tr class="even">
 <td>Tools</td>
-<td>- RStudio <br> - VS Code <br> - Vim/Neovim <br> - Obsidian <br></td>
+<td>- RStudio</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>- VS Code</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>- Vim/Neovim</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>- Obsidian</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>Miscellaneous Skills</td>
-<td>- Web Scraping <br> - SQL <br> - Website Design</td>
+<td>- Web Scraping</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>- SQL</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>- Website Design</td>
 </tr>
 </tbody>
 </table>
+
+  
 
 ##  Journal Articles and Conference Proceedings
 

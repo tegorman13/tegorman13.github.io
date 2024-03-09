@@ -166,5 +166,12 @@
     "title": "Curriculum Vitae",
     "section": " Ad-hoc Reviewer",
     "text": "Ad-hoc Reviewer\nCognitive Science\nJournal of Experimental Psychology: General\nJournal of Experimental Psychology: Human Perception and Performance\nContemporary Educational Psychology"
+  },
+  {
+    "objectID": "cv.html#skills-1",
+    "href": "cv.html#skills-1",
+    "title": "Curriculum Vitae",
+    "section": " Skills",
+    "text": "Skills\n\n\n\n\n\n\n\nCategory\nSkills\n\n\n\n\nProgramming\n- R (Quarto, Rmarkdown, Shiny )\n\n\n\n- JavaScript\n\n\n\n- Python (jupyter, torch, tensorflow)\n\n\n\n- Bash (Shell scripting, Workflow automation)\n\n\n\n- MATLAB (psychtoolbox)\n\n\n\n\n\n\nComputational Modeling\n- Artificial Neural Networks\n\n\n\n- Exemplar Models\n\n\n\n- Bayesian Statistics\n\n\n\n- Mixed Effect Models\n\n\n\n- Similarity Scaling\n\n\n\n- Approximate Bayesian Computation\n\n\n\n- Individual Differences\n\n\n\n\n\n\nData Analysis\n- Multilevel Modeling\n\n\n\n- Bayesian Statistics\n\n\n\n- Mixed Effects Models\n\n\n\n- Dimensionality Reduction\n\n\n\n- Frequentist ANOVA/Regression\n\n\n\n\n\n\nExperimental Skills\n- Behavioral Tasks\n\n\n\n- Online Data Collection (jsPsych for web-based experiments)\n\n\n\n- Survey Data Collection (Qualtrics)\n\n\n\n- Mechanical Turk\n\n\n\n- MRI & EEG\n\n\n\n\n\n\nWorkflow Automation & Version Control\n- Multi-language workflows (integrating R, Bash, Python)\n\n\n\n- Git (Documentation, backup, branching, collaboration)\n\n\n\n\n\n\nTools\n- RStudio\n\n\n\n- VS Code\n\n\n\n- Vim/Neovim\n\n\n\n- Obsidian\n\n\n\n\n\n\nMiscellaneous Skills\n- Web Scraping\n\n\n\n- SQL\n\n\n\n- Website Design"
   }
 ]
