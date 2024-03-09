@@ -17,7 +17,7 @@
 <tbody>
 <tr class="odd">
 <td><i class="ai ai-google-scholar" aria-hidden="true"></i> <a
-href="http://scholar.google.com/citations?hl=en&amp;user=3KRfbWUAAAAJ">Google
+href="https://scholar.google.com/citations?user=USMVPjEAAAAJ&amp;hl=en">Google
 Scholar</a></td>
 <td><i class="ai ai-orcid" aria-hidden="true"></i> <a
 href="https://orcid.org/0000-0001-5366-5442">ORCiD</a></td>
