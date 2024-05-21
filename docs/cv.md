@@ -232,7 +232,7 @@ href="https://www.researchgate.net/profile/Thomas-Gorman-3">ResearchGate</a></td
 
 -   **Gorman**, T. E., & Goldstone, R. L. (2022). An instance-based
     model account of the benefits of varied practice in visuomotor
-    skill. Cognitive Psychology, 137, 101491.
+    skill. *Cognitive Psychology*, *137*, 101491.
 
 -   Bazyldo, A., Kecskemeti, S., Cochrane, A., **Gorman**, T., Rokers,
     B., Dean, D., Green, C. S., & Alexander, A. L. (2021). Assessment of
@@ -257,26 +257,26 @@ href="https://www.researchgate.net/profile/Thomas-Gorman-3">ResearchGate</a></td
 
 -   Kattner, F., Cochrane, A., Cox, C. R., **Gorman**, T. E., &
     Green, C. S. (2017). Perceptual learning generalization from
-    sequential perceptual training as a change in learning rate. Current
-    Biology, 27(6), 840-846.
+    sequential perceptual training as a change in learning rate.
+    *Current Biology*, *27*(6), 840-846.
 
 -   **Gorman**, T.E., & Green, C.S. (2016). Short-term mindfulness
     intervention reduces the negative attentional effects associated
-    with heavy media multitasking. Scientific Reports, 6.
+    with heavy media multitasking. *Scientific Reports*, *6*.
 
-##  Book Chapters
+##  Reviews and Book Chapters
 
 -   **Gorman**, T.E., Gentile, D.A., & Green, C.S. Video game addiction:
-    a short primer (2018). American Journal of Play, 10 (3), 309-327
+    a short primer (2018). *American Journal of Play*, *10* (3), 309-327
 
 -   **Gorman**, T.E., & Green, C.S. (2017). Young minds on video games.
-    In F. Blumberg & P. Brooks, (Eds.), Cognitive development in digital
-    contexts. 121-143.
+    In *Cognitive development in digital contexts*. 121-143. Academic
+    Press.
 
 -   Green, C. S., **Gorman**, T., & Bavelier, D. (2016). Action
     Video-Game Training and Its Effects on Perception and Attentional
-    Control. In Cognitive Training (pp. 107-116). Springer International
-    Publishing.
+    Control. In *Cognitive Training* (pp. 107-116). Springer
+    International Publishing.
 
 ##  Presentations
 

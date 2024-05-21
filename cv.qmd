@@ -1,11 +1,11 @@
 ---
 title: Curriculum Vitae
-title2: Thomas Gorman
+title2: Thomas E. Gorman
 role: Cognitive Scientist
 format:
-  cv-pdf: default
   html: 
      css: css/cv.css
+  cv-pdf: default
   docx: default
   md: default
   # pdf: 
@@ -43,6 +43,7 @@ cvmeta:
 execute:
   echo: false
   warning: false
+format-links: [cv-pdf]
 ---
 
 
@@ -190,7 +191,7 @@ execute:
 
 ## {{< fa file-lines >}} Journal Articles and Conference Proceedings
 
--   **Gorman**, T. E., & Goldstone, R. L. (2022). An instance-based model account of the benefits of varied practice in visuomotor skill. Cognitive Psychology, 137, 101491.
+-   **Gorman**, T. E., & Goldstone, R. L. (2022). An instance-based model account of the benefits of varied practice in visuomotor skill. *Cognitive Psychology*, *137*, 101491.
 
 -   Bazyldo, A., Kecskemeti, S., Cochrane, A., **Gorman**, T., Rokers, B., Dean, D., Green, C. S., & Alexander, A. L. (2021). Assessment of R1 Relaxometry Changes Induced via Repeated Videogame Training as a Measure of Neuroplasticity in College-aged Brains. In Proceedings of the ISMRM & SMRT Annual Meeting & Exhibition. An Online Experience. [link](https://archive.ismrm.org/2021/1050.html)
 
@@ -198,17 +199,17 @@ execute:
 
 -   Dean, C. D., Patrick, A. M., **Gorman**, T., Green, C. S., & Alexander, A. L. (2018). Neuroplastic Changes of Myelin Microstructure With Video Game Play. In Proceedings of the Joint Annual Meeting ISMRM-ESMRMB. Paris, France. [link](https://cds.ismrm.org/protected/18MProceedings/PDFfiles/0929.html)
 
--   Kattner, F., Cochrane, A., Cox, C. R., **Gorman**, T. E., & Green, C. S. (2017). Perceptual learning generalization from sequential perceptual training as a change in learning rate. Current Biology, 27(6), 840-846.
+-   Kattner, F., Cochrane, A., Cox, C. R., **Gorman**, T. E., & Green, C. S. (2017). Perceptual learning generalization from sequential perceptual training as a change in learning rate. *Current Biology*, *27*(6), 840-846.
 
--   **Gorman**, T.E., & Green, C.S. (2016). Short-term mindfulness intervention reduces the negative attentional effects associated with heavy media multitasking. Scientific Reports, 6.
+-   **Gorman**, T.E., & Green, C.S. (2016). Short-term mindfulness intervention reduces the negative attentional effects associated with heavy media multitasking. *Scientific Reports*, *6*.
 
-## {{< fa book >}} Book Chapters
+## {{< fa book >}} Reviews and Book Chapters
 
--   **Gorman**, T.E., Gentile, D.A., & Green, C.S. Video game addiction: a short primer (2018). American Journal of Play, 10 (3), 309-327
+-   **Gorman**, T.E., Gentile, D.A., & Green, C.S. Video game addiction: a short primer (2018). *American Journal of Play*, *10* (3), 309-327
 
--   **Gorman**, T.E., & Green, C.S. (2017). Young minds on video games. In F. Blumberg & P. Brooks, (Eds.), Cognitive development in digital contexts. 121-143.
+-   **Gorman**, T.E., & Green, C.S. (2017). Young minds on video games. In *Cognitive development in digital contexts*. 121-143. Academic Press. 
 
--   Green, C. S., **Gorman**, T., & Bavelier, D. (2016). Action Video-Game Training and Its Effects on Perception and Attentional Control. In Cognitive Training (pp. 107-116). Springer International Publishing.
+-   Green, C. S., **Gorman**, T., & Bavelier, D. (2016). Action Video-Game Training and Its Effects on Perception and Attentional Control. In *Cognitive Training* (pp. 107-116). Springer International Publishing.
 
 ## {{< fa comments >}} Presentations
 

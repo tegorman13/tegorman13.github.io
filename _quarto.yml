@@ -111,9 +111,10 @@ format:
     #number-depth: 3
     smooth-scroll: true
     code-block-bg: "#272822"
-    highlight-style: monokai #github #a11y
+    #highlight-style: monokai #github #a11y
+    linkcolor: red
     link-external-newwindow: true
-    link-external-filter: '^(?:http:|https:)\/\/www\.tegorman13.github.io\/custom'
+    #link-external-filter: '^(?:http:|https:)\/\/www\.tegorman13.github.io\/custom'
 
 execute:
   freeze: auto

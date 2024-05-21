@@ -136,13 +136,19 @@ Here, I will take advantage of a large dataset from Lost In Migration, a popular
 
 
 ## Other Projects
+\
 
 ### Learning the Structure of the Environment
+\
 
 ### Effect of Distance and Sequence in Category Learning
-  * Presented at MathPsych/ICCM Conference (2018)
+
+  -  In Colloboration with [Bradley Rogers](https://www.linkedin.com/in/bradley-rogers-b618294)
+  - Presented at MathPsych/ICCM Conference (2018)
+\
 
 ### Skewed vs. Uniform Frequency Distributions in Cross-Situational Learning
+- Collobration with Chen Yu
 
 
 
