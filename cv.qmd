@@ -49,7 +49,7 @@ format-links: [cv-pdf]
 
 ::: {.content-visible when-format="html"}
 \
-<p align="center"><a href="cv.pdf" class="btn btn-primary">PDF Version</a></p>
+<p align="center"><a href="cv.pdf" class="btn btn-primary"> {{< fa file-pdf >}} PDF Version</a></p>
 \
 :::
 
@@ -189,7 +189,7 @@ format-links: [cv-pdf]
 :::
 \
 
-## {{< fa file-lines >}} Journal Articles and Conference Proceedings
+## {{< fa scroll >}} Journal Articles and Conference Proceedings
 
 -   **Gorman**, T. E., & Goldstone, R. L. (2022). An instance-based model account of the benefits of varied practice in visuomotor skill. *Cognitive Psychology*, *137*, 101491.
 
@@ -240,7 +240,7 @@ Journal of Experimental Psychology: Human Perception and Performance
 
 Contemporary Educational Psychology
 
-## {{< fa handshake >}} Conferences
+## {{< fa person-chalkboard >}} Conferences
 
 Cognitive Science Conference - 2021
 
