@@ -26,6 +26,9 @@ about:
     - text: "{{< ai researchgate >}}"
       aria-label: Research Gate
       href: https://www.researchgate.net/profile/Thomas-Gorman-3
+    - icon: linkedin
+      #text: LinkedIn
+      href: https://www.linkedin.com/in/thomas-gorman-5a00a1312/
     - text: "{{< ai cv size=lg >}}"
       aria-label: cv
       href: cv.html
@@ -37,5 +40,7 @@ lightbox: true
 # date: last-modified
 ---
 
-I'm currently a PhD student in Cognitive Science at Indiana University - Bloomington. My research interests center on learning transfer and generalization, which I investigate in a variety of domains (e.g. category learning, visuomotor skill learning, and decision making). To explore these topics, I use a combination of experimental and computational modeling approaches.
+Welcome to my website! 
+
+I recently defended my dissertation and completed a joint PhD in Cognitive Science and Psychology at Indiana University. My research focuses on computational models of learning and generalization, with a particular interest in using neural network models to test theories of how experience shapes internal representations. I am also interested in exploring the factors that influence generalization, such as training sequence and variability, and in developing methods to compare human behavior to large-scale deep learning models. My work spans various domains, including category learning, visuomotor skill learning, and decision making, and I employ a combination of experimental and computational modeling approaches to investigate these topics.
 

@@ -57,6 +57,8 @@ website:
           - text: "{{< ai orcid >}}"
             href: https://orcid.org/0000-0001-5366-5442
             target: _blank
+          - icon: linkedin
+            href: https://www.linkedin.com/in/thomas-gorman-5a00a1312/
   page-footer:
     left: "© 2024 Thomas Gorman"
     center: "site created with [R](https://cran.r-project.org/) and [quarto](https://quarto.org)"
@@ -73,6 +75,8 @@ website:
         aria-label: GitHub
         target: _blank
         href: https://github.com/tegorman13
+      - icon: linkedin
+        href: https://www.linkedin.com/in/thomas-gorman-5a00a1312/
       # - text: "{{< ai osf size=1.5x >}}"
       #   aria-label: ai-osf
       #   href: https://osf.io/s8m2x/

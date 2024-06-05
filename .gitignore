@@ -15,6 +15,9 @@
 *.jpg
 *.gif
 
+# Folders
+
+_scratch/*
 
 # Misc Knit Files
 *.aux
@@ -31,11 +34,6 @@
 .DS_Store
 
 
-# MTurk credentials and data
-auth.json
-my-own-auth.json
-mturk/
-mturk-and-gmail.txt
 
 # Specific file keep
 !README.md
