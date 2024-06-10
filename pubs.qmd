@@ -33,7 +33,7 @@ You can also check my [<u>Google Scholar page</u>](https://scholar.google.com/ci
 # Manuscripts in progress 
 
 Gorman, T. E., & Goldstone, R. L. Impact of Training Variability on Visuomotor Function Learning
-and Extrapolation [project site.](https://tegorman13.github.io/htw/paper.html)   [ <iconify-icon inline="" icon="fa6-solid:file-lines"></iconify-icon>  <u><B>pdf</u></B>](pdf/htw_manuscript.pdf){target="_blank"}
+and Extrapolation. [project site.](https://tegorman13.github.io/htw/paper.html)   [ <iconify-icon inline="" icon="fa6-solid:file-lines"></iconify-icon>  <u><B>pdf</u></B>](pdf/htw_manuscript.pdf){target="_blank"}
 
 
 -----

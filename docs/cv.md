@@ -38,28 +38,28 @@ href="https://www.researchgate.net/profile/Thomas-Gorman-3">ResearchGate</a></td
 
   
 
-##  Research Experience
+##  Experience
 
 **Percepts and Concepts Lab**
 
+-   PhD Student (2017 - Present)
 -   Principal Investigator: Robert Goldstone, PhD
--   Graduate Student (2017 - Present)
 
 **Learning and Transfer Lab (University of Wisconsin-Madison)**
 
--   Principal Investigator: C. Shawn Green, PhD
 -   Lab Manager / Research Coordinator (2015-2017)
 -   Undergraduate Research Assistant (2013 - May 2015)
+-   Principal Investigator: C. Shawn Green, PhD
 
 **Alexander Lab – Medical Physics (University of Wisconsin-Madison)**
 
--   Principal Investigator: Andrew Alexander, PhD
 -   Research Coordinator (2015 – 2017)
+-   Principal Investigator: Andrew Alexander, PhD
 
 **Center for Healthy Minds (University of Wisconsin-Madison)**
 
--   Principal Investigator: Richard J. Davidson, PhD
 -   Undergraduate Research Assistant (January 2014 - May 2015)
+-   Principal Investigator: Richard J. Davidson, PhD
 
 ##  Skills
 
@@ -141,15 +141,15 @@ href="https://www.researchgate.net/profile/Thomas-Gorman-3">ResearchGate</a></td
 </tr>
 <tr class="odd">
 <td></td>
-<td>- Mixed Effects Models</td>
+<td>- ANOVA; t-test; regression</td>
 </tr>
 <tr class="even">
 <td></td>
-<td>- Dimensionality Reduction</td>
+<td>- Mixed Effects Models</td>
 </tr>
 <tr class="odd">
 <td></td>
-<td>- Frequentist ANOVA/Regression</td>
+<td>- Dimensionality Reduction</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -229,6 +229,10 @@ href="https://www.researchgate.net/profile/Thomas-Gorman-3">ResearchGate</a></td
   
 
 ##  Journal Articles and Conference Proceedings
+
+-   **Gorman**, T. E., & Goldstone, R. L. (in progress). Impact of
+    Training Variability on Visuomotor Function Learning and
+    Extrapolation. [link](https://tegorman13.github.io/htw/paper.html)
 
 -   **Gorman**, T. E., & Goldstone, R. L. (2022). An instance-based
     model account of the benefits of varied practice in visuomotor

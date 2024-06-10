@@ -1,7 +1,7 @@
 ---
 title: Curriculum Vitae
 title2: Thomas E. Gorman
-role: Cognitive Scientist
+role: Cognitive Scientist | Data Scientist
 format:
   html: 
      css: css/cv.css
@@ -54,7 +54,6 @@ format-links: [cv-pdf]
 :::
 
 
-
 ::: {.content-visible unless-format="pdf"}
 | <i class="fa fa-envelope" aria-hidden="true" title="An envelope"></i> [tegorman@iu.edu](mailto:tegorman@iu.edu) | <i class="fa fa-envelope" aria-hidden="true" title="An envelope"></i> [tegorman13@gmail.com](mailto:tegorman13@gmail.com) |
 | --- | --- |
@@ -104,28 +103,29 @@ format-links: [cv-pdf]
 
 \
 
-## {{< fa chart-column >}} Research Experience
+## {{< fa chart-column >}} Experience
 
 **Percepts and Concepts Lab**
 
+-   PhD Student (2017 - Present)
 -   Principal Investigator: Robert Goldstone, PhD
--   Graduate Student (2017 - Present)
 
 **Learning and Transfer Lab (University of Wisconsin-Madison)**
 
--   Principal Investigator: C. Shawn Green, PhD
 -   Lab Manager / Research Coordinator (2015-2017)
 -   Undergraduate Research Assistant (2013 - May 2015)
+-   Principal Investigator: C. Shawn Green, PhD
 
 **Alexander Lab – Medical Physics (University of Wisconsin-Madison)**
 
--   Principal Investigator: Andrew Alexander, PhD
 -   Research Coordinator (2015 – 2017)
+-   Principal Investigator: Andrew Alexander, PhD
+
 
 **Center for Healthy Minds (University of Wisconsin-Madison)**
 
--   Principal Investigator: Richard J. Davidson, PhD
 -   Undergraduate Research Assistant (January 2014 - May 2015)
+-   Principal Investigator: Richard J. Davidson, PhD
 
 
 \pagebreak
@@ -165,9 +165,9 @@ format-links: [cv-pdf]
 |  |
 | Data Analysis | - Multilevel Modeling |
 |  | - Bayesian Statistics |
+|  | - ANOVA; t-test; regression |
 |  | - Mixed Effects Models |
 |  | - Dimensionality Reduction |
-|  | - Frequentist ANOVA/Regression |
 |  |
 | Experimental Skills | - Behavioral Tasks |
 |  | - Online Data Collection (jsPsych for web-based experiments) |
@@ -190,6 +190,9 @@ format-links: [cv-pdf]
 \
 
 ## {{< fa scroll >}} Journal Articles and Conference Proceedings
+
+- **Gorman**, T. E., & Goldstone, R. L. (in progress). Impact of Training Variability on Visuomotor Function Learning
+and Extrapolation. [link](https://tegorman13.github.io/htw/paper.html) 
 
 -   **Gorman**, T. E., & Goldstone, R. L. (2022). An instance-based model account of the benefits of varied practice in visuomotor skill. *Cognitive Psychology*, *137*, 101491.
 
