@@ -26,6 +26,19 @@ You can also check my [<u>Google Scholar page</u>](https://scholar.google.com/ci
 
 -----
 
+<br>
+
+
+
+# Manuscripts in progress 
+
+Gorman, T. E., & Goldstone, R. L. Impact of Training Variability on Visuomotor Function Learning
+and Extrapolation [project site.](https://tegorman13.github.io/htw/paper.html)   [ <iconify-icon inline="" icon="fa6-solid:file-lines"></iconify-icon>  <u><B>pdf</u></B>](pdf/htw_manuscript.pdf){target="_blank"}
+
+
+-----
+
+<br>
 
 # Articles
 
@@ -51,6 +64,7 @@ Gorman, T. E., & Green, C. S. (2016). Short-term mindfulness intervention reduce
 \
 \
 
+-----
 
 # Review Papers & Book Chapters
 
@@ -58,7 +72,7 @@ Gorman, T. E., Gentile, D. A., & Green, C. S. (2018). Problem gaming: A short pr
 [<iconify-icon inline="" icon="fa6-solid:file-lines"></iconify-icon> <u><B>pdf</u></B>](pdf/Gorman et al_2018_Problem_gaming.pdf){target="_blank"}
 \
 \
-Gorman, T. E., & Green, C. S. (2017). Young minds on video games. In *Cognitive development in digital contexts* (pp. 121–143). Academic Press. 
+Gorman, T. E., & Green, C. S. (2017). Young minds on video games. In *Cognitive development in digital contexts* (pp. 121–143). Academic Press. [link](https://psycnet.apa.org/record/2017-28765-006)
 \
 \
 Green, C. S., Gorman, T., & Bavelier, D. (2016). Action Video-Game Training and Its Effects on Perception and Attentional Control. In T. Strobach & J. Karbach (Eds.), *Cognitive Training* (pp. 107–116). Springer International Publishing.  [doi.org/10.1007/978-3-319-42662-4_10](https://doi.org/10.1007/978-3-319-42662-4_10)
@@ -83,7 +97,4 @@ Short term mindfulness intervention reduces cognitive deficits in heavy media mu
 -----
 
 
-# Preprints
 
-
------
