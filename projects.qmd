@@ -143,7 +143,19 @@ _______________________________________________________________
 <br><br>
 
 ### Skewed vs. Uniform Frequency Distributions in Cross-Situational Learning
+
+<br>
+
+::: {layout-nrow=1}
+![](/Assets/csl_test3-bg.png){width=500}
+
+![](/Assets/csl_train.png){width=500}
+:::
+
+Participants were trained in a cross-situational learning environment, wherein category instances are presented simultaneously with category labels, thus requiring co-occurrences to be tracked across trials in order for the category-label mappings to be disambiguated. The critical manipulation is whether the instances of the categories are uniform (each category instance presented the same number of times), or Zipfian (a few instances presented at a far higher frequency than others). 
+
 - Collobration with [Chen Yu](https://www.la.utexas.edu/users/dil/)
+- [{{< fa brands github >}} repo](https://github.com/tegorman13/CSL_Zipf) \
 
 <br><br>
 
