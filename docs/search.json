@@ -1,73 +1,45 @@
 [
   {
-    "objectID": "cv.html",
-    "href": "cv.html",
-    "title": "Curriculum Vitae",
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
     "section": "",
-    "text": "PDF Version"
+    "text": "Labs & Collaborators\nRob Goldstone - Percepts and Concepts Lab\nRob Nosofsky - Nosofsky Lab\nChen Yu - Developmental Intelligence Lab\nC. Shawn Green - Learning and Transfer Lab\n\n\n\n\nExamining the Effects of Training Variability on Extrapolation Performance\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe ALM Model\n\n\n\n\n\n\n\n\n\n\n\n\nThis project investigates the influence of training variability on extrapolation in a uni-dimensional visuomotor function learning task. Across three experiments, we compare constant and varied training conditions in terms of learning performance, extrapolation accuracy, and the ability to reliably discriminate between stimuli.\nTo account for the empirical results, I fit the Associative Learning Model (ALM) and the Extrapolation-Association Model (EXAM) to the data from each individual participant. Notably, this study is the first to employ approximate Bayesian computation (ABC) to fit ALM and EXAM, enabling us to thoroughly investigate the full range of posterior predictions of each model, and to examine the ability of these influential models of function learning to account for both the group level and individual level data.\n Link to project page\n\n\n\n\nHuman perception of dot pattern prototype similarity\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIn colloboration with Rob Nosofsky\n Link to project site\n\n\n\n\nVariability and Visuomotor Learning\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFor this project, I programmed a simple projectile launching task to serve as a conceptual replication of an influential paradigm in the visuomotor skill learning literature. Several of the canonical empirical patterns are replicated, with the varied trained participants tending to perform better during testing in both experiments. A major issue with previous research in the cross-disciplinary “benefits of variability” literature is that many previous works do not adequately control for the similarity between training and testing conditions. Such issues arise when both from failures to consider the possibility of non-linear generalization, and from often the unquestioned assumption that participants are acquiring, and then generalizing from prototype or schema-based representations. I introduce a theoretically motivated method of explicitly quantifying the similarity between training experience and testing condition. The resulting similarity quantity can then be used to explicitly control for similarity (by adding it as a covariate to the statistical model). The effect of variability remains significant while controlling for similarity, which I argue is a more rigorous demonstration of the effect of variability on testing performance than what is typically provided with standard methods. I conclude by introducing an extended version of the model that assumes training variation influences the steepness of the generalization gradient. With this flexible similarity mechanism, the group-level effect of variability can then be accounted for within the similarity-based generalization framework.\n\n\n pdf of the journal article\n Link to online version\n\nGorman, T. E., & Goldstone, R. L. (2022). An instance-based model account of the benefits of varied practice in visuomotor skill. Cognitive Psychology, 137, 101491. doi.org/10.1016/j.cogpsych.2022.101491\n\n\n\n\nInvestigating the Role of Variability in Real-World Learning\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThis project takes advantage of a large dataset from Lost In Migration, a popular online game resembling the classic Eriksen flanker task. Due to randomization of game trials, some users experience much more variability in the early phases of the game than others. Additionally, the dataset provided by Lumos labs includes data from users who experienced a ‘high variability’ version of the game before being switched to the standard version. I will assess the influence of both variability-via-randomization, and variability-via-manipulation, and once again evaluate the ability of similarity-based-generalization models to account for the observed patterns. While the key theoretical questions, and general modeling approach will remain the same as the first two projects, the Lost In Migration’s dataset will present the opportunity to examine the influence of variability in a much more graded fashion, and to assess the ecological validity of the phenomena.\n\n\n\n\nLearning the Structure of the Environment\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nassessing how the properties of simple grid world environments influence how participants search for rewards\n\n\n\n\n\nEffect of Distance and Sequence in Category Learning\n\n\nIn Colloboration with Bradley Rogers\nPresented at MathPsych/ICCM Conference (2018)\n\n\n\n\n\n\nSkewed vs. Uniform Frequency Distributions in Cross-Situational Learning\n\nCollobration with Chen Yu\n\n\n\n\n\nDissertation\n\nThe Role of Variability in Learning Generalization: A Computational Modeling Approach\n Link to my dissertation website"
   },
   {
-    "objectID": "cv.html#education",
-    "href": "cv.html#education",
-    "title": "Curriculum Vitae",
-    "section": " Education",
-    "text": "Education\n\n\n\n\n\n\n\n2017 - May 2024\n\n\n\nUniversity of Indiana - Bloomington\n- PhD in Psychology and Cognitive Science\n\n\n\n\n\n2011 - 2015\n\n\n\nUniversity of Wisconsin – Madison\n- B.Sc. in Psychology"
+    "objectID": "projects.html#dissertation---the-role-of-variability-in-learning-generalization-a-computational-modeling-approa",
+    "href": "projects.html#dissertation---the-role-of-variability-in-learning-generalization-a-computational-modeling-approa",
+    "title": "Projects",
+    "section": "Dissertation - The Role of Variability in Learning Generalization: A Computational Modeling Approa",
+    "text": "Dissertation - The Role of Variability in Learning Generalization: A Computational Modeling Approa\nLink to my dissertation website"
   },
   {
-    "objectID": "cv.html#research-experience",
-    "href": "cv.html#research-experience",
-    "title": "Curriculum Vitae",
-    "section": " Research Experience",
-    "text": "Research Experience\nPercepts and Concepts Lab\n\nPrincipal Investigator: Robert Goldstone, PhD\nGraduate Student (2017 - Present)\n\nLearning and Transfer Lab (University of Wisconsin-Madison)\n\nPrincipal Investigator: C. Shawn Green, PhD\nLab Manager / Research Coordinator (2015-2017)\nUndergraduate Research Assistant (2013 - May 2015)\n\nAlexander Lab – Medical Physics (University of Wisconsin-Madison)\n\nPrincipal Investigator: Andrew Alexander, PhD\nResearch Coordinator (2015 – 2017)\n\nCenter for Healthy Minds (University of Wisconsin-Madison)\n\nPrincipal Investigator: Richard J. Davidson, PhD\nUndergraduate Research Assistant (January 2014 - May 2015)"
+    "objectID": "projects.html#variability-and-visuomotor-learning",
+    "href": "projects.html#variability-and-visuomotor-learning",
+    "title": "Projects",
+    "section": "Variability and Visuomotor Learning",
+    "text": "Variability and Visuomotor Learning\n\n\n\n\n\nFor this project, I programmed a simple projectile launching task to serve as a conceptual replication of an influential paradigm in the visuomotor skill learning literature. Several of the canonical empirical patterns are replicated, with the varied trained participants tending to perform better during testing in both experiments. A major issue with previous research in the cross-disciplinary “benefits of variability” literature is that many previous works do not adequately control for the similarity between training and testing conditions. Such issues arise when both from failures to consider the possibility of non-linear generalization, and from often the unquestioned assumption that participants are acquiring, and then generalizing from prototype or schema-based representations. I introduce a theoretically motivated method of explicitly quantifying the similarity between training experience and testing condition. The resulting similarity quantity can then be used to explicitly control for similarity (by adding it as a covariate to the statistical model). The effect of variability remains significant while controlling for similarity, which I argue is a more rigorous demonstration of the effect of variability on testing performance than what is typically provided with standard methods. I conclude by introducing an extended version of the model that assumes training variation influences the steepness of the generalization gradient. With this flexible similarity mechanism, the group-level effect of variability can then be accounted for within the similarity-based generalization framework.\n\n\npdf of the journal article\nLink to online version of journal article"
   },
   {
-    "objectID": "cv.html#skills",
-    "href": "cv.html#skills",
-    "title": "Curriculum Vitae",
-    "section": " Skills",
-    "text": "Skills\n\n\n\n\n\n\n\nCategory\nSkills\n\n\n\n\nProgramming\n- R (Quarto, Rmarkdown, Shiny )  - JavaScript  - Python (jupyter, torch, tensorflow)  - Bash (Shell scripting, Workflow automation)  - MATLAB (psychtoolbox)\n\n\nComputational Modeling\n- Artificial Neural Networks  - Exemplar Models  - Bayesian Statistics  - Mixed Effect Models  - Similarity Scaling  - Approximate Bayesian Computation  - Individual Differences\n\n\nData Analysis\n- Multilevel Modeling  - Bayesian Statistics  - Mixed Effects Models  - Dimensionality Reduction  - Frequentist ANOVA/Regression \n\n\nExperimental Skills\n- Behavioral Tasks  - Online Data Collection (jsPsych for web-based experiments)  - Survey Data Collection (Qualtrics)  - Mechanical Turk  - MRI & EEG\n\n\nWorkflow Automation & Version Control\n- Multi-language workflows (integrating R, Bash, Python)  - Git (Documentation, backup, branching, collaboration)\n\n\nTools\n- RStudio  - VS Code  - Vim/Neovim  - Obsidian \n\n\nMiscellaneous Skills\n- Web Scraping  - SQL  - Website Design"
+    "objectID": "projects.html#examining-the-effects-of-training-variability-on-extrapolation-performance",
+    "href": "projects.html#examining-the-effects-of-training-variability-on-extrapolation-performance",
+    "title": "Projects",
+    "section": "Examining the Effects of Training Variability on Extrapolation Performance",
+    "text": "Examining the Effects of Training Variability on Extrapolation Performance\n\nThis project investigates the influence of training variability on extrapolation in a uni-dimensional visuomotor function learning task. Across three experiments, we compare constant and varied training conditions in terms of learning performance, extrapolation accuracy, and the ability to reliably discriminate between stimuli.\nTo account for the empirical results, I fit the Associative Learning Model (ALM) and the Extrapolation-Association Model (EXAM) to the data from each individual participant. Notably, this study is the first to employ approximate Bayesian computation (ABC) to fit ALM and EXAM, enabling us to thoroughly investigate the full range of posterior predictions of each model, and to examine the ability of these influential models of function learning to account for both the group level and individual level data.\n\nLink to project page"
   },
   {
-    "objectID": "cv.html#journal-articles-and-conference-proceedings",
-    "href": "cv.html#journal-articles-and-conference-proceedings",
-    "title": "Curriculum Vitae",
-    "section": " Journal Articles and Conference Proceedings",
-    "text": "Journal Articles and Conference Proceedings\n\nGorman, T. E., & Goldstone, R. L. (in progress). Impact of Training Variability on Visuomotor Function Learning and Extrapolation. link\nGorman, T. E., & Goldstone, R. L. (2022). An instance-based model account of the benefits of varied practice in visuomotor skill. Cognitive Psychology, 137, 101491.\nBazyldo, A., Kecskemeti, S., Cochrane, A., Gorman, T., Rokers, B., Dean, D., Green, C. S., & Alexander, A. L. (2021). Assessment of R1 Relaxometry Changes Induced via Repeated Videogame Training as a Measure of Neuroplasticity in College-aged Brains. In Proceedings of the ISMRM & SMRT Annual Meeting & Exhibition. An Online Experience. link\nPatrick, A., Dean, D., Gorman, T., Green, C. S., & Alexander, A. (2019). Assessment of Microstructural Changes Induced via Repeated Videogame Training as a Measure of Neuroplasticity in Normal Developing, College-age Brains. In Proceedings of the 27th Annual Meeting & Exhibition of the International Society for Magnetic Resonance in Medicine. Montréal, QC, Canada. link\nDean, C. D., Patrick, A. M., Gorman, T., Green, C. S., & Alexander, A. L. (2018). Neuroplastic Changes of Myelin Microstructure With Video Game Play. In Proceedings of the Joint Annual Meeting ISMRM-ESMRMB. Paris, France. link\nKattner, F., Cochrane, A., Cox, C. R., Gorman, T. E., & Green, C. S. (2017). Perceptual learning generalization from sequential perceptual training as a change in learning rate. Current Biology, 27(6), 840-846.\nGorman, T.E., & Green, C.S. (2016). Short-term mindfulness intervention reduces the negative attentional effects associated with heavy media multitasking. Scientific Reports, 6."
+    "objectID": "projects.html#investigating-the-role-of-variability-in-real-world-learning",
+    "href": "projects.html#investigating-the-role-of-variability-in-real-world-learning",
+    "title": "Projects",
+    "section": "Investigating the Role of Variability in Real-World Learning",
+    "text": "Investigating the Role of Variability in Real-World Learning\n\n\n\n\n\nThis project takes advantage of a large dataset from Lost In Migration, a popular online game resembling the classic Eriksen flanker task. Due to randomization of game trials, some users experience much more variability in the early phases of the game than others. Additionally, the dataset provided by Lumos labs includes data from users who experienced a ‘high variability’ version of the game before being switched to the standard version. I will assess the influence of both variability-via-randomization, and variability-via-manipulation, and once again evaluate the ability of similarity-based-generalization models to account for the observed patterns. While the key theoretical questions, and general modeling approach will remain the same as the first two projects, the Lost In Migration’s dataset will present the opportunity to examine the influence of variability in a much more graded fashion, and to assess the ecological validity of the phenomena."
   },
   {
-    "objectID": "cv.html#book-chapters",
-    "href": "cv.html#book-chapters",
-    "title": "Curriculum Vitae",
-    "section": " Book Chapters",
-    "text": "Book Chapters\n\nGorman, T.E., Gentile, D.A., & Green, C.S. Video game addiction: a short primer (2018). American Journal of Play, 10 (3), 309-327\nGorman, T.E., & Green, C.S. (2017). Young minds on video games. In F. Blumberg & P. Brooks, (Eds.), Cognitive development in digital contexts. 121-143.\nGreen, C. S., Gorman, T., & Bavelier, D. (2016). Action Video-Game Training and Its Effects on Perception and Attentional Control. In Cognitive Training (pp. 107-116). Springer International Publishing."
-  },
-  {
-    "objectID": "cv.html#presentations",
-    "href": "cv.html#presentations",
-    "title": "Curriculum Vitae",
-    "section": " Presentations",
-    "text": "Presentations\n\nHalf Day Tutorial on Measuring Mindfulness Behaviorally: Onsite/Online Data Col-lection with jsPsych\n\nCognitive Science Conference – 2018\n\nDoes interleaving go the distance? Exploring the effect of dissimilarity on interleaved category learning\n\nMath Psych/ICCM 2018\n\nShort term mindfulness intervention reduces cognitive deficits in heavy media multi-taskers\n\nUndergraduate Research Symposium – UW-Madison – April 16th, 2015"
-  },
-  {
-    "objectID": "cv.html#awards",
-    "href": "cv.html#awards",
-    "title": "Curriculum Vitae",
-    "section": " Awards",
-    "text": "Awards\nIU-Bloomington – Development Training Grant – beginning Fall 2019\nIU-Bloomington - Steinmetz Summer Research Award - 2018\nUW-Madison - Undergraduate Research Scholar Award – 2015\nUW-Madison - Hilldale Undergraduate/Faculty Research Fellowship – 2014"
-  },
-  {
-    "objectID": "cv.html#peer-review",
-    "href": "cv.html#peer-review",
-    "title": "Curriculum Vitae",
-    "section": " Peer Review",
-    "text": "Peer Review\nCognitive Science\nJournal of Experimental Psychology: General\nJournal of Experimental Psychology: Human Perception and Performance\nContemporary Educational Psychology"
-  },
-  {
-    "objectID": "cv.html#conferences",
-    "href": "cv.html#conferences",
-    "title": "Curriculum Vitae",
-    "section": " Conferences",
-    "text": "Conferences\nCognitive Science Conference - 2021\nCognitive Science Conference - 2018\nMathematical Psychology & ICCM 2018\nBoston Meeting on Methods in Cognitive Training (NSF Sponsored) – May 2017"
+    "objectID": "projects.html#other-projects",
+    "href": "projects.html#other-projects",
+    "title": "Projects",
+    "section": "Other Projects",
+    "text": "Other Projects\n\n\n\nHuman perception of dot pattern prototype similarity\n\nIn colloboration with Rob Nosofsky\nLink to project site\n\n\n\nLearning the Structure of the Environment\n\n- assessing how the properties of simple grid world environments influence how participants search for rewards\n\n\nEffect of Distance and Sequence in Category Learning\n\nIn Colloboration with Bradley Rogers\nPresented at MathPsych/ICCM Conference (2018)\n\n\n\n\nSkewed vs. Uniform Frequency Distributions in Cross-Situational Learning\n\nCollobration with Chen Yu"
   },
   {
     "objectID": "pubs.html",
@@ -77,11 +49,11 @@
     "text": "You can also check my Google Scholar page for an updated list of my works.\n\n\n\nManuscripts in progress\nGorman, T. E., & Goldstone, R. L. Impact of Training Variability on Visuomotor Function Learning and Extrapolation. project site.  pdf\n\n\n\n\nArticles\nGorman, T. E., & Goldstone, R. L. (2022). An instance-based model account of the benefits of varied practice in visuomotor skill. Cognitive Psychology, 137, 101491. doi.org/10.1016/j.cogpsych.2022.101491  pdf\n\nBazyldo, A., Kecskemeti, S., Cochrane, A., Gorman, T., Rokers, B., Dean, D., Green, C. S., & Alexander, A. L. (2021). Assessment of R1 Relaxometry Changes Induced via Repeated Videogame Training as a Measure of Neuroplasticity in College-aged Brains. In Proceedings of the ISMRM & SMRT Annual Meeting & Exhibition. An Online Experience. link\n\nPatrick, A., Dean, D., Gorman, T., Green, C. S., & Alexander, A. (2019). Assessment of Microstructural Changes Induced via Repeated Videogame Training as a Measure of Neuroplasticity in Normal Developing, College-age Brains. In Proceedings of the 27th Annual Meeting & Exhibition of the International Society for Magnetic Resonance in Medicine. Montréal, QC, Canada. link\n\nDean, C. D., Patrick, A. M., Gorman, T., Green, C. S., & Alexander, A. L. (2018). Neuroplastic Changes of Myelin Microstructure With Video Game Play. In Proceedings of the Joint Annual Meeting ISMRM-ESMRMB. Paris, France. link\n\nKattner, F., Cochrane, A., Cox, C. R., Gorman, T. E., & Green, C. S. (2017). Perceptual learning generalization from sequential perceptual training as a change in learning rate. Current Biology, 27(6), 840–846. doi.org/10.1016/j.cub.2017.01.046  pdf\n\nGorman, T. E., & Green, C. S. (2016). Short-term mindfulness intervention reduces the negative attentional effects associated with heavy media multitasking. Scientific Reports, 6. doi.org/10.1038/srep24542  pdf\n\n\n\n\n\nReview Papers & Book Chapters\nGorman, T. E., Gentile, D. A., & Green, C. S. (2018). Problem gaming: A short primer. American Journal of Play, 10(3), 309–327.  pdf\n\nGorman, T. E., & Green, C. S. (2017). Young minds on video games. In Cognitive development in digital contexts (pp. 121–143). Academic Press. link\n\nGreen, C. S., Gorman, T., & Bavelier, D. (2016). Action Video-Game Training and Its Effects on Perception and Attentional Control. In T. Strobach & J. Karbach (Eds.), Cognitive Training (pp. 107–116). Springer International Publishing. doi.org/10.1007/978-3-319-42662-4_10  pdf\n\n\n\n\n\n\nConference Presentations\nHalf Day Tutorial on Measuring Mindfulness Behaviorally: Onsite/Online Data Collection with jsPsych -Cognitive Science Conference – 2018\nDoes interleaving go the distance? Exploring the effect of dissimilarity on interleaved category learning -Math Psych/ICCM 2018\nShort term mindfulness intervention reduces cognitive deficits in heavy media multi-taskers -Undergraduate Research Symposium – UW-Madison – April 16th, 2015"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Thomas E. Gorman",
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
     "section": "",
-    "text": "Welcome to my website!\nI recently defended my dissertation and completed a joint PhD in Cognitive Science and Psychology at Indiana University. My research focuses on computational models of learning and generalization, with a particular interest in using neural network models to test theories of how experience shapes internal representations. I am also interested in exploring the factors that influence generalization, such as training sequence and variability, and in developing methods to compare human behavior to large-scale deep learning models. My work spans various domains, including category learning, visuomotor skill learning, and decision making, and I employ a combination of experimental and computational modeling approaches to investigate these topics."
+    "text": "Email\n\ntegorman@iu.edu\ntegorman13@gmail.com\n\n\n\nOffice\n\nGeology 6050L"
   },
   {
     "objectID": "resources.html",
@@ -119,60 +91,39 @@
     "text": "Datasets\n\n\nExpand/Collapse\n\n\nGitHub\nOSF\nZenodo\nFigshare\nMendeley Data\nOpenNeuro\nDatadryad\nGoogle Dataset Search\nJournal of Open Psychology Data\nOpen Psychometrics\nCode Ocean\nBitbucket\nPrinceton Dataspace\nKiltHub\nPapers With Code (Datasets)"
   },
   {
-    "objectID": "resources.html#cognitive-modeling2",
-    "href": "resources.html#cognitive-modeling2",
-    "title": "Resources",
-    "section": "Cognitive Modeling2",
-    "text": "Cognitive Modeling2"
-  },
-  {
-    "objectID": "resources.html#cognitive-modeling3",
-    "href": "resources.html#cognitive-modeling3",
-    "title": "Resources",
-    "section": "Cognitive Modeling3",
-    "text": "Cognitive Modeling3"
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Rob Goldstone - Percepts and Concepts Lab\nRob Nosofsky - Nosofsky Lab\nChen Yu - Developmental Intelligence Lab\nC. Shawn Green - Learning and Transfer Lab"
-  },
-  {
-    "objectID": "projects.html#labs-collaborators",
-    "href": "projects.html#labs-collaborators",
-    "title": "Projects",
-    "section": "",
-    "text": "Rob Goldstone - Percepts and Concepts Lab\nRob Nosofsky - Nosofsky Lab\nChen Yu - Developmental Intelligence Lab\nC. Shawn Green - Learning and Transfer Lab"
-  },
-  {
-    "objectID": "projects.html#primary-phd-work",
-    "href": "projects.html#primary-phd-work",
-    "title": "Projects",
-    "section": "Primary PhD Work",
-    "text": "Primary PhD Work\nIn all of these projects, my goal is to understand and explain the patterns of performance observed, and to identify the cognitive and computational mechanisms that underlie learning and transfer. By exploring these topics, I hope to contribute to a better understanding of how we learn and generalize.\nLink to my dissertation website\n\nVariability and Visuomotor Learning\npdf of the journal article\nLink to online version of journal article\n\n\n\n\n\n\n\n\n\nFor this project, I programmed a simple projectile launching task to serve as a conceptual replication of an influential paradigm in the visuomotor skill learning literature. Several of the canonical empirical patterns are replicated, with the varied trained participants tending to perform better during testing in both experiments. A major issue with previous research in the cross-disciplinary “benefits of variability” literature is that many previous works do not adequately control for the similarity between training and testing conditions. Such issues arise when both from failures to consider the possibility of non-linear generalization, and from often the unquestioned assumption that participants are acquiring, and then generalizing from prototype or schema-based representations. I introduce a theoretically motivated method of explicitly quantifying the similarity between training experience and testing condition. The resulting similarity quantity can then be used to explicitly control for similarity (by adding it as a covariate to the statistical model). The effect of variability remains significant while controlling for similarity, which I argue is a more rigorous demonstration of the effect of variability on testing performance than what is typically provided with standard methods. I conclude by introducing an extended version of the model that assumes training variation influences the steepness of the generalization gradient. With this flexible similarity mechanism, the group-level effect of variability can then be accounted for within the similarity-based generalization framework.\n\n\n\nExamining the Effects of Training Variability on Extrapolation Performance\n\nLink to project page\n\n\n\n\n\n\n\n\n\n\nIn a follow up to my first project, a modified version of the task is used in conjunction with a testing procedure that challenges participants to extrapolate well beyond their training experience. In line with previous research in the function learning literature, participants show evidence of successful extrapolation in our linear task environment. Surprisingly though, the constant training group outperforms the varied training group consistently across numerous variants of the task. Such a pattern is far from unheard of in the vast literature on training variability, and it is therefore remains a worthwhile challenge to evaluate the ability of similarity-based models to account for the observed effects. Additionally, the cognitive process models implemented for project 2 will go beyond the modelling efforts of the previous project in two respects. 1) Extensions that enable the model to produce predictions of participant responses, and 2) fitting and attempting to account for behavior in both training AND testing phases of the experiment.\n\n\n\nInvestigating the Role of Variability in Real-World Learning: A Study Using Lost In Migration Data\n\n\n\n\n\n\n\n\n\nThis project takes advantage of a large dataset from Lost In Migration, a popular online game resembling the classic Eriksen flanker task. Due to randomization of game trials, some users experience much more variability in the early phases of the game than others. Additionally, the dataset provided by Lumos labs includes data from users who experienced a ‘high variability’ version of the game before being switched to the standard version. I will assess the influence of both variability-via-randomization, and variability-via-manipulation, and once again evaluate the ability of similarity-based-generalization models to account for the observed patterns. While the key theoretical questions, and general modeling approach will remain the same as the first two projects, the Lost In Migration’s dataset will present the opportunity to examine the influence of variability in a much more graded fashion, and to assess the ecological validity of the phenomena."
-  },
-  {
-    "objectID": "projects.html#other-projects",
-    "href": "projects.html#other-projects",
-    "title": "Projects",
-    "section": "Other Projects",
-    "text": "Other Projects\n\n\n\nHuman perception of dot pattern prototype similarity\n\nIn colloboration with Rob Nosofsky\nLink to project site\n\n\n\nLearning the Structure of the Environment\n\n- assessing how the properties of simple grid world environments influence how participants search for rewards\n\n\nEffect of Distance and Sequence in Category Learning\n\nIn Colloboration with Bradley Rogers\nPresented at MathPsych/ICCM Conference (2018)\n\n\n\n\nSkewed vs. Uniform Frequency Distributions in Cross-Situational Learning\n\nCollobration with Chen Yu"
-  },
-  {
-    "objectID": "cv.html#ad-hoc-reviewer",
-    "href": "cv.html#ad-hoc-reviewer",
+    "objectID": "cv.html",
+    "href": "cv.html",
     "title": "Curriculum Vitae",
-    "section": " Ad-hoc Reviewer",
-    "text": "Ad-hoc Reviewer\nCognitive Science\nJournal of Experimental Psychology: General\nJournal of Experimental Psychology: Human Perception and Performance\nContemporary Educational Psychology"
+    "section": "",
+    "text": "PDF Version"
   },
   {
-    "objectID": "cv.html#skills-1",
-    "href": "cv.html#skills-1",
+    "objectID": "cv.html#education",
+    "href": "cv.html#education",
+    "title": "Curriculum Vitae",
+    "section": " Education",
+    "text": "Education\n\n\n\n\n\n\n\n2017 - May 2024\n\n\n\nUniversity of Indiana - Bloomington\n- PhD in Psychology and Cognitive Science\n\n\n\n\n\n2011 - 2015\n\n\n\nUniversity of Wisconsin – Madison\n- B.Sc. in Psychology"
+  },
+  {
+    "objectID": "cv.html#experience",
+    "href": "cv.html#experience",
+    "title": "Curriculum Vitae",
+    "section": " Experience",
+    "text": "Experience\nPercepts and Concepts Lab\n\nPhD Student (2017 - Present)\nPrincipal Investigator: Robert Goldstone, PhD\n\nLearning and Transfer Lab (University of Wisconsin-Madison)\n\nLab Manager / Research Coordinator (2015-2017)\nUndergraduate Research Assistant (2013 - May 2015)\nPrincipal Investigator: C. Shawn Green, PhD\n\nAlexander Lab – Medical Physics (University of Wisconsin-Madison)\n\nResearch Coordinator (2015 – 2017)\nPrincipal Investigator: Andrew Alexander, PhD\n\nCenter for Healthy Minds (University of Wisconsin-Madison)\n\nUndergraduate Research Assistant (January 2014 - May 2015)\nPrincipal Investigator: Richard J. Davidson, PhD"
+  },
+  {
+    "objectID": "cv.html#skills",
+    "href": "cv.html#skills",
     "title": "Curriculum Vitae",
     "section": " Skills",
-    "text": "Skills\n\n\n\n\n\n\n\nCategory\nSkills\n\n\n\n\nProgramming\n- R (Quarto, Rmarkdown, Shiny )\n\n\n\n- JavaScript\n\n\n\n- Python (jupyter, torch, tensorflow)\n\n\n\n- Bash (Shell scripting, Workflow automation)\n\n\n\n- MATLAB (psychtoolbox)\n\n\n\n\n\n\nComputational Modeling\n- Artificial Neural Networks\n\n\n\n- Exemplar Models\n\n\n\n- Bayesian Statistics\n\n\n\n- Mixed Effect Models\n\n\n\n- Similarity Scaling\n\n\n\n- Approximate Bayesian Computation\n\n\n\n- Individual Differences\n\n\n\n\n\n\nData Analysis\n- Multilevel Modeling\n\n\n\n- Bayesian Statistics\n\n\n\n- Mixed Effects Models\n\n\n\n- Dimensionality Reduction\n\n\n\n- Frequentist ANOVA/Regression\n\n\n\n\n\n\nExperimental Skills\n- Behavioral Tasks\n\n\n\n- Online Data Collection (jsPsych for web-based experiments)\n\n\n\n- Survey Data Collection (Qualtrics)\n\n\n\n- Mechanical Turk\n\n\n\n- MRI & EEG\n\n\n\n\n\n\nWorkflow Automation & Version Control\n- Multi-language workflows (integrating R, Bash, Python)\n\n\n\n- Git (Documentation, backup, branching, collaboration)\n\n\n\n\n\n\nTools\n- RStudio\n\n\n\n- VS Code\n\n\n\n- Vim/Neovim\n\n\n\n- Obsidian\n\n\n\n\n\n\nMiscellaneous Skills\n- Web Scraping\n\n\n\n- SQL\n\n\n\n- Website Design"
+    "text": "Skills\n\n\n\n\n\n\n\nCategory\nSkills\n\n\n\n\nProgramming\n- R (Quarto, Rmarkdown, Shiny )  - JavaScript  - Python (jupyter, torch, tensorflow)  - Bash (Shell scripting, Workflow automation)  - MATLAB (psychtoolbox)\n\n\nComputational Modeling\n- Artificial Neural Networks  - Exemplar Models  - Bayesian Statistics  - Mixed Effect Models  - Similarity Scaling  - Approximate Bayesian Computation  - Individual Differences\n\n\nData Analysis\n- Multilevel Modeling  - Bayesian Statistics  - Mixed Effects Models  - Dimensionality Reduction  - Frequentist ANOVA/Regression \n\n\nExperimental Skills\n- Behavioral Tasks  - Online Data Collection (jsPsych for web-based experiments)  - Survey Data Collection (Qualtrics)  - Mechanical Turk  - MRI & EEG\n\n\nWorkflow Automation & Version Control\n- Multi-language workflows (integrating R, Bash, Python)  - Git (Documentation, backup, branching, collaboration)\n\n\nTools\n- RStudio  - VS Code  - Vim/Neovim  - Obsidian \n\n\nMiscellaneous Skills\n- Web Scraping  - SQL  - Website Design"
+  },
+  {
+    "objectID": "cv.html#journal-articles-and-conference-proceedings",
+    "href": "cv.html#journal-articles-and-conference-proceedings",
+    "title": "Curriculum Vitae",
+    "section": " Journal Articles and Conference Proceedings",
+    "text": "Journal Articles and Conference Proceedings\n\nGorman, T. E., & Goldstone, R. L. (in progress). Impact of Training Variability on Visuomotor Function Learning and Extrapolation. link\nGorman, T. E., & Goldstone, R. L. (2022). An instance-based model account of the benefits of varied practice in visuomotor skill. Cognitive Psychology, 137, 101491.\nBazyldo, A., Kecskemeti, S., Cochrane, A., Gorman, T., Rokers, B., Dean, D., Green, C. S., & Alexander, A. L. (2021). Assessment of R1 Relaxometry Changes Induced via Repeated Videogame Training as a Measure of Neuroplasticity in College-aged Brains. In Proceedings of the ISMRM & SMRT Annual Meeting & Exhibition. An Online Experience. link\nPatrick, A., Dean, D., Gorman, T., Green, C. S., & Alexander, A. (2019). Assessment of Microstructural Changes Induced via Repeated Videogame Training as a Measure of Neuroplasticity in Normal Developing, College-age Brains. In Proceedings of the 27th Annual Meeting & Exhibition of the International Society for Magnetic Resonance in Medicine. Montréal, QC, Canada. link\nDean, C. D., Patrick, A. M., Gorman, T., Green, C. S., & Alexander, A. L. (2018). Neuroplastic Changes of Myelin Microstructure With Video Game Play. In Proceedings of the Joint Annual Meeting ISMRM-ESMRMB. Paris, France. link\nKattner, F., Cochrane, A., Cox, C. R., Gorman, T. E., & Green, C. S. (2017). Perceptual learning generalization from sequential perceptual training as a change in learning rate. Current Biology, 27(6), 840-846.\nGorman, T.E., & Green, C.S. (2016). Short-term mindfulness intervention reduces the negative attentional effects associated with heavy media multitasking. Scientific Reports, 6."
   },
   {
     "objectID": "cv.html#reviews-and-book-chapters",
@@ -182,52 +133,52 @@
     "text": "Reviews and Book Chapters\n\nGorman, T.E., Gentile, D.A., & Green, C.S. Video game addiction: a short primer (2018). American Journal of Play, 10 (3), 309-327\nGorman, T.E., & Green, C.S. (2017). Young minds on video games. In Cognitive development in digital contexts. 121-143. Academic Press.\nGreen, C. S., Gorman, T., & Bavelier, D. (2016). Action Video-Game Training and Its Effects on Perception and Attentional Control. In Cognitive Training (pp. 107-116). Springer International Publishing."
   },
   {
-    "objectID": "projects.html#dissertation---the-role-of-variability-in-learning-generalization-a-computational-modeling-approa",
-    "href": "projects.html#dissertation---the-role-of-variability-in-learning-generalization-a-computational-modeling-approa",
-    "title": "Projects",
-    "section": "Dissertation - The Role of Variability in Learning Generalization: A Computational Modeling Approa",
-    "text": "Dissertation - The Role of Variability in Learning Generalization: A Computational Modeling Approa\nLink to my dissertation website"
-  },
-  {
-    "objectID": "projects.html#variability-and-visuomotor-learning",
-    "href": "projects.html#variability-and-visuomotor-learning",
-    "title": "Projects",
-    "section": "Variability and Visuomotor Learning",
-    "text": "Variability and Visuomotor Learning\n\n\n\n\n\n\n\n\n\nFor this project, I programmed a simple projectile launching task to serve as a conceptual replication of an influential paradigm in the visuomotor skill learning literature. Several of the canonical empirical patterns are replicated, with the varied trained participants tending to perform better during testing in both experiments. A major issue with previous research in the cross-disciplinary “benefits of variability” literature is that many previous works do not adequately control for the similarity between training and testing conditions. Such issues arise when both from failures to consider the possibility of non-linear generalization, and from often the unquestioned assumption that participants are acquiring, and then generalizing from prototype or schema-based representations. I introduce a theoretically motivated method of explicitly quantifying the similarity between training experience and testing condition. The resulting similarity quantity can then be used to explicitly control for similarity (by adding it as a covariate to the statistical model). The effect of variability remains significant while controlling for similarity, which I argue is a more rigorous demonstration of the effect of variability on testing performance than what is typically provided with standard methods. I conclude by introducing an extended version of the model that assumes training variation influences the steepness of the generalization gradient. With this flexible similarity mechanism, the group-level effect of variability can then be accounted for within the similarity-based generalization framework.\n\n\npdf of the journal article\nLink to online version of journal article"
-  },
-  {
-    "objectID": "projects.html#examining-the-effects-of-training-variability-on-extrapolation-performance",
-    "href": "projects.html#examining-the-effects-of-training-variability-on-extrapolation-performance",
-    "title": "Projects",
-    "section": "Examining the Effects of Training Variability on Extrapolation Performance",
-    "text": "Examining the Effects of Training Variability on Extrapolation Performance\n\n\n\n\n\n\n\n\n\n\nThis project investigates the influence of training variability on extrapolation in a uni-dimensional visuomotor function learning task. Across three experiments, we compare constant and varied training conditions in terms of learning performance, extrapolation accuracy, and the ability to reliably discriminate between stimuli.\nTo account for the empirical results, I fit the Associative Learning Model (ALM) and the Extrapolation-Association Model (EXAM) to the data from each individual participant. Notably, this study is the first to employ approximate Bayesian computation (ABC) to fit ALM and EXAM, enabling us to thoroughly investigate the full range of posterior predictions of each model, and to examine the ability of these influential models of function learning to account for both the group level and individual level data.\n\nLink to project page"
-  },
-  {
-    "objectID": "projects.html#investigating-the-role-of-variability-in-real-world-learning-a-study-using-lost-in-migration-data",
-    "href": "projects.html#investigating-the-role-of-variability-in-real-world-learning-a-study-using-lost-in-migration-data",
-    "title": "Projects",
-    "section": "Investigating the Role of Variability in Real-World Learning: A Study Using Lost In Migration Data",
-    "text": "Investigating the Role of Variability in Real-World Learning: A Study Using Lost In Migration Data\n\n\n\n\n\n\n\n\n\nThis project takes advantage of a large dataset from Lost In Migration, a popular online game resembling the classic Eriksen flanker task. Due to randomization of game trials, some users experience much more variability in the early phases of the game than others. Additionally, the dataset provided by Lumos labs includes data from users who experienced a ‘high variability’ version of the game before being switched to the standard version. I will assess the influence of both variability-via-randomization, and variability-via-manipulation, and once again evaluate the ability of similarity-based-generalization models to account for the observed patterns. While the key theoretical questions, and general modeling approach will remain the same as the first two projects, the Lost In Migration’s dataset will present the opportunity to examine the influence of variability in a much more graded fashion, and to assess the ecological validity of the phenomena."
-  },
-  {
-    "objectID": "projects.html#investigating-the-role-of-variability-in-real-world-learning",
-    "href": "projects.html#investigating-the-role-of-variability-in-real-world-learning",
-    "title": "Projects",
-    "section": "Investigating the Role of Variability in Real-World Learning",
-    "text": "Investigating the Role of Variability in Real-World Learning\n\n\n\n\n\n\n\n\n\nThis project takes advantage of a large dataset from Lost In Migration, a popular online game resembling the classic Eriksen flanker task. Due to randomization of game trials, some users experience much more variability in the early phases of the game than others. Additionally, the dataset provided by Lumos labs includes data from users who experienced a ‘high variability’ version of the game before being switched to the standard version. I will assess the influence of both variability-via-randomization, and variability-via-manipulation, and once again evaluate the ability of similarity-based-generalization models to account for the observed patterns. While the key theoretical questions, and general modeling approach will remain the same as the first two projects, the Lost In Migration’s dataset will present the opportunity to examine the influence of variability in a much more graded fashion, and to assess the ecological validity of the phenomena."
-  },
-  {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
-    "section": "",
-    "text": "Email\n\ntegorman@iu.edu\ntegorman13@gmail.com\n\n\n\nOffice\n\nGeology 6050L"
-  },
-  {
-    "objectID": "cv.html#experience",
-    "href": "cv.html#experience",
+    "objectID": "cv.html#presentations",
+    "href": "cv.html#presentations",
     "title": "Curriculum Vitae",
-    "section": " Experience",
-    "text": "Experience\nPercepts and Concepts Lab\n\nPhD Student (2017 - Present)\nPrincipal Investigator: Robert Goldstone, PhD\n\nLearning and Transfer Lab (University of Wisconsin-Madison)\n\nLab Manager / Research Coordinator (2015-2017)\nUndergraduate Research Assistant (2013 - May 2015)\nPrincipal Investigator: C. Shawn Green, PhD\n\nAlexander Lab – Medical Physics (University of Wisconsin-Madison)\n\nResearch Coordinator (2015 – 2017)\nPrincipal Investigator: Andrew Alexander, PhD\n\nCenter for Healthy Minds (University of Wisconsin-Madison)\n\nUndergraduate Research Assistant (January 2014 - May 2015)\nPrincipal Investigator: Richard J. Davidson, PhD"
+    "section": " Presentations",
+    "text": "Presentations\n\nHalf Day Tutorial on Measuring Mindfulness Behaviorally: Onsite/Online Data Col-lection with jsPsych\n\nCognitive Science Conference – 2018\n\nDoes interleaving go the distance? Exploring the effect of dissimilarity on interleaved category learning\n\nMath Psych/ICCM 2018\n\nShort term mindfulness intervention reduces cognitive deficits in heavy media multi-taskers\n\nUndergraduate Research Symposium – UW-Madison – April 16th, 2015"
+  },
+  {
+    "objectID": "cv.html#awards",
+    "href": "cv.html#awards",
+    "title": "Curriculum Vitae",
+    "section": " Awards",
+    "text": "Awards\nIU-Bloomington – Development Training Grant – beginning Fall 2019\nIU-Bloomington - Steinmetz Summer Research Award - 2018\nUW-Madison - Undergraduate Research Scholar Award – 2015\nUW-Madison - Hilldale Undergraduate/Faculty Research Fellowship – 2014"
+  },
+  {
+    "objectID": "cv.html#ad-hoc-reviewer",
+    "href": "cv.html#ad-hoc-reviewer",
+    "title": "Curriculum Vitae",
+    "section": " Ad-hoc Reviewer",
+    "text": "Ad-hoc Reviewer\nCognitive Science\nJournal of Experimental Psychology: General\nJournal of Experimental Psychology: Human Perception and Performance\nContemporary Educational Psychology"
+  },
+  {
+    "objectID": "cv.html#conferences",
+    "href": "cv.html#conferences",
+    "title": "Curriculum Vitae",
+    "section": " Conferences",
+    "text": "Conferences\nCognitive Science Conference - 2021\nCognitive Science Conference - 2018\nMathematical Psychology & ICCM 2018\nBoston Meeting on Methods in Cognitive Training (NSF Sponsored) – May 2017"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Thomas E. Gorman",
+    "section": "",
+    "text": "Welcome to my website!\nI recently defended my dissertation and completed a joint PhD in Cognitive Science and Psychology at Indiana University. My research focuses on computational models of learning and generalization, with a particular interest in using neural network models to test theories of how experience shapes internal representations. I am also interested in exploring the factors that influence generalization, such as training sequence and variability, and in developing methods to compare human behavior to large-scale deep learning models. My work spans various domains, including category learning, visuomotor skill learning, and decision making, and I employ a combination of experimental and computational modeling approaches to investigate these topics."
+  },
+  {
+    "objectID": "projects.html#labs-collaborators",
+    "href": "projects.html#labs-collaborators",
+    "title": "Projects",
+    "section": "",
+    "text": "Rob Goldstone - Percepts and Concepts Lab\nRob Nosofsky - Nosofsky Lab\nChen Yu - Developmental Intelligence Lab\nC. Shawn Green - Learning and Transfer Lab"
+  },
+  {
+    "objectID": "projects.html#dissertation---the-role-of-variability-in-learning-generalization-a-computational-modeling-approach",
+    "href": "projects.html#dissertation---the-role-of-variability-in-learning-generalization-a-computational-modeling-approach",
+    "title": "Projects",
+    "section": "Dissertation - The Role of Variability in Learning Generalization: A Computational Modeling Approach",
+    "text": "Dissertation - The Role of Variability in Learning Generalization: A Computational Modeling Approach\nLink to my dissertation website\n\n\nExamining the Effects of Training Variability on Extrapolation Performance\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThis project investigates the influence of training variability on extrapolation in a uni-dimensional visuomotor function learning task. Across three experiments, we compare constant and varied training conditions in terms of learning performance, extrapolation accuracy, and the ability to reliably discriminate between stimuli.\nTo account for the empirical results, I fit the Associative Learning Model (ALM) and the Extrapolation-Association Model (EXAM) to the data from each individual participant. Notably, this study is the first to employ approximate Bayesian computation (ABC) to fit ALM and EXAM, enabling us to thoroughly investigate the full range of posterior predictions of each model, and to examine the ability of these influential models of function learning to account for both the group level and individual level data.\n\nLink to project page\n\n\n\n\n\nHuman perception of dot pattern prototype similarity\n\n\n\n\n\n\nIn colloboration with Rob Nosofsky\nLink to project site\n\n\n\n\nVariability and Visuomotor Learning\n\n\n\n\n\nFor this project, I programmed a simple projectile launching task to serve as a conceptual replication of an influential paradigm in the visuomotor skill learning literature. Several of the canonical empirical patterns are replicated, with the varied trained participants tending to perform better during testing in both experiments. A major issue with previous research in the cross-disciplinary “benefits of variability” literature is that many previous works do not adequately control for the similarity between training and testing conditions. Such issues arise when both from failures to consider the possibility of non-linear generalization, and from often the unquestioned assumption that participants are acquiring, and then generalizing from prototype or schema-based representations. I introduce a theoretically motivated method of explicitly quantifying the similarity between training experience and testing condition. The resulting similarity quantity can then be used to explicitly control for similarity (by adding it as a covariate to the statistical model). The effect of variability remains significant while controlling for similarity, which I argue is a more rigorous demonstration of the effect of variability on testing performance than what is typically provided with standard methods. I conclude by introducing an extended version of the model that assumes training variation influences the steepness of the generalization gradient. With this flexible similarity mechanism, the group-level effect of variability can then be accounted for within the similarity-based generalization framework.\n\n\npdf of the journal article\nLink to online version of journal article\n\n\n\n\nInvestigating the Role of Variability in Real-World Learning\n\n\n\n\n\nThis project takes advantage of a large dataset from Lost In Migration, a popular online game resembling the classic Eriksen flanker task. Due to randomization of game trials, some users experience much more variability in the early phases of the game than others. Additionally, the dataset provided by Lumos labs includes data from users who experienced a ‘high variability’ version of the game before being switched to the standard version. I will assess the influence of both variability-via-randomization, and variability-via-manipulation, and once again evaluate the ability of similarity-based-generalization models to account for the observed patterns. While the key theoretical questions, and general modeling approach will remain the same as the first two projects, the Lost In Migration’s dataset will present the opportunity to examine the influence of variability in a much more graded fashion, and to assess the ecological validity of the phenomena.\n\n\n\n\nOther Projects\n\n\n\n\nLearning the Structure of the Environment\n\n- assessing how the properties of simple grid world environments influence how participants search for rewards\n\n\nEffect of Distance and Sequence in Category Learning\n\nIn Colloboration with Bradley Rogers\nPresented at MathPsych/ICCM Conference (2018)\n\n\n\n\nSkewed vs. Uniform Frequency Distributions in Cross-Situational Learning\n\nCollobration with Chen Yu"
   }
 ]

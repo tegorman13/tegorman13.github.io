@@ -1,13 +1,21 @@
 ---
 title: Curriculum Vitae
-title2: Thomas E. Gorman
-role: Cognitive Scientist | Data Scientist
 format:
   html: 
-     css: css/cv.css
-  cv-pdf: default
+    css: css/cv.css
   docx: default
-  md: default
+  # typst: 
+  #   output-file: cv_typst.pdf
+  #   papersize: a4
+  #   margin: 
+  #     bottom: .75in
+  #hugo-md: default
+  gfm:
+    echo: false
+    output-file: cv_gfm.md
+  docusaurus-md:
+    echo: false
+    output-file: cv_docusaurus.md
   # pdf: 
   #   output-file: "cv2.pdf"
   #   fontfamily: tgpagella
@@ -25,21 +33,24 @@ format:
   #       \fancyhead[LO,LE]{\textbf{Franchak CV}}
   #       \fancyhead[RO,RE]{\thepage}
   #       \fancyfoot{}
-cvfooter:
-  left: "Thomas Gorman"
-  right: "[tegorman13@github.io](https://tegorman13.github.io)"
-cvcolor: 58748F #without `#`
-sectcolor: "701112"
-cvfont: tgcursor #texlive fonts like raleway,fetamont,gillius,comfortaa
-cvmeta:
-  - left: Department of Psychological and Brain Sciences
-    right:  "{{< fa globe >}} [tegorman13@github.io](https://tegorman13.github.io)"
-  - title: 
-    left: 1101 E. 10th St.
-    right: "{{< fa brands github size=1.7x >}} [tegorman13](https://github.com/tegorman13)"
-  - title: 
-    left: Bloomington, IN 47405
-    right: " {{< fa envelope >}} [tegorman@iu.edu](mailto:tegorman@iu.edu)"
+  cv-pdf: 
+    title2: Thomas E. Gorman
+    role: Cognitive Scientist | Data Scientist
+    cvfooter:
+      left: "Thomas Gorman"
+      right: "[tegorman13@github.io](https://tegorman13.github.io)"
+    cvcolor: 58748F #without `#`
+    sectcolor: "701112"
+    cvfont: tgcursor #texlive fonts like raleway,fetamont,gillius,comfortaa
+    cvmeta:
+      - left: Department of Psychological and Brain Sciences
+        right:  "{{< fa globe >}} [tegorman13@github.io](https://tegorman13.github.io)"
+      - title: 
+        left: 1101 E. 10th St.
+        right: "{{< fa brands github size=1.7x >}} [tegorman13](https://github.com/tegorman13)"
+      - title: 
+        left: Bloomington, IN 47405
+        right: " {{< fa envelope >}} [tegorman@iu.edu](mailto:tegorman@iu.edu)"
 execute:
   echo: false
   warning: false
@@ -55,10 +66,12 @@ format-links: [cv-pdf]
 
 
 ::: {.content-visible unless-format="pdf"}
+::: {.content-visible unless-format="markdown"}
 | <i class="fa fa-envelope" aria-hidden="true" title="An envelope"></i> [tegorman@iu.edu](mailto:tegorman@iu.edu) | <i class="fa fa-envelope" aria-hidden="true" title="An envelope"></i> [tegorman13@gmail.com](mailto:tegorman13@gmail.com) |
 | --- | --- |
 | <i class="ai ai-google-scholar" aria-hidden="true"></i> [Google Scholar](https://scholar.google.com/citations?user=USMVPjEAAAAJ&hl=en) | <i class="ai ai-orcid" aria-hidden="true"></i> [ORCiD](https://orcid.org/0000-0001-5366-5442) |
 | <i class="fa fa-brands fa-github" aria-hidden="true" title="GitHub logo"></i> [GitHub](https://github.com/tegorman13) | <i class="ai ai-researchgate" aria-hidden="true"></i> [ResearchGate](https://www.researchgate.net/profile/Thomas-Gorman-3) |
+:::
 :::
 
 \
@@ -156,10 +169,9 @@ format-links: [cv-pdf]
 |  | - MATLAB (psychtoolbox) |
 |  |
 | Computational Modeling| - Artificial Neural Networks |
-|  | - Exemplar Models |
 |  | - Bayesian Statistics | 
 |  | - Mixed Effect Models | 
-|  | - Similarity Scaling | 
+|  | - Dimensionality Reduction & Similarity Scaling | 
 |  | - Approximate Bayesian Computation | 
 |  | - Individual Differences |
 |  |
@@ -181,7 +193,6 @@ format-links: [cv-pdf]
 | Tools | - RStudio |
 |  | - VS Code |
 |  | - Vim/Neovim |
-|  | - Obsidian |
 |  |
 | Miscellaneous Skills | - Web Scraping |
 |  | - SQL |

@@ -5,12 +5,12 @@ project:
     port: 4203
   render:
     - "*.qmd"
-    - "!_*" # ignore any file that starts with a _
+    - "!_*" 
+    - "!_scratch/"
     - "!quarto_shiny.qmd"
     #- "!cv/*"
     
-exclude: ["*.rds","*.tex","*.csl","*.bib","docs*","_old*","out.bib",
-"*.R",".obsidian","Rproj","R","Bib","exp","HTW_Analysis/**","*HTW_Modelling/**","Motivated*","Manuscript*"]
+exclude: ["*.rds","*.tex"]
 
 
 website:

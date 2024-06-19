@@ -1,0 +1,241 @@
+
+
+
+
+```{r include=FALSE}
+
+packages <- c('tidyverse','rmarkdown',"RColorBrewer",'gghalves','here')
+invisible(lapply(packages, require, character.only = TRUE))
+
+
+e2<- readRDS('data/igas_e2_cleanedData-final.rds')%>% mutate(initialVelocityX=X_Velocity,initialVelocityY=Y_Velocity)
+solSpace <- e2 %>% filter(trialType==11)
+#solSpace %>% ggplot(aes(x=X_Velocity,y=Y_Velocity)) + geom_point(aes(colour=ThrowPosition),alpha=0.58) + ggtitle("") 
+
+solSpace$Result = ifelse(solSpace$ThrowPosition==400,"400",solSpace$ThrowPosition)
+solSpace$Result = ifelse(solSpace$ThrowPosition==500,"500",solSpace$Result)
+solSpace$Result= ifelse(solSpace$ThrowPosition==625,"625",solSpace$Result)
+solSpace$Result = ifelse(solSpace$ThrowPosition==675,"675",solSpace$Result)
+solSpace$Result = ifelse(solSpace$ThrowPosition==800,"800",solSpace$Result)
+solSpace$Result = ifelse(solSpace$ThrowPosition==900,"900",solSpace$Result)
+theme_set(theme_classic())
+
+
+
+d <- readRDS("data/htw-04-07-22.rds") # removed this
+d <- d %>% mutate(distCapped=ifelse(dist>1500,1500,dist),
+                  vxCapped =ifelse(vx>2000,2000,vx),
+                  rectWidth=.4,
+                  vbn=as.numeric(throwCategory),
+                  vbLag=vbn-rectWidth,vbLead=vbn+rectWidth,
+                  condit=recode_factor(condit,constant="Constant",varied="Varied"))
+dtest <- d %>% filter(expMode=="test-Nf" | expMode=="test-train-nf") %>% 
+  droplevels() %>%   
+  mutate(testMode=factor(ifelse(expMode=="test-Nf","Novel Velocity Band","Trained Velocity Band \n(Constant trained from only 800-1000)")))
+
+
+dtest$vbLabel <- factor(dtest$throwCategory, 
+                        labels= c("100-300\nNovel", "350-550\nNovel", "600-800\nNovel",
+                                  "800-1000\nTrained\nBoth", "1000-1200\nTrained\nVaried","1200-1400\nTrained\nVaried"))
+
+
+vbRect<- dtest %>% group_by(throwCategory,vbLabel) %>% 
+  summarise(vxMean=mean(vx,trim=.05),lowBound=first(bandInt),highBound=first(highBound),vx=median(vx),
+            vxCapped=median(vxCapped),devMean=mean(dist)) %>%
+  mutate(rectWidth=.4,vbn=as.numeric(throwCategory),vbLag=vbn-rectWidth,vbLead=vbn+rectWidth)
+
+
+bandLines4 <- list(geom_segment(data=vbRect,aes(x=vbLag,xend=vbLead,y=highBound,yend=highBound),alpha=1,linetype="dashed"),
+                   geom_segment(data=vbRect,aes(x=vbLag,xend=vbLead,y=lowBound,yend=lowBound),alpha=1,linetype="dashed"),
+                   geom_text(data=vbRect,aes(x=vbLag-.03,y=lowBound+100,label=throwCategory),angle=90,size=2.5,fontface="bold") )    
+
+
+```
+
+
+
+```{r echo=FALSE,fig.height=2.5, fig.width=5}
+#, out.width= "85%", out.extra='style="float:right; padding:2px"'
+ss=solSpace %>% ggplot(aes(x=X_Velocity*-1,y=Y_Velocity*-1)) + 
+  geom_point(aes(colour=Result),alpha=0.6) + scale_color_manual(values =brewer.pal(n=6,name="Set1"))+
+  theme(axis.text=element_blank(),axis.title=element_blank(),axis.line=element_blank(),
+        axis.ticks=element_blank(), legend.position = "none" )
+ss
+
+```
+
+
+### HTW dist visual
+```{r echo=FALSE,fig.height=2.5, fig.width=5}
+
+dtest %>% group_by(sbjCode,vbLabel,condit,throwCategory) %>%
+  summarise(vxMean=mean(vxCapped),lowBound=first(bandInt),highBound=first(highBound),
+            vbLag=first(vbLag),vbLead=first(vbLead),.groups = 'keep') %>%
+  ggplot(aes(x=vbLabel,y=vxMean,fill=throwCategory))+
+  geom_half_violin(color=NA)+ # remove border color
+  geom_half_boxplot(position=position_nudge(x=-0.05),side="r",outlier.shape = NA,center=TRUE,
+                    errorbar.draw = FALSE,width=.25)+
+  geom_half_point(transformation = position_jitter(width = 0.05, height = 0.05),size=.3,aes(color=throwCategory))+
+  geom_rect(data=vbRect,aes(xmin=vbLag,xmax=vbLead,ymin=lowBound,ymax=highBound,fill=throwCategory),alpha=.3)+
+  bandLines4+
+  scale_y_continuous(expand=expansion(add=100),breaks=round(seq(0,2000,by=200),2))+
+  scale_fill_discrete(name="Velocity Band")+
+  scale_color_discrete(guide="none")+  # remove extra legend
+  theme(axis.text=element_blank(),axis.title=element_blank(),
+        legend.position = "none" )
+
+```
+
+
+## LIM visual
+```{r echo=FALSE,fig.height=2.5, fig.width=5}
+cowplot::ggdraw()+cowplot::draw_image("Assets/LIM_InGame.png",hjust=0)+theme(plot.margin = margin(0, 0, 0, 0))
+```
+
+
+
+## Grid Environments
+
+```{r}
+
+plotData <- readRDS(paste0(here::here("R/genSearch_plotData.rds")))
+
+patchy <- plotData$patchy
+diffuse <-  plotData$diffuse
+
+# reduce number of water cells in distGrid
+# Generate a matrix of random values between 0 and 1
+#random_matrix <- matrix(runif(length(distGrids[[1]])), nrow = nrow(distGrids[[1]]))
+# Replace 100s with 0s with 50% probability
+#distGrids[[1]][distGrids[[1]] == 100 & random_matrix <= 0.57] <- 0
+# Assign the modified matrix back to distGrids
+#sum(distGrids[[1]]==100)
+
+
+createGridPlot <- plotData$createGridPlot
+borderCheck <- plotData$borderCheck
+
+pg <- createGridPlot(patchy) + 
+  theme_void() + 
+  labs(title="Patchy Environment") + 
+  theme(legend.position="none",plot.title = element_text(face = "italic",size=7.5,hjust=.5,vjust=-3))
+  
+dg <- createGridPlot(diffuse) + 
+  theme_void() + 
+  labs(title="Diffuse Environment") + 
+  theme(legend.position="none",plot.title = element_text(face = "italic",size=7.5,hjust=.5,vjust=-3))
+
+# ggsave(here::here("patch_grid.png"), pg, width = 2.5, height = 2.5, units = "in", dpi = 400)
+# ggsave(here::here("diffuse_grid.png"), dg, width = 2.5, height = 2.5, units = "in", dpi = 400)
+
+# plotData <- tibble::lst(patchy=newPatch39[[1]],diffuse=distGrids[[1]], distGrids,newPatch39, pwd=getwd(),checkAllGridUnique,infoEachGridInList,createGridPlot,printListOfGrids, loadExistingGrids,
+#                         gridFunctions=readLines("gridFunctions.R"),grid_world_visualizer=readLines("grid-world-visualizer3.Rmd")) 
+#saveRDS(plotData, file = here::here("genSearch_plotData.rds"))
+
+```
+
+
+
+
+
+
+## lim sequences
+```{r fig.width=11.5, fig.height=8}
+
+library(ggimg)
+library(patchwork)
+library(data.table)
+
+
+
+highVariedTrials <- c(1,37,77,95)
+lowVariedTrials <- c(37,38,77,41)
+
+xmin=0; xmax=20; ymin=0; ymax=20; shrinkX=10; shrinkY=10;
+pointVec=data.frame(x=c(xmin,xmax)/shrinkX,y=c(ymin,ymax)/shrinkY)
+
+
+coordByLayout <- function(bird_layout){
+  
+  if(bird_layout[1]=="Vright"){cr=cbind(x=c(3,2,1,2,3),y=c(1,2,3,4,5))
+  } else if(bird_layout[1]=="Vleft") {cr=cbind(x=c(1,2,3,2,1),y=c(1,2,3,4,5))
+  }else if(bird_layout[1]=="Vup") {cr=cbind(x=c(1,2,3,4,5),y=c(1,2,3,2,1))
+  }else if(bird_layout[1]=="Vdown") {cr=cbind(x=c(1,2,3,4,5),y=c(3,2,1,2,3))
+  }else if(bird_layout[1]=="cross") {cr=cbind(x=c(1,2,2,2,3),y=c(2,1,2,3,2))
+  }else if(bird_layout[1]=="horiz") {cr=cbind(x=c(1,2,3,4,5),y=c(1,1,1,1,1))
+  }else{cr=cbind(x=c(1,1,1,1,1),y=c(1,2,3,4,5))}
+  
+  
+  cr <- cr %>% setNames(c("x","y")) %>% as.data.frame()
+  return(cr)
+}
+
+
+
+# ssCoords[(configAll %in% highVariedTrials),][,Trial:=cumsum(!duplicated(configAll))] %>%
+#   .[,x:=x+(sample.int(xmax-2,1))/shrinkX,by=configAll] %>%
+#   .[,y:=y+(sample.int(ymax-2,1)/shrinkY),by=configAll ] %>%
+#   ggImageRect(size=.08)+geom_point(data=pointVec,aes(x=x,y=y),alpha=0)+facet_wrap(~Trial,ncol=5)
+
+
+plot_items <- readRDS(paste0(here::here("R/lim_trial_plot_items.rds")))
+
+ssCoords <- plot_items$ssCoords|>  as.data.table() |> mutate(path=paste0(here(),"/Assets/",img,".png"))
+
+ggv<- ssCoords[(configAll %in% highVariedTrials),][,Trial:=cumsum(!duplicated(configAll))] %>%
+  .[,x:=x+(sample.int(xmax-1,1))/shrinkX,by=configAll] %>%
+  .[,y:=y+(sample.int(ymax-1,1)/shrinkY),by=configAll ] %>%
+  .[,Trial:=paste0("Trial ",Trial)] %>%
+  ggplot() +
+  ggimg::geom_point_img(aes(x,y,img = path),size=1.5) +
+  geom_point(data=pointVec,aes(x=x,y=y),alpha=0)+
+  facet_wrap(~Trial,ncol=5)+
+  ggtitle("Trial Sequence with High Variation")+
+  theme_void() +
+    theme(plot.title=element_text(face="italic",size=14,hjust=.5,vjust=4),
+    strip.text.x=element_text(size=11),
+      axis.title.x=element_blank(),
+      axis.title.y=element_blank())
+
+
+xmin=0; xmax=20; ymin=0; ymax=20; shrinkX=10; shrinkY=10;
+pointVec=data.frame(x=c(xmin,xmax)/shrinkX,y=c(ymin,ymax)/shrinkY)
+
+ggc <- ssCoords[(configAll %in% lowVariedTrials),][,Trial:=cumsum(!duplicated(configAll))] %>%
+  # .[,x:=x+(rnorm(1,mean(pointVec$x),.5)/shrinkX),,by=configAll] %>%
+  # .[,y:=y+(rnorm(1,mean(pointVec$y),.5)/shrinkY),by=configAll ] %>%
+  .[,x:=x+(rnorm(1,mean(pointVec$x),.5)/shrinkX),,by=configAll] %>%
+  .[,y:=(y+.2),by=configAll ] %>%
+  .[,Trial:=paste0("Trial ",Trial)] %>%
+  ggplot() +
+  ggimg::geom_point_img(aes(x,y,img = path),size=1.5) +
+  geom_point(data=pointVec,aes(x=x,y=y),alpha=0)+
+  facet_wrap(~Trial,ncol=5)+
+  ggtitle("Trial Sequence with Low Variation")+
+  theme_void() +
+  theme(plot.title=element_text(face="italic",size=14,hjust=.5,vjust=4),
+  strip.text.x=element_text(size=11),
+   panel.spacing = unit(0.1, "lines"),
+   plot.margin = unit(c(0.5, 0.5, 0.5, 0.5), "cm"),
+    axis.title.x=element_blank(),
+    axis.title.y=element_blank())
+  # theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+  #         panel.background = element_rect(fill="#fcfcfc",colour="#fcfcfc"), axis.line = element_line(colour = "black"),
+  #         axis.text=element_blank(),axis.ticks=element_blank(),strip.text.x=element_text(size=11)
+  #       )
+
+seqPlots <- (ggv/ggc)
+       
+seqPlots
+
+# ggsave(filename=paste0(here::here(),"Assets/lim_trial_seq.png"),plot=seqPlots,bg='transparent',dpi=300)
+
+
+# plot_items <- tibble::lst(ssCoords, highVariedTrials, lowVariedTrials, 
+#   pointVec,xmin,xmax,ymin,ymax,shrinkX,shrinkY, scripts=readLines("birdFigures.Rmd"))
+
+
+# saveRDS(plot_items, "lim_trial_plot_items.rds")
+
+
+```
