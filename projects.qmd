@@ -14,20 +14,10 @@ format:
       gutter-width: 1.5rem
 ---
 
-### Labs & Collaborators 
 
-Rob Goldstone - [Percepts and Concepts Lab](https://pc.cogs.indiana.edu/)
-
-Rob Nosofsky - [Nosofsky Lab](https://nosofsky.cogs.indiana.edu/)
-
-Chen Yu - [Developmental Intelligence Lab](https://www.la.utexas.edu/users/dil/)
-
-C. Shawn Green - [Learning and Transfer Lab](https://greenlab.psych.wisc.edu/)
 
 
 _______________________________________________________________
-
-
 
 
 <br>
@@ -46,7 +36,9 @@ This project investigates the influence of training variability on extrapolation
 
 To account for the empirical results, I fit the Associative Learning Model (ALM) and the Extrapolation-Association Model (EXAM) to the data from each individual participant. Notably, this study is the first to employ approximate Bayesian computation (ABC) to fit ALM and EXAM, enabling us to thoroughly investigate the full range of posterior predictions of each model, and to  examine the ability of these influential models of function learning to account for both the group level and individual level data.
 
-[{{< fa file-lines >}} Link to project page](https://tegorman13.github.io/htw/){target="_blank"}
+- Colloboration with [Rob Goldstone](https://pc.cogs.indiana.edu/)
+- [{{< fa file-lines >}} Link to project page](https://tegorman13.github.io/htw/){target="_blank"}
+- [{{< fa brands github >}} repo](https://github.com/tegorman13/htw) \
 
 <br>
 
@@ -66,9 +58,9 @@ _______________________________________________________________
 :::
 
 
-
-  - In colloboration with Rob Nosofsky
+  - Colloboration with [Rob Nosofsky](https://nosofsky.cogs.indiana.edu/)
   - [{{< fa file-lines >}} Link to project site](https://tegorman13.github.io/dot_variability/)
+  - [{{< fa brands github >}} repo](https://github.com/tegorman13/dot_variability) \
 
 
 _______________________________________________________________
@@ -88,12 +80,11 @@ For this project, I programmed a simple projectile launching task to serve as a 
 
 <br>
 
-[ {{< fa file-pdf >}} pdf of the journal article](https://tegorman13.github.io/pdf/Gorman_Goldstone_2022_Instance-based_model_varied_practice.pdf){target="_blank"}\
-[{{< fa file-lines >}} Link to online version](https://www.sciencedirect.com/science/article/abs/pii/S0010028522000299){target="_blank"}
-
-<br>
-
-Gorman, T. E., & Goldstone, R. L. (2022). An instance-based model account of the benefits of varied practice in visuomotor skill. *Cognitive Psychology*, *137*, 101491. [doi.org/10.1016/j.cogpsych.2022.101491](https://doi.org/10.1016/j.cogpsych.2022.101491)
+- Colloboration with [Rob Goldstone](https://pc.cogs.indiana.edu/)
+- [ {{< fa file-pdf >}} pdf of the journal article](https://tegorman13.github.io/pdf/Gorman_Goldstone_2022_Instance-based_model_varied_practice.pdf){target="_blank"}\
+- [{{< fa file-lines >}} Link to online version](https://www.sciencedirect.com/science/article/abs/pii/S0010028522000299){target="_blank"}
+- [{{< fa brands github >}} repo](https://github.com/tegorman13/IGAS_Variability) \
+- Gorman, T. E., & Goldstone, R. L. (2022). An instance-based model account of the benefits of varied practice in visuomotor skill. *Cognitive Psychology*, *137*, 101491. [doi.org/10.1016/j.cogpsych.2022.101491](https://doi.org/10.1016/j.cogpsych.2022.101491)
 
 
 <br>
@@ -141,8 +132,9 @@ _______________________________________________________________
 
 <br>
 
-  -  In Colloboration with [Bradley Rogers](https://www.linkedin.com/in/bradley-rogers-b618294)
-  - Presented at MathPsych/ICCM Conference (2018)
+  - In Colloboration with [Bradley Rogers](https://www.linkedin.com/in/bradley-rogers-b618294)
+  - Presented at [MathPsych/ICCM Conference (2018)](https://mathpsych.org/)
+  -  [{{< fa brands github >}} repo](https://github.com/tegorman13/Category_Distance_Learn) \
 \
 
 _______________________________________________________________
@@ -151,7 +143,7 @@ _______________________________________________________________
 <br><br>
 
 ### Skewed vs. Uniform Frequency Distributions in Cross-Situational Learning
-- Collobration with Chen Yu
+- Collobration with [Chen Yu](https://www.la.utexas.edu/users/dil/)
 
 <br><br>
 
@@ -160,6 +152,21 @@ _______________________________________________________________
 
 ### Dissertation 
 
-#### The Role of Variability in Learning Generalization: A Computational Modeling Approach
+ **The Role of Variability in Learning Generalization: A Computational Modeling Approach**
 
-[{{< fa file-lines >}} Link to my dissertation website](https://tegorman13.github.io/Dissertation/paper.html)
+- [{{< fa file-lines >}} Link to my dissertation website](https://tegorman13.github.io/Dissertation/paper.html)
+- [{{< fa brands github >}} repo](https://github.com/tegorman13/Dissertation) \
+
+
+_______________________________________________________________
+
+
+### Labs & Collaborators 
+
+Rob Goldstone - [Percepts and Concepts Lab](https://pc.cogs.indiana.edu/)
+
+Rob Nosofsky - [Nosofsky Lab](https://nosofsky.cogs.indiana.edu/)
+
+Chen Yu - [Developmental Intelligence Lab](https://www.la.utexas.edu/users/dil/)
+
+C. Shawn Green - [Learning and Transfer Lab](https://greenlab.psych.wisc.edu/)
