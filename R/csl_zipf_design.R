@@ -8,6 +8,9 @@ library(psych)
 library(tidyr)
 
 
+# python -m http.server
+# http://localhost:8000/
+
 freqLevels <- 3
 nCategory <- 6
 

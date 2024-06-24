@@ -82,7 +82,7 @@ For this project, I programmed a simple projectile launching task to serve as a 
 
 - Colloboration with [Rob Goldstone](https://pc.cogs.indiana.edu/)
 - [ {{< fa file-pdf >}} pdf of the journal article](https://tegorman13.github.io/pdf/Gorman_Goldstone_2022_Instance-based_model_varied_practice.pdf){target="_blank"}\
-- [{{< fa file-lines >}} Link to online version](https://www.sciencedirect.com/science/article/abs/pii/S0010028522000299){target="_blank"}
+- [{{< fa scroll >}} Link to online version](https://www.sciencedirect.com/science/article/abs/pii/S0010028522000299){target="_blank"}
 - [{{< fa brands github >}} repo](https://github.com/tegorman13/IGAS_Variability) \
 - Gorman, T. E., & Goldstone, R. L. (2022). An instance-based model account of the benefits of varied practice in visuomotor skill. *Cognitive Psychology*, *137*, 101491. [doi.org/10.1016/j.cogpsych.2022.101491](https://doi.org/10.1016/j.cogpsych.2022.101491)
 

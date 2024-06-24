@@ -1,0 +1,111 @@
+%% Define boxes for letter heads
+
+\newsavebox{\lethdone} %logo
+\newsavebox{\lethdtwo} %footer
+\newsavebox{\headname} %name and address
+
+% define new page style, including the locations of the letter head boxes
+\makeatletter
+\def\ps@firstpage{
+    \begin{textblock}{8}(2,1.5)
+        \usebox{\lethdone}
+    \end{textblock}
+    \begin{textblock}{8}(4,1.5)
+        \usebox{\headname}
+    \end{textblock}
+    \def\thepage{}
+}
+
+\def\ps@otherpage{
+    \def\thepage{}
+}
+
+% Adjust the positioning of the footer
+\def\ps@lastpage{
+  \begin{textblock}{18}(2,26.5) % Adjusted width and position
+    \usebox{\lethdtwo}
+  \end{textblock}
+  \def\thepage{}
+}
+
+\@ifundefined{opening}{}{%
+    \renewcommand*{\opening}[1]{%
+        \thispagestyle{firstpage}%
+        {\@date\par}%
+        \vspace{2\parskip}%
+        {\raggedright \toname \\ \toaddress \par}%
+        \vspace{2\parskip}%
+        #1\par\nobreak}}
+
+% Redefine the closing command
+\renewcommand{\closing}[1]{\par\nobreak\vspace{\parskip}%
+    \stopbreaks
+    \noindent
+    \ifx\@empty\fromaddress\else
+    \hspace*{\longindentation}\fi
+    \parbox{\indentedwidth}{\raggedright
+    \ignorespaces #1\\[6pt]%
+    \ifx\@empty\fromsig
+    \fromname
+    \else \fromsig \fi\strut}%
+    \par
+    \vfill % Push the footer to the bottom of the page
+}
+
+% Redefine the letter environment to set the page style for other pages
+\renewenvironment{letter}[1]
+  {\newpage
+    \c@page\@ne
+    \interlinepenalty=200 % smaller than the TeXbook value
+    \@processto{\leavevmode\ignorespaces #1}%
+    \pagestyle{otherpage} % Set the page style for other pages
+  }
+  {} % Empty end definition
+
+% Check if we're still on the first page at the end of the document
+\AtEndDocument{%
+  \ifnum\value{page}=1
+    \thispagestyle{firstpage}%
+    \begin{textblock}{10}(2,25.5)\usebox{\lethdtwo}\end{textblock}%
+  \else
+    \thispagestyle{lastpage}%
+  \fi
+}
+\makeatother
+
+% define letterhead logo
+% \sbox{\lethdone}{\hbox{
+%     \includegraphics[height=1in]{$if(fromlogo)$$fromlogo$$else$path/to/default/logo.png$endif$}
+%     }
+% }
+
+% define letterhead name and address
+\sbox{\headname}{\parbox{6in}{\raggedleft\fontsize{10}{12}\sffamily\color[gray]{0.4}%
+        {\large\textbf{$fromname$}}, $fromqualifications$\par
+        $fromtitle$\par
+        $if(fromdepartment)$$fromdepartment$\par$endif$
+        $if(frominstitute)$$frominstitute$\par$endif$
+        $if(fromaddress)$$fromaddress$\par$endif$
+        }}
+
+ %\\ % \\ for new line & for same
+
+% define footer with contact details
+\sbox{\lethdtwo}{
+  \parbox{\textwidth}{
+    \hrule height 1pt width \textwidth % Black line
+    \vspace{0.5em} % Space after the line
+    \fontsize{9}{11}\sffamily\color[gray]{0.4}
+    \begin{tabular}{@{}l@{\hspace{2em}}l@{\hspace{2em}}l@{}}
+      \faIcon{home} \href{https://$fromWWW$}{$fromWWW$} &
+      \faIcon{envelope} \href{mailto:$fromemail$}{$fromemail$} &
+      \faIcon{phone} $fromphone$
+    \end{tabular}
+  }
+}
+
+\begin{letter}{$if(toname)$$toname$\\$endif$$if(toaddress)$$toaddress$$endif$$if(subject)$\\ ~ \\\textbf{Subject: $subject$}$endif$}
+\setstretch{1}
+\vspace*{2ex}
+\opening{$opening$}
+\setstretch{$spacing$}
