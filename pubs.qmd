@@ -22,7 +22,7 @@ linkcolor: "#1F407A"
 
 
 {{< iconify <icon> >}}
-You can also check my [ <u>Google Scholar page</u> <i class="ai ai-google-scholar" aria-hidden="true"></i>](https://scholar.google.com/citations?user=USMVPjEAAAAJ&hl=en){target="_blank"} for an updated list of my works. 
+You can also check my [ <u>Google Scholar page</u>](https://scholar.google.com/citations?user=USMVPjEAAAAJ&hl=en){target="_blank"} for an updated list of my works. 
 
 -----
 
@@ -52,7 +52,7 @@ Bazyldo, A., Kecskemeti, S., Cochrane, A., Gorman, T., Rokers, B., Dean, D., Gre
 Patrick, A., Dean, D., Gorman, T., Green, C. S., & Alexander, A. (2019). Assessment of Microstructural Changes Induced via Repeated Videogame Training as a Measure of Neuroplasticity in Normal Developing, College-age Brains. In Proceedings of the 27th Annual Meeting & Exhibition of the International Society for Magnetic Resonance in Medicine. Montréal, QC, Canada. [{{< fa file-lines >}} link](https://cds.ismrm.org/protected/19MProceedings/PDFfiles/3620.html)
 \
 \
-Dean, C. D., Patrick, A. M., Gorman, T., Green, C. S., & Alexander, A. L. (2018). Neuroplastic Changes of Myelin Microstructure With Video Game Play. In Proceedings of the Joint Annual Meeting ISMRM-ESMRMB. Paris, France. [{{< fa file-lines >}} link](https://cds.ismrm.org/protected/18MProceedings/PDFfiles/0929.html)
+Dean, C. D., Patrick, A. M., Gorman, T., Green, C. S., & Alexander, A. L. (2018). Neuroplastic Changes of Myelin Microstructure With Video Game Play. In Proceedings of the Joint Annual Meeting ISMRM-ESMRMB. Paris, France. [{{< fa file-lines >}}link](https://cds.ismrm.org/protected/18MProceedings/PDFfiles/0929.html)
 \
 \
 Kattner, F., Cochrane, A., Cox, C. R., Gorman, T. E., & Green, C. S. (2017). Perceptual learning generalization from sequential perceptual training as a change in learning rate. *Current Biology*, *27*(6), 840–846. [doi.org/10.1016/j.cub.2017.01.046](https://doi.org/10.1016/j.cub.2017.01.046) [{{< fa file-pdf >}} pdf](pdf/Kattner_2017 _Perceptual_learning_generalization_from_sequential.pdf){target="_blank"}
