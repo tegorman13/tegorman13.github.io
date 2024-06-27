@@ -14,7 +14,7 @@ format:
     echo: false
     output-file: cv_gfm.md
   docusaurus-md:
-    echo: false
+    echo: false   
     output-file: cv_docusaurus.md
   # pdf: 
   #   output-file: "cv2.pdf"
@@ -35,7 +35,8 @@ format:
   #       \fancyfoot{}
   cv-pdf: 
     title2: Thomas E. Gorman
-    role: Cognitive Scientist | Data Scientist
+    role: Cognitive Scientist
+    output-file: tg_cv.pdf
     cvfooter:
       left: "Thomas Gorman"
       right: "[tegorman13@github.io](https://tegorman13.github.io)"
@@ -60,7 +61,7 @@ format-links: [cv-pdf]
 
 ::: {.content-visible when-format="html"}
 \
-<p align="center"><a href="cv.pdf" class="btn btn-primary"> {{< fa file-pdf >}} PDF Version</a></p>
+<p align="center"><a href="tg_cv.pdf" class="btn btn-primary"> {{< fa file-pdf >}} PDF Version</a></p>
 \
 :::
 
@@ -87,7 +88,8 @@ format-links: [cv-pdf]
 
 ::: {#secondcol}
 **University of Indiana - Bloomington**\
-- PhD in Psychology and Cognitive Science
+- PhD in Psychology and Cognitive Science\
+- Dissertation: *The Role of Variability in Learning Generalization: A Computational Modeling Approach*
 :::
 
 <div>
@@ -97,7 +99,8 @@ format-links: [cv-pdf]
 <div>
 
 **University of Wisconsin – Madison**\
-- B.Sc. in Psychology
+- B.Sc. in Psychology\
+- Thesis: *Short-term mindfulness intervention reduces the negative attentional effects associated with heavy media multitasking*
 
 </div>
 :::
@@ -107,9 +110,11 @@ format-links: [cv-pdf]
 ```{=tex}
 \begin{tabular}{p{0.3\textwidth} p{0.7\textwidth}}
 2017 - May 2024 & \textbf{University of Indiana - Bloomington} \\
-& PhD in Psychology and Cognitive Science, \\ \\
+& PhD in Psychology and Cognitive Science \\ 
+& Dissertation: \textit{The Role of Variability in Learning Generalization: A Computational Modeling Approach}\\
 2011 - 2015 & \textbf{University of Wisconsin – Madison} \\
-& B.Sc. in Psychology, \\
+& B.Sc. in Psychology \\
+& Thesis: \textit{Short-term mindfulness intervention reduces the negative attentional effects associated with heavy media multitasking} \\
 \end{tabular}
 ```
 :::

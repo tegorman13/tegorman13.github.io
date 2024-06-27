@@ -119,8 +119,8 @@
 
 ##  Reviews and Book Chapters
 
-- **Gorman**, T.E., Gentile, D.A., & Green, C.S. Video game addiction: a
-  short primer (2018). *American Journal of Play*, *10* (3), 309-327
+- **Gorman**, T.E., Gentile, D.A., & Green, C.S. Problem gaming: a short
+  primer (2018). *American Journal of Play*, *10* (3), 309-327
 
 - **Gorman**, T.E., & Green, C.S. (2017). Young minds on video games. In
   *Cognitive development in digital contexts*. 121-143. Academic Press.
