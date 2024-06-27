@@ -16,23 +16,6 @@ format:
   docusaurus-md:
     echo: false   
     output-file: cv_docusaurus.md
-  # pdf: 
-  #   output-file: "cv2.pdf"
-  #   fontfamily: tgpagella
-  #   fontenc: T1
-  #   colorlinks: false
-  #   include-in-header: 
-  #     text: |
-  #       \usepackage{array,colortbl}
-  #       \arrayrulecolor{white}
-  #       \usepackage{fancyhdr}
-  #       \usepackage{fontawesome5}
-  #       \usepackage{fontspec}
-  #       \pagestyle{fancy}
-  #       \fancyhead{}
-  #       \fancyhead[LO,LE]{\textbf{Franchak CV}}
-  #       \fancyhead[RO,RE]{\thepage}
-  #       \fancyfoot{}
   cv-pdf: 
     title2: Thomas E. Gorman
     role: Cognitive Scientist
@@ -87,7 +70,7 @@ format-links: [cv-pdf]
 :::
 
 ::: {#secondcol}
-**University of Indiana - Bloomington**\
+**Indiana University - Bloomington**\
 - PhD in Psychology and Cognitive Science\
 - Dissertation: *The Role of Variability in Learning Generalization: A Computational Modeling Approach*
 :::
@@ -109,10 +92,10 @@ format-links: [cv-pdf]
 ::: {.content-visible when-format="pdf"}
 ```{=tex}
 \begin{tabular}{p{0.3\textwidth} p{0.7\textwidth}}
-2017 - May 2024 & \textbf{University of Indiana - Bloomington} \\
+2017 - May 2024 & \textbf{Indiana University - Bloomington} \\
 & PhD in Psychology and Cognitive Science \\ 
 & Dissertation: \textit{The Role of Variability in Learning Generalization: A Computational Modeling Approach}\\
-2011 - 2015 & \textbf{University of Wisconsin – Madison} \\
+2011 - 2015 & \textbf{University of Wisconsin - Madison} \\
 & B.Sc. in Psychology \\
 & Thesis: \textit{Short-term mindfulness intervention reduces the negative attentional effects associated with heavy media multitasking} \\
 \end{tabular}
