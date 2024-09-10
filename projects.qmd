@@ -176,6 +176,8 @@ _______________________________________________________________
 
 ### Labs & Collaborators 
 
+Torsten Reimer - [Communication and Cognition Lab](https://web.ics.purdue.edu/~treimer/)
+
 Rob Goldstone - [Percepts and Concepts Lab](https://pc.cogs.indiana.edu/)
 
 Rob Nosofsky - [Nosofsky Lab](https://nosofsky.cogs.indiana.edu/)

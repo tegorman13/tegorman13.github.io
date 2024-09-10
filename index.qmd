@@ -1,9 +1,9 @@
 ---
 title: "Thomas E. Gorman"
 subtitle: |
-  PhD Student\ 
+  Postdoctoral Researcher\ 
   Cognitive Science & Cognitive Psychology\
-  Indiana University\
+  Purdue University\
 toc: false
 format:
   html:
@@ -37,7 +37,7 @@ sidebar: false
 
 Welcome to my website! 
 
-I recently defended my dissertation and completed a joint PhD in Cognitive Science and Psychology at Indiana University. My research focuses on computational models of learning and generalization, with a particular interest in using neural network models to test theories of how experience shapes internal representations. I am also interested in exploring the factors that influence generalization, such as training sequence and variability, and in developing methods to compare human behavior to large-scale deep learning models. My work spans various domains, including category learning, visuomotor skill learning, and decision making, and I employ a combination of experimental and computational modeling approaches to investigate these topics. 
+I recently completed a joint PhD in Cognitive Science and Psychology, and am now a postdoctoral researcher at Purdue University. My research focuses on computational models of learning and generalization, with a particular interest in using neural network models to test theories of how experience shapes internal representations. I am also interested in exploring the factors that influence generalization, such as training sequence and variability, and in developing methods to compare human behavior to large-scale deep learning models. My work spans various domains, including category learning, visuomotor skill learning, and decision making, and I employ a combination of experimental and computational modeling approaches to investigate these topics. 
 
 To learn more about what I do, check out my [projects page.](projects.qmd)
 
