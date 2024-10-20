@@ -27,14 +27,14 @@ format:
     sectcolor: "701112"
     cvfont: tgcursor #texlive fonts like raleway,fetamont,gillius,comfortaa
     cvmeta:
-      - left: Department of Psychological and Brain Sciences
+      - left: Purdue University
         right:  "{{< fa globe >}} [tegorman13@github.io](https://tegorman13.github.io)"
       - title: 
-        left: 1101 E. 10th St.
+        left: 100 N. University Street
         right: "{{< fa brands github size=1.7x >}} [tegorman13](https://github.com/tegorman13)"
       - title: 
-        left: Bloomington, IN 47405
-        right: " {{< fa envelope >}} [tegorman@iu.edu](mailto:tegorman@iu.edu)"
+        left: West Lafayette, IN 47907
+        right: " {{< fa envelope >}} [tegorman@purdue.edu](mailto:tegorman@purdue.edu)"
 execute:
   echo: false
   warning: false
@@ -51,7 +51,7 @@ format-links: [cv-pdf]
 
 ::: {.content-visible unless-format="pdf"}
 ::: {.content-visible unless-format="markdown"}
-| <i class="fa fa-envelope" aria-hidden="true" title="An envelope"></i> [tegorman@iu.edu](mailto:tegorman@iu.edu) | <i class="fa fa-envelope" aria-hidden="true" title="An envelope"></i> [tegorman13@gmail.com](mailto:tegorman13@gmail.com) |
+| <i class="fa fa-envelope" aria-hidden="true" title="An envelope"></i> [tegorman@purdue.edu](mailto:tegorman@purdue.edu) | <i class="fa fa-envelope" aria-hidden="true" title="An envelope"></i> [tegorman13@gmail.com](mailto:tegorman13@gmail.com) |
 | --- | --- |
 | <i class="ai ai-google-scholar" aria-hidden="true"></i> [Google Scholar](https://scholar.google.com/citations?user=USMVPjEAAAAJ&hl=en) | <i class="ai ai-orcid" aria-hidden="true"></i> [ORCiD](https://orcid.org/0000-0001-5366-5442) |
 | <i class="fa fa-brands fa-github" aria-hidden="true" title="GitHub logo"></i> [GitHub](https://github.com/tegorman13) | <i class="ai ai-researchgate" aria-hidden="true"></i> [ResearchGate](https://www.researchgate.net/profile/Thomas-Gorman-3) |
@@ -108,7 +108,7 @@ format-links: [cv-pdf]
 
 **Communication and Cognition Lab - Purdue University**
 
--  Postdoctoral Researcher (2024 - Present)
+-  Postdoctoral Researcher in AI, Decision Making, and Risk (2024 - Present)
 -  Principal Investigator: Torsten Reimer, PhD
 
 

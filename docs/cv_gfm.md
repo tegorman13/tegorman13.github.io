@@ -14,9 +14,15 @@
 
 ##  Experience
 
+**Communication and Cognition Lab - Purdue University**
+
+- Postdoctoral Researcher in AI, Decision Making, and Risk (2024 -
+  Present)
+- Principal Investigator: Torsten Reimer, PhD
+
 **Percepts and Concepts Lab**
 
-- PhD Student (2017 - Present)
+- PhD Student (2017 - 2024)
 - Principal Investigator: Robert Goldstone, PhD
 
 **Learning and Transfer Lab (University of Wisconsin-Madison)**
@@ -143,7 +149,7 @@
 
 ##  Awards
 
-IU-Bloomington – Development Training Grant – beginning Fall 2019
+IU-Bloomington – Development Training Grant – Fall 2019
 
 IU-Bloomington - Steinmetz Summer Research Award - 2018
 
